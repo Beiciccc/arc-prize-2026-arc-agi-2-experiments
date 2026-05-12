@@ -13,7 +13,8 @@
 | 2026-05-05 | `52340267` | NVARC/Qwen3 v3 rerun | `28.06` | Complete |
 | 2026-05-06 | `52369283` | NVARC/Qwen3 v3 rerun | `30.14` | Complete |
 | 2026-05-07 | `52403827` | NVARC/Qwen3 v3 rerun | `25.97` | Complete |
-| 2026-05-09 | `52469496` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-09 | `52469496` | NVARC/Qwen3 v3 rerun | `28.47` | Complete |
+| 2026-05-12 | `52570019` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -47,12 +48,19 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52340267` | `28.06` |
 | `52369283` | `30.14` |
 | `52403827` | `25.97` |
-| `52469496` | pending |
+| `52469496` | `28.47` |
+| `52570019` | pending |
 
 Takeaway: repeated reruns can match the baseline but have not exceeded it in this record. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
 ### 2026-05-09: v3 Rerun
 
-The latest accepted submission is ref `52469496`, submitted on `2026-05-09T02:20:24.947Z`. The public score was pending at the time of record update.
+Submission ref `52469496` scored `28.47`.
 
 Context note: the public leaderboard top score moved to `42.22`, but no matching public exact-version notebook evidence was found. A new TOPAS discussion reported `11.67% LB vs ~36% Local`, which did not justify replacing the verified v3 baseline for this daily attempt.
+
+### 2026-05-12: v3 Rerun
+
+The latest accepted submission is ref `52570019`, submitted on `2026-05-12T07:58:24.273Z`. The public score was pending at the time of record update.
+
+Context note: the public leaderboard top score moved to `42.64`. A new public same-name fork was visible, but its output evidence was unreliable, so the run stayed with the established v3 artifact.
