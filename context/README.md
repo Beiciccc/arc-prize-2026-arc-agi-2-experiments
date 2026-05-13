@@ -8,5 +8,7 @@ This directory stores compact CSV indexes captured from public Kaggle pages.
 - `notebooks-2026-05-09.csv`: public notebook listing captured during experiment review.
 - `discussions-index-2026-05-12.csv`: recent discussion topics and metadata.
 - `notebooks-2026-05-12.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-05-13.csv`: recent discussion topics and metadata.
+- `notebooks-2026-05-13.csv`: public notebook listing captured during experiment review.
 
 Full discussion text, notebook source code, generated outputs, and local execution logs are not included.

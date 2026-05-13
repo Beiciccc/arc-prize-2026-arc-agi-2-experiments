@@ -14,7 +14,8 @@
 | 2026-05-06 | `52369283` | NVARC/Qwen3 v3 rerun | `30.14` | Complete |
 | 2026-05-07 | `52403827` | NVARC/Qwen3 v3 rerun | `25.97` | Complete |
 | 2026-05-09 | `52469496` | NVARC/Qwen3 v3 rerun | `28.47` | Complete |
-| 2026-05-12 | `52570019` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-12 | `52570019` | NVARC/Qwen3 v3 rerun | `31.81` | Complete |
+| 2026-05-13 | `52595702` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -49,9 +50,10 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52369283` | `30.14` |
 | `52403827` | `25.97` |
 | `52469496` | `28.47` |
-| `52570019` | pending |
+| `52570019` | `31.81` |
+| `52595702` | pending |
 
-Takeaway: repeated reruns can match the baseline but have not exceeded it in this record. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
+Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
 ### 2026-05-09: v3 Rerun
 
@@ -61,6 +63,12 @@ Context note: the public leaderboard top score moved to `42.22`, but no matching
 
 ### 2026-05-12: v3 Rerun
 
-The latest accepted submission is ref `52570019`, submitted on `2026-05-12T07:58:24.273Z`. The public score was pending at the time of record update.
+Submission ref `52570019` scored `31.81`, the best score in this record so far.
 
 Context note: the public leaderboard top score moved to `42.64`. A new public same-name fork was visible, but its output evidence was unreliable, so the run stayed with the established v3 artifact.
+
+### 2026-05-13: v3 Rerun
+
+The latest accepted submission is ref `52595702`, submitted on `2026-05-13T00:32:49.990Z`. The public score was pending at the time of record update.
+
+Context note: full context refresh timed out against Kaggle API, but lightweight CLI checks showed no stronger public exact-version replacement for the current v3 artifact.
