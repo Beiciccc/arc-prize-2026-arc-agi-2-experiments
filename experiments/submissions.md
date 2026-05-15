@@ -17,6 +17,7 @@
 | 2026-05-12 | `52570019` | NVARC/Qwen3 v3 rerun | `31.81` | Complete |
 | 2026-05-13 | `52595702` | NVARC/Qwen3 v3 rerun | `29.31` | Complete |
 | 2026-05-14 | `52633081` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-15 | `52666668` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -54,6 +55,7 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52570019` | `31.81` |
 | `52595702` | `29.31` |
 | `52633081` | pending |
+| `52666668` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -80,3 +82,9 @@ Context note: full context refresh timed out against Kaggle API, but lightweight
 The latest accepted submission is ref `52633081`, submitted on `2026-05-14T02:09:13.767Z`. The public score was pending at the time of record update.
 
 Context note: Kaggle API connectivity was intermittent, so the run used the successful quota check, latest available context, and target-kernel status before submission. The first submit attempt hit a connect timeout; the retry succeeded and the submission list confirmed the new ref.
+
+### 2026-05-15: v3 Rerun
+
+The latest accepted submission is ref `52666668`, submitted on `2026-05-15T02:31:45.567Z`. The public score was pending at the time of record update.
+
+Context note: the refreshed public context added recent topics and notebooks, but no stronger exact-version replacement for the verified v3 path was identified.
