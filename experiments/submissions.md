@@ -16,8 +16,9 @@
 | 2026-05-09 | `52469496` | NVARC/Qwen3 v3 rerun | `28.47` | Complete |
 | 2026-05-12 | `52570019` | NVARC/Qwen3 v3 rerun | `31.81` | Complete |
 | 2026-05-13 | `52595702` | NVARC/Qwen3 v3 rerun | `29.31` | Complete |
-| 2026-05-14 | `52633081` | NVARC/Qwen3 v3 rerun | pending | Pending |
-| 2026-05-15 | `52666668` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-14 | `52633081` | NVARC/Qwen3 v3 rerun | `26.94` | Complete |
+| 2026-05-15 | `52666668` | NVARC/Qwen3 v3 rerun | `28.47` | Complete |
+| 2026-05-16 | `52719610` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -54,8 +55,9 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52469496` | `28.47` |
 | `52570019` | `31.81` |
 | `52595702` | `29.31` |
-| `52633081` | pending |
-| `52666668` | pending |
+| `52633081` | `26.94` |
+| `52666668` | `28.47` |
+| `52719610` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -79,12 +81,18 @@ Context note: full context refresh timed out against Kaggle API, but lightweight
 
 ### 2026-05-14: v3 Rerun
 
-The latest accepted submission is ref `52633081`, submitted on `2026-05-14T02:09:13.767Z`. The public score was pending at the time of record update.
+Submission ref `52633081`, submitted on `2026-05-14T02:09:13.767Z`, later returned public score `26.94`.
 
 Context note: Kaggle API connectivity was intermittent, so the run used the successful quota check, latest available context, and target-kernel status before submission. The first submit attempt hit a connect timeout; the retry succeeded and the submission list confirmed the new ref.
 
 ### 2026-05-15: v3 Rerun
 
-The latest accepted submission is ref `52666668`, submitted on `2026-05-15T02:31:45.567Z`. The public score was pending at the time of record update.
+Submission ref `52666668`, submitted on `2026-05-15T02:31:45.567Z`, later returned public score `28.47`.
 
 Context note: the refreshed public context added recent topics and notebooks, but no stronger exact-version replacement for the verified v3 path was identified.
+
+### 2026-05-16: v3 Rerun
+
+The latest accepted submission is ref `52719610`, submitted on `2026-05-16T19:43:38.490Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public discussion and notebook indexes did not identify a stronger exact-version replacement. The run continued with the verified v3 artifact, with prior complete score `28.47` and current best record `31.81`.
