@@ -19,6 +19,7 @@
 | 2026-05-14 | `52633081` | NVARC/Qwen3 v3 rerun | `26.94` | Complete |
 | 2026-05-15 | `52666668` | NVARC/Qwen3 v3 rerun | `28.47` | Complete |
 | 2026-05-16 | `52719610` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-17 | `52724208` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -58,6 +59,7 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52633081` | `26.94` |
 | `52666668` | `28.47` |
 | `52719610` | pending |
+| `52724208` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -96,3 +98,9 @@ Context note: the refreshed public context added recent topics and notebooks, bu
 The latest accepted submission is ref `52719610`, submitted on `2026-05-16T19:43:38.490Z`. The public score was pending at the time of record update.
 
 Context note: refreshed public discussion and notebook indexes did not identify a stronger exact-version replacement. The run continued with the verified v3 artifact, with prior complete score `28.47` and current best record `31.81`.
+
+### 2026-05-17: v3 Rerun
+
+The latest accepted submission is ref `52724208`, submitted on `2026-05-17T00:34:07.637Z`. The public score was pending at the time of record update.
+
+Context note: the previous submission remained pending, so the latest complete score available for decision-making was still `28.47`. Refreshed public context showed no new official rule change and no stronger exact-version replacement for the verified v3 artifact.
