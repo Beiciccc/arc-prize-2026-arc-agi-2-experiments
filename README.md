@@ -2,7 +2,7 @@
 
 This repository tracks public-facing experiment notes, leaderboard snapshots, and dataset references for the Kaggle competition `arc-prize-2026-arc-agi-2`.
 
-The current public best submission in this record is `31.81`, obtained by rerunning a public NVARC/Qwen3-based notebook variant. Repeated reruns of the same artifact showed notable public-score variance, ranging from `25.97` to `31.81`.
+The current public best submission in this record is `32.22`, obtained by rerunning a public NVARC/Qwen3-based notebook variant. Repeated reruns of the same artifact showed notable public-score variance, ranging from `25.97` to `32.22`.
 
 ## Repository Contents
 
