@@ -22,7 +22,8 @@
 | 2026-05-17 | `52724208` | NVARC/Qwen3 v3 rerun | `30.14` | Complete |
 | 2026-05-18 | `52763054` | NVARC/Qwen3 v3 rerun | `31.39` | Complete |
 | 2026-05-19 | `52794657` | NVARC/Qwen3 v3 rerun | `27.64` | Complete |
-| 2026-05-20 | `52832792` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-20 | `52832792` | NVARC/Qwen3 v3 rerun | `28.89` | Complete |
+| 2026-05-21 | `52869595` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -65,7 +66,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52724208` | `30.14` |
 | `52763054` | `31.39` |
 | `52794657` | `27.64` |
-| `52832792` | pending |
+| `52832792` | `28.89` |
+| `52869595` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -125,6 +127,12 @@ Context note: refreshed public context showed no stronger verifiable exact-versi
 
 ### 2026-05-20: v3 Rerun
 
-The latest accepted submission is ref `52832792`, submitted on `2026-05-20T00:52:24.580Z`. The public score was pending at the time of record update.
+Submission ref `52832792`, submitted on `2026-05-20T00:52:24.580Z`, later returned public score `28.89`.
 
 Context note: refreshed public context still showed no stronger verifiable exact-version replacement. The run continued with the verified v3 artifact after the previous rerun scored `27.64`.
+
+### 2026-05-21: v3 Rerun
+
+The latest accepted submission is ref `52869595`, submitted on `2026-05-21T02:39:00.880Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public context still showed no stronger verifiable exact-version replacement. The run continued with the verified v3 artifact after the previous rerun scored `28.89`.
