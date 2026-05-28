@@ -29,7 +29,8 @@
 | 2026-05-24 | `52972873` | NVARC/Qwen3 v3 rerun | `30.97` | Complete |
 | 2026-05-25 | `53011246` | NVARC/Qwen3 v3 rerun | `28.06` | Complete |
 | 2026-05-26 | `53044355` | NVARC/Qwen3 v3 rerun | `28.89` | Complete |
-| 2026-05-27 | `53065543` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-27 | `53065543` | NVARC/Qwen3 v3 rerun | `29.72` | Complete |
+| 2026-05-28 | `53131479` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -79,7 +80,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `52972873` | `30.97` |
 | `53011246` | `28.06` |
 | `53044355` | `28.89` |
-| `53065543` | pending |
+| `53065543` | `29.72` |
+| `53131479` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -181,6 +183,12 @@ Context note: refreshed public context showed no new official rule change. A hig
 
 ### 2026-05-27: v3 Rerun
 
-The latest accepted submission is ref `53065543`, submitted on `2026-05-27T00:12:10.330Z`. The public score was pending at the time of record update.
+Submission ref `53065543`, submitted on `2026-05-27T00:12:10.330Z`, later returned public score `29.72`.
 
 Context note: refreshed public context showed no new official rule change. The Tony Li leaderboard lead at `32.64` remained inaccessible as a submit-ready public notebook through the CLI, and other recent candidates were not stronger executable replacements: AFP2025 and Joel errored, several completed candidates mapped to `0.00`, and accessible Hammad/algebraictopology-style variants were below the current best. The run continued with the verified v3 artifact after the previous rerun scored `28.89`.
+
+### 2026-05-28: v3 Rerun
+
+The latest accepted submission is ref `53131479`, submitted on `2026-05-28T23:36:18.107Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public context showed one new DSL discussion and several public notebooks, but no stronger submit-ready replacement. The top leaderboard score moved to `45.42`; the strongest discussed public notebook link was not accessible as a direct submit target, and the complete `maiklukaszuk` notebook had output-shape risk and no matched strong leaderboard score. The run continued with the verified v3 artifact after the previous rerun scored `29.72`.
