@@ -31,6 +31,7 @@
 | 2026-05-26 | `53044355` | NVARC/Qwen3 v3 rerun | `28.89` | Complete |
 | 2026-05-27 | `53065543` | NVARC/Qwen3 v3 rerun | `29.72` | Complete |
 | 2026-05-28 | `53131479` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-29 | `53132639` | NVARC/Qwen3 v3 top-20 target rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -82,6 +83,7 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53044355` | `28.89` |
 | `53065543` | `29.72` |
 | `53131479` | pending |
+| `53132639` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -192,3 +194,9 @@ Context note: refreshed public context showed no new official rule change. The T
 The latest accepted submission is ref `53131479`, submitted on `2026-05-28T23:36:18.107Z`. The public score was pending at the time of record update.
 
 Context note: refreshed public context showed one new DSL discussion and several public notebooks, but no stronger submit-ready replacement. The top leaderboard score moved to `45.42`; the strongest discussed public notebook link was not accessible as a direct submit target, and the complete `maiklukaszuk` notebook had output-shape risk and no matched strong leaderboard score. The run continued with the verified v3 artifact after the previous rerun scored `29.72`.
+
+### 2026-05-29: v3 Top-20 Target Rerun
+
+The latest accepted submission is ref `53132639`, submitted on `2026-05-29T00:28:56.680Z`. The public score was pending at the time of record update.
+
+Context note: top 20 required escaping the `32.22` tie group or improving tie position. Public context did not expose a submit-ready `32.64+` notebook, so the run continued with the best verified v3 artifact as the only validated path with a prior `32.22` result.
