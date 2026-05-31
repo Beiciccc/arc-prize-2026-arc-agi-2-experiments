@@ -32,7 +32,8 @@
 | 2026-05-27 | `53065543` | NVARC/Qwen3 v3 rerun | `29.72` | Complete |
 | 2026-05-28 | `53131479` | NVARC/Qwen3 v3 rerun | `27.22` | Complete |
 | 2026-05-29 | `53132639` | NVARC/Qwen3 v3 top-20 target rerun | `28.47` | Complete |
-| 2026-05-30 | `53167892` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-30 | `53167892` | NVARC/Qwen3 v3 rerun | `31.39` | Complete |
+| 2026-05-31 | `53204831` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -85,7 +86,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53065543` | `29.72` |
 | `53131479` | `27.22` |
 | `53132639` | `28.47` |
-| `53167892` | pending |
+| `53167892` | `31.39` |
+| `53204831` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -205,6 +207,12 @@ Context note: top 20 required escaping the `32.22` tie group or improving tie po
 
 ### 2026-05-30: v3 Rerun
 
-The latest accepted submission is ref `53167892`, submitted on `2026-05-30T00:38:55.860Z`. The public score was pending at the time of record update.
+Submission ref `53167892`, submitted on `2026-05-30T00:38:55.860Z`, later returned public score `31.39`.
 
 Context note: public context still showed no stronger submit-ready replacement. Tony Li's `32.64` discussion link was not accessible as a public CLI submit target, 34+/33+ leaderboard users did not expose matching public competition code, and recent public candidates were errored, timed out, or mapped to weaker leaderboard scores. The run continued with the best verified v3 artifact after the previous rerun scored `28.47`.
+
+### 2026-05-31: v3 Rerun
+
+The latest accepted submission is ref `53204831`, submitted on `2026-05-31T05:08:49.930Z`. The public score was pending at the time of record update.
+
+Context note: public context added one ARC-AGI-3 discussion and seven public notebook entries, but no stronger submit-ready ARC-AGI-2 replacement. The new completed candidates mapped to weaker leaderboard scores, while the strongest `32.64` public lead remained inaccessible as a direct submit target. The run continued with the best verified v3 artifact after the previous rerun scored `31.39`.
