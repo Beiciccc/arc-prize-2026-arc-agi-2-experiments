@@ -33,7 +33,8 @@
 | 2026-05-28 | `53131479` | NVARC/Qwen3 v3 rerun | `27.22` | Complete |
 | 2026-05-29 | `53132639` | NVARC/Qwen3 v3 top-20 target rerun | `28.47` | Complete |
 | 2026-05-30 | `53167892` | NVARC/Qwen3 v3 rerun | `31.39` | Complete |
-| 2026-05-31 | `53204831` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-05-31 | `53204831` | NVARC/Qwen3 v3 rerun | `27.64` | Complete |
+| 2026-06-01 | `53235811` | NVARC/Qwen3 v3 rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -87,7 +88,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53131479` | `27.22` |
 | `53132639` | `28.47` |
 | `53167892` | `31.39` |
-| `53204831` | pending |
+| `53204831` | `27.64` |
+| `53235811` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -213,6 +215,12 @@ Context note: public context still showed no stronger submit-ready replacement. 
 
 ### 2026-05-31: v3 Rerun
 
-The latest accepted submission is ref `53204831`, submitted on `2026-05-31T05:08:49.930Z`. The public score was pending at the time of record update.
+Submission ref `53204831`, submitted on `2026-05-31T05:08:49.930Z`, later returned public score `27.64`.
 
 Context note: public context added one ARC-AGI-3 discussion and seven public notebook entries, but no stronger submit-ready ARC-AGI-2 replacement. The new completed candidates mapped to weaker leaderboard scores, while the strongest `32.64` public lead remained inaccessible as a direct submit target. The run continued with the best verified v3 artifact after the previous rerun scored `31.39`.
+
+### 2026-06-01: v3 Rerun
+
+The latest accepted submission is ref `53235811`, submitted on `2026-06-01T01:26:51.883Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public context showed no new discussion topics or public notebook refs compared with the previous snapshot. The public leaderboard top score rose to `49.17`, while the top-20 line remained in the `32.22` tie group. No accessible high-score public notebook was found, so the run continued with the best verified v3 artifact after the previous rerun scored `27.64`.
