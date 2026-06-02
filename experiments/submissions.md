@@ -34,7 +34,8 @@
 | 2026-05-29 | `53132639` | NVARC/Qwen3 v3 top-20 target rerun | `28.47` | Complete |
 | 2026-05-30 | `53167892` | NVARC/Qwen3 v3 rerun | `31.39` | Complete |
 | 2026-05-31 | `53204831` | NVARC/Qwen3 v3 rerun | `27.64` | Complete |
-| 2026-06-01 | `53235811` | NVARC/Qwen3 v3 rerun | pending | Pending |
+| 2026-06-01 | `53235811` | NVARC/Qwen3 v3 rerun | `0.00` | Complete |
+| 2026-06-02 | `53271523` | NVARC/Qwen3 v3 rerun after output-risk review | pending | Pending |
 
 ## Experiment Notes
 
@@ -221,6 +222,14 @@ Context note: public context added one ARC-AGI-3 discussion and seven public not
 
 ### 2026-06-01: v3 Rerun
 
-The latest accepted submission is ref `53235811`, submitted on `2026-06-01T01:26:51.883Z`. The public score was pending at the time of record update.
+Submission ref `53235811`, submitted on `2026-06-01T01:26:51.883Z`, later returned public score `0.00`.
 
 Context note: refreshed public context showed no new discussion topics or public notebook refs compared with the previous snapshot. The public leaderboard top score rose to `49.17`, while the top-20 line remained in the `32.22` tie group. No accessible high-score public notebook was found, so the run continued with the best verified v3 artifact after the previous rerun scored `27.64`.
+
+Postmortem: the submitted file size was much smaller than normal historical runs, indicating unusually low output coverage. This is treated as a runtime-output anomaly rather than evidence that the historical best v3 score is invalid.
+
+### 2026-06-02: v3 Rerun After Output-Risk Review
+
+The latest accepted submission is ref `53271523`, submitted on `2026-06-02T00:54:20.247Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public context again showed no new discussion topics or public notebook refs compared with the previous snapshot. The top-20 line remained in the `32.22` tie group, with this project still holding a best record of `32.22`. Current output inspection showed risk of low coverage, but recently visible public alternatives remained weaker or lacked valid output evidence, so the run continued with the historically best verified v3 path.
