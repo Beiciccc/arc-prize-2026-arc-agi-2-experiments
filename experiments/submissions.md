@@ -90,7 +90,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53132639` | `28.47` |
 | `53167892` | `31.39` |
 | `53204831` | `27.64` |
-| `53235811` | pending |
+| `53235811` | `0.00` |
+| `53271523` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
