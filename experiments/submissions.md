@@ -35,7 +35,8 @@
 | 2026-05-30 | `53167892` | NVARC/Qwen3 v3 rerun | `31.39` | Complete |
 | 2026-05-31 | `53204831` | NVARC/Qwen3 v3 rerun | `27.64` | Complete |
 | 2026-06-01 | `53235811` | NVARC/Qwen3 v3 rerun | `0.00` | Complete |
-| 2026-06-02 | `53271523` | NVARC/Qwen3 v3 rerun after output-risk review | pending | Pending |
+| 2026-06-02 | `53271523` | NVARC/Qwen3 v3 rerun after output-risk review | `30.56` | Complete |
+| 2026-06-03 | `53313106` | NVARC/Qwen3 v3 rerun after public-context review | pending | Pending |
 
 ## Experiment Notes
 
@@ -91,7 +92,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53167892` | `31.39` |
 | `53204831` | `27.64` |
 | `53235811` | `0.00` |
-| `53271523` | pending |
+| `53271523` | `30.56` |
+| `53313106` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -231,6 +233,12 @@ Postmortem: the submitted file size was much smaller than normal historical runs
 
 ### 2026-06-02: v3 Rerun After Output-Risk Review
 
-The latest accepted submission is ref `53271523`, submitted on `2026-06-02T00:54:20.247Z`. The public score was pending at the time of record update.
+Submission ref `53271523`, submitted on `2026-06-02T00:54:20.247Z`, later returned public score `30.56`.
 
 Context note: refreshed public context again showed no new discussion topics or public notebook refs compared with the previous snapshot. The top-20 line remained in the `32.22` tie group, with this project still holding a best record of `32.22`. Current output inspection showed risk of low coverage, but recently visible public alternatives remained weaker or lacked valid output evidence, so the run continued with the historically best verified v3 path.
+
+### 2026-06-03: v3 Rerun After Public-Context Review
+
+The latest accepted submission is ref `53313106`, submitted on `2026-06-03T04:19:09.210Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public context showed no new discussion topics or public notebook refs compared with the previous reviewed snapshot. The public leaderboard top score remained `49.17`, while the top-20 threshold moved to `32.36`. The strongest public clue remained an inaccessible `32.64` notebook link, and high-score user searches did not expose usable public competition code. The run continued with the historically best verified v3 path after the previous rerun scored `30.56`.
