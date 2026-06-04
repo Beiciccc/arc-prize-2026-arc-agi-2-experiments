@@ -36,7 +36,8 @@
 | 2026-05-31 | `53204831` | NVARC/Qwen3 v3 rerun | `27.64` | Complete |
 | 2026-06-01 | `53235811` | NVARC/Qwen3 v3 rerun | `0.00` | Complete |
 | 2026-06-02 | `53271523` | NVARC/Qwen3 v3 rerun after output-risk review | `30.56` | Complete |
-| 2026-06-03 | `53313106` | NVARC/Qwen3 v3 rerun after public-context review | pending | Pending |
+| 2026-06-03 | `53313106` | NVARC/Qwen3 v3 rerun after public-context review | `28.89` | Complete |
+| 2026-06-04 | `53344882` | NVARC/Qwen3 v3 rerun after leaderboard/code review | pending | Pending |
 
 ## Experiment Notes
 
@@ -93,7 +94,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53204831` | `27.64` |
 | `53235811` | `0.00` |
 | `53271523` | `30.56` |
-| `53313106` | pending |
+| `53313106` | `28.89` |
+| `53344882` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -239,6 +241,12 @@ Context note: refreshed public context again showed no new discussion topics or 
 
 ### 2026-06-03: v3 Rerun After Public-Context Review
 
-The latest accepted submission is ref `53313106`, submitted on `2026-06-03T04:19:09.210Z`. The public score was pending at the time of record update.
+Submission ref `53313106`, submitted on `2026-06-03T04:19:09.210Z`, later returned public score `28.89`.
 
 Context note: refreshed public context showed no new discussion topics or public notebook refs compared with the previous reviewed snapshot. The public leaderboard top score remained `49.17`, while the top-20 threshold moved to `32.36`. The strongest public clue remained an inaccessible `32.64` notebook link, and high-score user searches did not expose usable public competition code. The run continued with the historically best verified v3 path after the previous rerun scored `30.56`.
+
+### 2026-06-04: v3 Rerun After Leaderboard/Code Review
+
+The latest accepted submission is ref `53344882`, submitted on `2026-06-04T01:03:02.300Z`. The public score was pending at the time of record update.
+
+Context note: refreshed public context added one daily-limit discussion but no new public notebook refs versus the previous complete snapshot. The public leaderboard top score remained `49.17`, and the top-20 threshold remained `32.36`; this record's best score remains `32.22`. The strongest `32.64` public-code clue was still inaccessible, and newly visible candidates either errored or lacked evidence of exceeding the verified v3 path. The run continued with the historically best verified v3 artifact after the previous rerun scored `28.89`.
