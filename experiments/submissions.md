@@ -39,7 +39,8 @@
 | 2026-06-03 | `53313106` | NVARC/Qwen3 v3 rerun after public-context review | `28.89` | Complete |
 | 2026-06-04 | `53344882` | NVARC/Qwen3 v3 rerun after leaderboard/code review | `28.61` | Complete |
 | 2026-06-05 | `53377749` | NVARC/Qwen3 v3 rerun after 32.64 public replay access check | `27.36` | Complete |
-| 2026-06-06 | `53408947` | Owned public replay candidate with fixed model path | pending | Pending |
+| 2026-06-06 | `53408947` | Owned public replay candidate with fixed model path | `29.31` | Complete |
+| 2026-06-07 | `53442506` | Rerun owned public replay candidate | pending | Pending |
 
 ## Experiment Notes
 
@@ -99,7 +100,8 @@ Repeated submissions of the same NVARC/Qwen3 v3 artifact showed public-score var
 | `53313106` | `28.89` |
 | `53344882` | `28.61` |
 | `53377749` | `27.36` |
-| `53408947` | pending |
+| `53408947` | `29.31` |
+| `53442506` | pending |
 
 Takeaway: repeated reruns can exceed the original baseline, but the variance is large. Future submissions need stronger evidence from a new exact-version public notebook or a materially improved local variant before replacing the current best baseline.
 
@@ -263,6 +265,13 @@ Context note: the latest public leaderboard kept the top score at `49.17`, moved
 
 ### 2026-06-06: Owned Public Replay Candidate
 
-The latest accepted submission is ref `53408947`, submitted on `2026-06-06T04:05:22.260Z`. The public score was pending at the time of record update.
+Submission ref `53408947`, submitted on `2026-06-06T04:05:22.260Z`, later returned public score `29.31`.
 
 Context note: the public leaderboard still had a top score of `49.17`; top 20 required `32.64`, and the visible public replay candidate remained at `32.64`. The candidate was recreated under this account and validated on the public evaluation run after fixing the model mount path. The validation run generated a non-empty `submission.json` and matched the public evaluation reload score reported by the replay notebook, so this candidate replaced another variance-only v3 rerun for the daily attempt.
+
+
+### 2026-06-07: Owned Public Replay Rerun
+
+The latest accepted submission is ref `53442506`, submitted on `2026-06-07T06:33:12.860Z`. The public score was pending at the time of record update.
+
+Context note: the public leaderboard still had a top score of `49.17`; top 20 required `32.64`, and the visible public replay candidate remained at `32.64`. The previous owned replay run scored `29.31`, below the current best record but above the latest v3 rerun. No newer public notebook exposed a stronger submit-ready candidate, so this daily attempt reran the owned replay version rather than returning to variance-only v3 reruns.
