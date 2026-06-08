@@ -40,7 +40,8 @@
 | 2026-06-04 | `53344882` | NVARC/Qwen3 v3 rerun after leaderboard/code review | `28.61` | Complete |
 | 2026-06-05 | `53377749` | NVARC/Qwen3 v3 rerun after 32.64 public replay access check | `27.36` | Complete |
 | 2026-06-06 | `53408947` | Owned public replay candidate with fixed model path | `29.31` | Complete |
-| 2026-06-07 | `53442506` | Rerun owned public replay candidate | pending | Pending |
+| 2026-06-07 | `53442506` | Rerun owned public replay candidate | `29.31` | Complete |
+| 2026-06-08 | `53478870` | Return to historical NVARC/Qwen3 v3 after replay plateau | pending | Pending |
 
 ## Experiment Notes
 
@@ -272,6 +273,12 @@ Context note: the public leaderboard still had a top score of `49.17`; top 20 re
 
 ### 2026-06-07: Owned Public Replay Rerun
 
-The latest accepted submission is ref `53442506`, submitted on `2026-06-07T06:33:12.860Z`. The public score was pending at the time of record update.
+Submission ref `53442506`, submitted on `2026-06-07T06:33:12.860Z`, later returned public score `29.31`.
 
 Context note: the public leaderboard still had a top score of `49.17`; top 20 required `32.64`, and the visible public replay candidate remained at `32.64`. The previous owned replay run scored `29.31`, below the current best record but above the latest v3 rerun. No newer public notebook exposed a stronger submit-ready candidate, so this daily attempt reran the owned replay version rather than returning to variance-only v3 reruns.
+
+### 2026-06-08: Return To Historical v3
+
+The latest accepted submission is ref `53478870`, submitted on `2026-06-08T13:32:28.727Z`. The public score was pending at the time of record update.
+
+Context note: the previous owned public replay rerun also returned `29.31`, giving two consecutive self-submissions at the same below-best score. The latest public context showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project still at a best record of `32.22`. New public notebooks and discussions did not expose a stronger submit-ready replacement, so this attempt returned to the historical NVARC/Qwen3 v3 path, the only owned path with a verified self score of `32.22`.
