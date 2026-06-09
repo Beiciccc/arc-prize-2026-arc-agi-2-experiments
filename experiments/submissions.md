@@ -41,7 +41,8 @@
 | 2026-06-05 | `53377749` | NVARC/Qwen3 v3 rerun after 32.64 public replay access check | `27.36` | Complete |
 | 2026-06-06 | `53408947` | Owned public replay candidate with fixed model path | `29.31` | Complete |
 | 2026-06-07 | `53442506` | Rerun owned public replay candidate | `29.31` | Complete |
-| 2026-06-08 | `53478870` | Return to historical NVARC/Qwen3 v3 after replay plateau | pending | Pending |
+| 2026-06-08 | `53478870` | Return to historical NVARC/Qwen3 v3 after replay plateau | `27.22` | Complete |
+| 2026-06-09 | `53492157` | Rerun historical NVARC/Qwen3 v3 after no stronger Jun9 candidate | pending | Pending |
 
 ## Experiment Notes
 
@@ -279,6 +280,13 @@ Context note: the public leaderboard still had a top score of `49.17`; top 20 re
 
 ### 2026-06-08: Return To Historical v3
 
-The latest accepted submission is ref `53478870`, submitted on `2026-06-08T13:32:28.727Z`. The public score was pending at the time of record update.
+Submission ref `53478870`, submitted on `2026-06-08T13:32:28.727Z`, later returned public score `27.22`.
 
 Context note: the previous owned public replay rerun also returned `29.31`, giving two consecutive self-submissions at the same below-best score. The latest public context showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project still at a best record of `32.22`. New public notebooks and discussions did not expose a stronger submit-ready replacement, so this attempt returned to the historical NVARC/Qwen3 v3 path, the only owned path with a verified self score of `32.22`.
+
+
+### 2026-06-09: Historical v3 Rerun After Jun9 Context Review
+
+The latest accepted submission is ref `53492157`, submitted on `2026-06-09T02:13:29.503Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 rerun scored `27.22`, while the owned public replay path had already returned `29.31` twice. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. Fresh high-score-adjacent public code signals were visible but not available as inspected submit-ready artifacts, so the run used the historical NVARC/Qwen3 v3 path again rather than repeating the owned replay plateau.
