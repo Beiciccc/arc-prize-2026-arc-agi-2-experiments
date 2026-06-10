@@ -42,7 +42,8 @@
 | 2026-06-06 | `53408947` | Owned public replay candidate with fixed model path | `29.31` | Complete |
 | 2026-06-07 | `53442506` | Rerun owned public replay candidate | `29.31` | Complete |
 | 2026-06-08 | `53478870` | Return to historical NVARC/Qwen3 v3 after replay plateau | `27.22` | Complete |
-| 2026-06-09 | `53492157` | Rerun historical NVARC/Qwen3 v3 after no stronger Jun9 candidate | pending | Pending |
+| 2026-06-09 | `53492157` | Rerun historical NVARC/Qwen3 v3 after no stronger Jun9 candidate | `30.97` | Complete |
+| 2026-06-10 | `53526766` | Owned TRM-Alone replay v2 with fixed checkpoint discovery | pending | Pending |
 
 ## Experiment Notes
 
@@ -287,6 +288,12 @@ Context note: the previous owned public replay rerun also returned `29.31`, givi
 
 ### 2026-06-09: Historical v3 Rerun After Jun9 Context Review
 
-The latest accepted submission is ref `53492157`, submitted on `2026-06-09T02:13:29.503Z`. The public score was pending at the time of record update.
+Submission ref `53492157`, submitted on `2026-06-09T02:13:29.503Z`, later returned public score `30.97`.
 
 Context note: the previous historical v3 rerun scored `27.22`, while the owned public replay path had already returned `29.31` twice. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. Fresh high-score-adjacent public code signals were visible but not available as inspected submit-ready artifacts, so the run used the historical NVARC/Qwen3 v3 path again rather than repeating the owned replay plateau.
+
+### 2026-06-10: Owned TRM-Alone Replay v2
+
+The latest accepted submission is ref `53526766`, submitted on `2026-06-10T06:51:11.837Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 rerun returned `30.97`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. A new TRM-Alone public-code signal exposed a materially different approach with a valid full 240-task output. Replaying it under this account required fixing checkpoint discovery, after which the owned run completed and generated a schema-valid `submission.json` with public-evaluation reload score `166/240`.
