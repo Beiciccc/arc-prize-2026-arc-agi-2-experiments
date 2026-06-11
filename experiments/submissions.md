@@ -43,7 +43,8 @@
 | 2026-06-07 | `53442506` | Rerun owned public replay candidate | `29.31` | Complete |
 | 2026-06-08 | `53478870` | Return to historical NVARC/Qwen3 v3 after replay plateau | `27.22` | Complete |
 | 2026-06-09 | `53492157` | Rerun historical NVARC/Qwen3 v3 after no stronger Jun9 candidate | `30.97` | Complete |
-| 2026-06-10 | `53526766` | Owned TRM-Alone replay v2 with fixed checkpoint discovery | pending | Pending |
+| 2026-06-10 | `53526766` | Owned TRM-Alone replay v2 with fixed checkpoint discovery | `8.75` | Complete |
+| 2026-06-11 | `53551144` | Fallback to historical NVARC/Qwen3 v3 after TRM transfer failure | pending | Pending |
 
 ## Experiment Notes
 
@@ -294,6 +295,14 @@ Context note: the previous historical v3 rerun scored `27.22`, while the owned p
 
 ### 2026-06-10: Owned TRM-Alone Replay v2
 
-The latest accepted submission is ref `53526766`, submitted on `2026-06-10T06:51:11.837Z`. The public score was pending at the time of record update.
+Submission ref `53526766`, submitted on `2026-06-10T06:51:11.837Z`, later returned public score `8.75`.
 
 Context note: the previous historical v3 rerun returned `30.97`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. A new TRM-Alone public-code signal exposed a materially different approach with a valid full 240-task output. Replaying it under this account required fixing checkpoint discovery, after which the owned run completed and generated a schema-valid `submission.json` with public-evaluation reload score `166/240`.
+
+Postmortem: the public-evaluation reload score did not transfer to the hidden leaderboard. This candidate is not treated as submit-ready for another identical rerun.
+
+### 2026-06-11: Historical v3 Fallback After TRM Transfer Failure
+
+The latest accepted submission is ref `53551144`, submitted on `2026-06-11T00:10:17.630Z`. The public score was pending at the time of record update.
+
+Context note: the previous TRM-Alone replay returned `8.75`, while the historical NVARC/Qwen3 v3 path had most recently returned `30.97` and remains the only path in this record with a prior `32.22`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. A public NVARC+TRM ensemble notebook was inspected but did not expose a valid submission artifact, so the run fell back to historical v3.
