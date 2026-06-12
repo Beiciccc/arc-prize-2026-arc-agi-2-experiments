@@ -44,7 +44,8 @@
 | 2026-06-08 | `53478870` | Return to historical NVARC/Qwen3 v3 after replay plateau | `27.22` | Complete |
 | 2026-06-09 | `53492157` | Rerun historical NVARC/Qwen3 v3 after no stronger Jun9 candidate | `30.97` | Complete |
 | 2026-06-10 | `53526766` | Owned TRM-Alone replay v2 with fixed checkpoint discovery | `8.75` | Complete |
-| 2026-06-11 | `53551144` | Fallback to historical NVARC/Qwen3 v3 after TRM transfer failure | pending | Pending |
+| 2026-06-11 | `53551144` | Fallback to historical NVARC/Qwen3 v3 after TRM transfer failure | `29.31` | Complete |
+| 2026-06-12 | `53613833` | Rerun historical NVARC/Qwen3 v3 while NVARC+TRM is not submit-ready | pending | Pending |
 
 ## Experiment Notes
 
@@ -303,6 +304,11 @@ Postmortem: the public-evaluation reload score did not transfer to the hidden le
 
 ### 2026-06-11: Historical v3 Fallback After TRM Transfer Failure
 
-The latest accepted submission is ref `53551144`, submitted on `2026-06-11T00:10:17.630Z`. The public score was pending at the time of record update.
+Submission ref `53551144`, submitted on `2026-06-11T00:10:17.630Z`, later returned public score `29.31`.
 
 Context note: the previous TRM-Alone replay returned `8.75`, while the historical NVARC/Qwen3 v3 path had most recently returned `30.97` and remains the only path in this record with a prior `32.22`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. A public NVARC+TRM ensemble notebook was inspected but did not expose a valid submission artifact, so the run fell back to historical v3.
+### 2026-06-12: Historical v3 Rerun After Jun12 Context Review
+
+The latest accepted submission is ref `53613833`, submitted on `2026-06-12T19:37:52.623Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `29.31`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. New public notebooks were inspected; one generated a valid 240-task output but mapped to a `0.00` public score, while the others did not provide submission artifacts. The run therefore used historical v3 again as the only owned submit-ready path with a prior `32.22`.
