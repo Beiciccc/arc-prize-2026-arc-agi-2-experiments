@@ -45,8 +45,9 @@
 | 2026-06-09 | `53492157` | Rerun historical NVARC/Qwen3 v3 after no stronger Jun9 candidate | `30.97` | Complete |
 | 2026-06-10 | `53526766` | Owned TRM-Alone replay v2 with fixed checkpoint discovery | `8.75` | Complete |
 | 2026-06-11 | `53551144` | Fallback to historical NVARC/Qwen3 v3 after TRM transfer failure | `29.31` | Complete |
-| 2026-06-12 | `53613833` | Rerun historical NVARC/Qwen3 v3 while NVARC+TRM is not submit-ready | pending | Pending |
-| 2026-06-13 | `53621193` | Fallback historical NVARC/Qwen3 v3 after Jun12 v3 remained pending | pending | Pending |
+| 2026-06-12 | `53613833` | Rerun historical NVARC/Qwen3 v3 while NVARC+TRM is not submit-ready | `29.44` | Complete |
+| 2026-06-13 | `53621193` | Fallback historical NVARC/Qwen3 v3 after Jun12 v3 remained pending | `28.89` | Complete |
+| 2026-06-14 | `53683778` | Defensive historical NVARC/Qwen3 v3 fallback after recent underperformance | pending | Pending |
 
 ## Experiment Notes
 
@@ -310,11 +311,16 @@ Submission ref `53551144`, submitted on `2026-06-11T00:10:17.630Z`, later return
 Context note: the previous TRM-Alone replay returned `8.75`, while the historical NVARC/Qwen3 v3 path had most recently returned `30.97` and remains the only path in this record with a prior `32.22`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. A public NVARC+TRM ensemble notebook was inspected but did not expose a valid submission artifact, so the run fell back to historical v3.
 ### 2026-06-12: Historical v3 Rerun After Jun12 Context Review
 
-The latest accepted submission is ref `53613833`, submitted on `2026-06-12T19:37:52.623Z`. The public score was pending at the time of record update.
+Submission ref `53613833`, submitted on `2026-06-12T19:37:52.623Z`, later returned public score `29.44`.
 
 Context note: the previous historical v3 fallback returned `29.31`. The latest public context still showed a top score of `49.17`, a top-20 threshold of `32.64`, and this project at a best record of `32.22`. New public notebooks were inspected; one generated a valid 240-task output but mapped to a `0.00` public score, while the others did not provide submission artifacts. The run therefore used historical v3 again as the only owned submit-ready path with a prior `32.22`.
 ### 2026-06-13: Historical v3 Fallback While Jun12 Remained Pending
 
-The latest accepted submission is ref `53621193`, submitted on `2026-06-13T01:54:45.230Z`. The public score was pending at the time of record update. Ref `53613833` from June 12 was also still pending at decision time.
+Submission ref `53621193`, submitted on `2026-06-13T01:54:45.230Z`, later returned public score `28.89`. Ref `53613833` from June 12 later returned public score `29.44`.
 
 Context note: the latest completed self score remained `29.31` from ref `53551144`, while this project still had a best record of `32.22`. The latest public context showed no new submit-ready notebook above the historical v3 path; the visible new notebooks were either analysis-only, lacked a submission artifact, or mapped to a `0.00` public score. The run therefore used historical v3 again as a defensive fallback under the explicit one-submission instruction.
+### 2026-06-14: Defensive Historical v3 Fallback
+
+The latest accepted submission is ref `53683778`, submitted on `2026-06-14T18:17:10.780Z`. The public score was pending at the time of record update.
+
+Context note: the recent historical v3 reruns returned `29.44` and `28.89`, below this record's best `32.22` and below the top-20 threshold of `32.64`. New public notebooks were reviewed; the Qwen+LoRA stop-loss run failed, one analysis notebook had no submission artifact, and a 240-task output candidate mapped to a `0.00` public score. The run therefore used historical v3 as a defensive fallback under the explicit one-submission instruction.
