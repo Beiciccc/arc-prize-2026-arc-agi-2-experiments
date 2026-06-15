@@ -48,6 +48,7 @@
 | 2026-06-12 | `53613833` | Rerun historical NVARC/Qwen3 v3 while NVARC+TRM is not submit-ready | `29.44` | Complete |
 | 2026-06-13 | `53621193` | Fallback historical NVARC/Qwen3 v3 after Jun12 v3 remained pending | `28.89` | Complete |
 | 2026-06-14 | `53683778` | Defensive historical NVARC/Qwen3 v3 fallback after recent underperformance | pending | Pending |
+| 2026-06-15 | `53693975` | Owned ARC2A2DBG1 replay after recent v3 underperformance | pending | Pending |
 
 ## Experiment Notes
 
@@ -324,3 +325,9 @@ Context note: the latest completed self score remained `29.31` from ref `5355114
 The latest accepted submission is ref `53683778`, submitted on `2026-06-14T18:17:10.780Z`. The public score was pending at the time of record update.
 
 Context note: the recent historical v3 reruns returned `29.44` and `28.89`, below this record's best `32.22` and below the top-20 threshold of `32.64`. New public notebooks were reviewed; the Qwen+LoRA stop-loss run failed, one analysis notebook had no submission artifact, and a 240-task output candidate mapped to a `0.00` public score. The run therefore used historical v3 as a defensive fallback under the explicit one-submission instruction.
+### 2026-06-15: Owned ARC2A2DBG1 Replay
+
+The latest accepted submission is ref `53693975`, submitted on `2026-06-15T02:54:46.433Z`. The public score was pending at the time of record update.
+
+Context note: ref `53683778` from June 14 was still pending, and the two latest completed historical v3 reruns returned `29.44` and `28.89`. A newly visible public notebook produced a schema-valid 240-task output and mapped to a visible source-author score of `30.56`. Because repeated v3 reruns were underperforming, this run used an owned replay of that deterministic color-map candidate for higher information value than another identical v3 rerun.
+
