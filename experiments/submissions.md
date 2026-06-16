@@ -47,8 +47,9 @@
 | 2026-06-11 | `53551144` | Fallback to historical NVARC/Qwen3 v3 after TRM transfer failure | `29.31` | Complete |
 | 2026-06-12 | `53613833` | Rerun historical NVARC/Qwen3 v3 while NVARC+TRM is not submit-ready | `29.44` | Complete |
 | 2026-06-13 | `53621193` | Fallback historical NVARC/Qwen3 v3 after Jun12 v3 remained pending | `28.89` | Complete |
-| 2026-06-14 | `53683778` | Defensive historical NVARC/Qwen3 v3 fallback after recent underperformance | pending | Pending |
-| 2026-06-15 | `53693975` | Owned ARC2A2DBG1 replay after recent v3 underperformance | pending | Pending |
+| 2026-06-14 | `53683778` | Defensive historical NVARC/Qwen3 v3 fallback after recent underperformance | `28.47` | Complete |
+| 2026-06-15 | `53693975` | Owned ARC2A2DBG1 replay after recent v3 underperformance | `0.00` | Complete |
+| 2026-06-16 | `53731332` | Defensive historical NVARC/Qwen3 v3 fallback after Pascal zero | pending | Pending |
 
 ## Experiment Notes
 
@@ -322,12 +323,17 @@ Submission ref `53621193`, submitted on `2026-06-13T01:54:45.230Z`, later return
 Context note: the latest completed self score remained `29.31` from ref `53551144`, while this project still had a best record of `32.22`. The latest public context showed no new submit-ready notebook above the historical v3 path; the visible new notebooks were either analysis-only, lacked a submission artifact, or mapped to a `0.00` public score. The run therefore used historical v3 again as a defensive fallback under the explicit one-submission instruction.
 ### 2026-06-14: Defensive Historical v3 Fallback
 
-The latest accepted submission is ref `53683778`, submitted on `2026-06-14T18:17:10.780Z`. The public score was pending at the time of record update.
+Submission ref `53683778`, submitted on `2026-06-14T18:17:10.780Z`, later returned public score `28.47`.
 
 Context note: the recent historical v3 reruns returned `29.44` and `28.89`, below this record's best `32.22` and below the top-20 threshold of `32.64`. New public notebooks were reviewed; the Qwen+LoRA stop-loss run failed, one analysis notebook had no submission artifact, and a 240-task output candidate mapped to a `0.00` public score. The run therefore used historical v3 as a defensive fallback under the explicit one-submission instruction.
 ### 2026-06-15: Owned ARC2A2DBG1 Replay
 
-The latest accepted submission is ref `53693975`, submitted on `2026-06-15T02:54:46.433Z`. The public score was pending at the time of record update.
+Submission ref `53693975`, submitted on `2026-06-15T02:54:46.433Z`, later returned public score `0.00`.
 
 Context note: ref `53683778` from June 14 was still pending, and the two latest completed historical v3 reruns returned `29.44` and `28.89`. A newly visible public notebook produced a schema-valid 240-task output and mapped to a visible source-author score of `30.56`. Because repeated v3 reruns were underperforming, this run used an owned replay of that deterministic color-map candidate for higher information value than another identical v3 rerun.
+### 2026-06-16: Defensive Historical v3 After Pascal Zero
+
+The latest accepted submission is ref `53731332`, submitted on `2026-06-16T04:48:49.087Z`. The public score was pending at the time of record update.
+
+Context note: the previous Pascal replay returned `0.00`, and the June 14 historical v3 fallback returned `28.47`. The refreshed public context showed top score `50.56`, top-20 threshold `32.64`, and this project still at best `32.22`. Newly visible public notebooks either lacked a valid submission artifact, failed dependency setup, mapped to `0.00`, or could not be verified during API limiting. The run therefore used historical NVARC/Qwen3 v3 as the only verified fallback with a prior `32.22`.
 
