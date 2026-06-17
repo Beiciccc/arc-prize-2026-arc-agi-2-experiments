@@ -49,7 +49,8 @@
 | 2026-06-13 | `53621193` | Fallback historical NVARC/Qwen3 v3 after Jun12 v3 remained pending | `28.89` | Complete |
 | 2026-06-14 | `53683778` | Defensive historical NVARC/Qwen3 v3 fallback after recent underperformance | `28.47` | Complete |
 | 2026-06-15 | `53693975` | Owned ARC2A2DBG1 replay after recent v3 underperformance | `0.00` | Complete |
-| 2026-06-16 | `53731332` | Defensive historical NVARC/Qwen3 v3 fallback after Pascal zero | pending | Pending |
+| 2026-06-16 | `53731332` | Defensive historical NVARC/Qwen3 v3 fallback after Pascal zero | `29.72` | Complete |
+| 2026-06-17 | `53772499` | Owned Foysal 2026D replay after stronger public-evaluation reload | pending | Pending |
 
 ## Experiment Notes
 
@@ -333,7 +334,12 @@ Submission ref `53693975`, submitted on `2026-06-15T02:54:46.433Z`, later return
 Context note: ref `53683778` from June 14 was still pending, and the two latest completed historical v3 reruns returned `29.44` and `28.89`. A newly visible public notebook produced a schema-valid 240-task output and mapped to a visible source-author score of `30.56`. Because repeated v3 reruns were underperforming, this run used an owned replay of that deterministic color-map candidate for higher information value than another identical v3 rerun.
 ### 2026-06-16: Defensive Historical v3 After Pascal Zero
 
-The latest accepted submission is ref `53731332`, submitted on `2026-06-16T04:48:49.087Z`. The public score was pending at the time of record update.
+Submission ref `53731332`, submitted on `2026-06-16T04:48:49.087Z`, later returned public score `29.72`.
 
 Context note: the previous Pascal replay returned `0.00`, and the June 14 historical v3 fallback returned `28.47`. The refreshed public context showed top score `50.56`, top-20 threshold `32.64`, and this project still at best `32.22`. Newly visible public notebooks either lacked a valid submission artifact, failed dependency setup, mapped to `0.00`, or could not be verified during API limiting. The run therefore used historical NVARC/Qwen3 v3 as the only verified fallback with a prior `32.22`.
+### 2026-06-17: Owned Foysal 2026D Replay
+
+The latest accepted submission is ref `53772499`, submitted on `2026-06-17T10:25:51.270Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `29.72`, while the record best remained `32.22` and the top-20 threshold remained `32.64`. A newly checked Foysal-derived public output passed schema checks and had a much stronger local public-evaluation reload signal than historical v3 (`46/172` output-correct versus `3/172`). An owned replay reproduced the downloaded output byte-for-byte, so this run used that verified non-v3 candidate for higher information value than another v3 rerun.
 
