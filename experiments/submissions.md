@@ -50,7 +50,8 @@
 | 2026-06-14 | `53683778` | Defensive historical NVARC/Qwen3 v3 fallback after recent underperformance | `28.47` | Complete |
 | 2026-06-15 | `53693975` | Owned ARC2A2DBG1 replay after recent v3 underperformance | `0.00` | Complete |
 | 2026-06-16 | `53731332` | Defensive historical NVARC/Qwen3 v3 fallback after Pascal zero | `29.72` | Complete |
-| 2026-06-17 | `53772499` | Owned Foysal 2026D replay after stronger public-evaluation reload | pending | Pending |
+| 2026-06-17 | `53772499` | Owned Foysal 2026D replay after stronger public-evaluation reload | no score | Complete |
+| 2026-06-18 | `53792285` | Owned Koushik Golden DSL replay after 33.89 public signal | pending | Pending |
 
 ## Experiment Notes
 
@@ -339,7 +340,12 @@ Submission ref `53731332`, submitted on `2026-06-16T04:48:49.087Z`, later return
 Context note: the previous Pascal replay returned `0.00`, and the June 14 historical v3 fallback returned `28.47`. The refreshed public context showed top score `50.56`, top-20 threshold `32.64`, and this project still at best `32.22`. Newly visible public notebooks either lacked a valid submission artifact, failed dependency setup, mapped to `0.00`, or could not be verified during API limiting. The run therefore used historical NVARC/Qwen3 v3 as the only verified fallback with a prior `32.22`.
 ### 2026-06-17: Owned Foysal 2026D Replay
 
-The latest accepted submission is ref `53772499`, submitted on `2026-06-17T10:25:51.270Z`. The public score was pending at the time of record update.
+Submission ref `53772499`, submitted on `2026-06-17T10:25:51.270Z`, completed with no public score returned in the submission list.
 
 Context note: the previous historical v3 fallback returned `29.72`, while the record best remained `32.22` and the top-20 threshold remained `32.64`. A newly checked Foysal-derived public output passed schema checks and had a much stronger local public-evaluation reload signal than historical v3 (`46/172` output-correct versus `3/172`). An owned replay reproduced the downloaded output byte-for-byte, so this run used that verified non-v3 candidate for higher information value than another v3 rerun.
+### 2026-06-18: Owned Koushik Golden DSL Replay
+
+The latest accepted submission is ref `53792285`, submitted on `2026-06-18T01:36:54.720Z`. The public score was pending at the time of record update.
+
+Context note: the previous Foysal replay completed without a public score, while the latest scored historical v3 rerun was `29.72`. The refreshed public context showed top score `50.56`, top-20 threshold `32.64`, and this project still at best `32.22`. A newly visible Koushik Golden DSL notebook had a source-team score of `33.89` and could be replayed end-to-end under this account, so this run used that executable notebook rather than another static-output replay or historical v3 fallback.
 
