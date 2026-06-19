@@ -51,7 +51,8 @@
 | 2026-06-15 | `53693975` | Owned ARC2A2DBG1 replay after recent v3 underperformance | `0.00` | Complete |
 | 2026-06-16 | `53731332` | Defensive historical NVARC/Qwen3 v3 fallback after Pascal zero | `29.72` | Complete |
 | 2026-06-17 | `53772499` | Owned Foysal 2026D replay after stronger public-evaluation reload | no score | Complete |
-| 2026-06-18 | `53792285` | Owned Koushik Golden DSL replay after 33.89 public signal | pending | Pending |
+| 2026-06-18 | `53792285` | Owned Koushik Golden DSL replay after 33.89 public signal | `29.44` | Complete |
+| 2026-06-19 | `53828333` | Owned Koushik 33.89 Plus selector replay | pending | Pending |
 
 ## Experiment Notes
 
@@ -345,7 +346,13 @@ Submission ref `53772499`, submitted on `2026-06-17T10:25:51.270Z`, completed wi
 Context note: the previous historical v3 fallback returned `29.72`, while the record best remained `32.22` and the top-20 threshold remained `32.64`. A newly checked Foysal-derived public output passed schema checks and had a much stronger local public-evaluation reload signal than historical v3 (`46/172` output-correct versus `3/172`). An owned replay reproduced the downloaded output byte-for-byte, so this run used that verified non-v3 candidate for higher information value than another v3 rerun.
 ### 2026-06-18: Owned Koushik Golden DSL Replay
 
-The latest accepted submission is ref `53792285`, submitted on `2026-06-18T01:36:54.720Z`. The public score was pending at the time of record update.
+Submission ref `53792285`, submitted on `2026-06-18T01:36:54.720Z`, later returned public score `29.44`.
 
 Context note: the previous Foysal replay completed without a public score, while the latest scored historical v3 rerun was `29.72`. The refreshed public context showed top score `50.56`, top-20 threshold `32.64`, and this project still at best `32.22`. A newly visible Koushik Golden DSL notebook had a source-team score of `33.89` and could be replayed end-to-end under this account, so this run used that executable notebook rather than another static-output replay or historical v3 fallback.
+
+### 2026-06-19: Owned Koushik 33.89 Plus Selector Replay
+
+The latest accepted submission is ref `53828333`, submitted on `2026-06-19T03:35:53.157Z`. The public score was pending at the time of record update.
+
+Context note: the previous Koushik Golden DSL replay returned `29.44`, below the project best `32.22`. The refreshed public context still showed top score `50.56`, top-20 threshold `32.64`, and no submit-ready public notebook for the visible higher-score teams. The Koushik Plus variant changed the final selector and produced a valid evaluation run under this account, improving the local public-evaluation reload from `3/172` to `4/172` output-correct. This run used that executable Plus variant for higher information value than another historical v3 rerun.
 
