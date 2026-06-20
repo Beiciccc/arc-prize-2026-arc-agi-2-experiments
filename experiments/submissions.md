@@ -52,7 +52,8 @@
 | 2026-06-16 | `53731332` | Defensive historical NVARC/Qwen3 v3 fallback after Pascal zero | `29.72` | Complete |
 | 2026-06-17 | `53772499` | Owned Foysal 2026D replay after stronger public-evaluation reload | no score | Complete |
 | 2026-06-18 | `53792285` | Owned Koushik Golden DSL replay after 33.89 public signal | `29.44` | Complete |
-| 2026-06-19 | `53828333` | Owned Koushik 33.89 Plus selector replay | pending | Pending |
+| 2026-06-19 | `53828333` | Owned Koushik 33.89 Plus selector replay | `30.69` | Complete |
+| 2026-06-20 | `53864255` | Defensive historical NVARC/Qwen3 v3 fallback after Jun20 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -352,7 +353,13 @@ Context note: the previous Foysal replay completed without a public score, while
 
 ### 2026-06-19: Owned Koushik 33.89 Plus Selector Replay
 
-The latest accepted submission is ref `53828333`, submitted on `2026-06-19T03:35:53.157Z`. The public score was pending at the time of record update.
+Submission ref `53828333`, submitted on `2026-06-19T03:35:53.157Z`, later returned public score `30.69`.
 
-Context note: the previous Koushik Golden DSL replay returned `29.44`, below the project best `32.22`. The refreshed public context still showed top score `50.56`, top-20 threshold `32.64`, and no submit-ready public notebook for the visible higher-score teams. The Koushik Plus variant changed the final selector and produced a valid evaluation run under this account, improving the local public-evaluation reload from `3/172` to `4/172` output-correct. This run used that executable Plus variant for higher information value than another historical v3 rerun.
+Context note: the previous Koushik Golden DSL replay returned `29.44`, below the project best `32.22`. The refreshed public context still showed top score `50.56`, top-20 threshold `32.64`, and no submit-ready public notebook for the visible higher-score teams. The Koushik Plus variant changed the final selector and produced a valid evaluation run under this account, improving the local public-evaluation reload from `3/172` to `4/172` output-correct. This run used that executable Plus variant for higher information value than another historical v3 rerun. The returned score improved over the Golden DSL replay but did not beat the project best of `32.22`.
 
+
+### 2026-06-20: Defensive Historical v3 After Jun20 Review
+
+The latest accepted submission is ref `53864255`, submitted on `2026-06-20T00:41:29.580Z`. The public score was pending at the time of record update.
+
+Context note: the previous Koushik Plus replay returned `30.69`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; recent visible notebooks and discussion updates did not provide a stronger validated executable replacement. This run returned to historical NVARC/Qwen3 v3 as the only owned path with a prior `32.22` result.
