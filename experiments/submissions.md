@@ -53,7 +53,8 @@
 | 2026-06-17 | `53772499` | Owned Foysal 2026D replay after stronger public-evaluation reload | no score | Complete |
 | 2026-06-18 | `53792285` | Owned Koushik Golden DSL replay after 33.89 public signal | `29.44` | Complete |
 | 2026-06-19 | `53828333` | Owned Koushik 33.89 Plus selector replay | `30.69` | Complete |
-| 2026-06-20 | `53864255` | Defensive historical NVARC/Qwen3 v3 fallback after Jun20 review | pending | Pending |
+| 2026-06-20 | `53864255` | Defensive historical NVARC/Qwen3 v3 fallback after Jun20 review | `29.31` | Complete |
+| 2026-06-21 | `53907018` | Defensive historical NVARC/Qwen3 v3 fallback after Jun21 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -360,6 +361,12 @@ Context note: the previous Koushik Golden DSL replay returned `29.44`, below the
 
 ### 2026-06-20: Defensive Historical v3 After Jun20 Review
 
-The latest accepted submission is ref `53864255`, submitted on `2026-06-20T00:41:29.580Z`. The public score was pending at the time of record update.
+Submission ref `53864255`, submitted on `2026-06-20T00:41:29.580Z`, later returned public score `29.31`.
 
-Context note: the previous Koushik Plus replay returned `30.69`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; recent visible notebooks and discussion updates did not provide a stronger validated executable replacement. This run returned to historical NVARC/Qwen3 v3 as the only owned path with a prior `32.22` result.
+Context note: the previous Koushik Plus replay returned `30.69`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; recent visible notebooks and discussion updates did not provide a stronger validated executable replacement. This run returned to historical NVARC/Qwen3 v3 as the only owned path with a prior `32.22` result. The returned score was below both the project best and the top-20 threshold.
+
+### 2026-06-21: Defensive Historical v3 After Jun21 Review
+
+The latest accepted submission is ref `53907018`, submitted on `2026-06-21T08:14:19.333Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 rerun returned `29.31`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included symbolic-search guides, a plasticity-schedule notebook, an AFP rerun, an Andres rerun, and a Koushik Original KG variant. The new outputs either lacked a valid submission, mapped to weak source-team scores, or were nearly identical to already tested variants. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
