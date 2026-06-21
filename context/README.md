@@ -54,5 +54,37 @@ This directory stores compact CSV indexes captured from public Kaggle pages.
 - `notebooks-2026-06-04.csv`: public notebook listing captured during experiment review.
 - `discussions-index-2026-06-05.csv`: recent discussion topics and metadata.
 - `notebooks-2026-06-05.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-06.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-06.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-07.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-07.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-08.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-08.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-09.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-09.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-10.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-10.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-11.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-11.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-12.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-12.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-13.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-13.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-14.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-14.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-15.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-15.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-16.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-16.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-17.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-17.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-18.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-18.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-19.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-19.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-20.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-20.csv`: public notebook listing captured during experiment review.
+- `discussions-index-2026-06-21.csv`: recent discussion topics and metadata.
+- `notebooks-2026-06-21.csv`: public notebook listing captured during experiment review.
 
 Full discussion text, notebook source code, generated outputs, and local execution logs are not included.
