@@ -54,7 +54,8 @@
 | 2026-06-18 | `53792285` | Owned Koushik Golden DSL replay after 33.89 public signal | `29.44` | Complete |
 | 2026-06-19 | `53828333` | Owned Koushik 33.89 Plus selector replay | `30.69` | Complete |
 | 2026-06-20 | `53864255` | Defensive historical NVARC/Qwen3 v3 fallback after Jun20 review | `29.31` | Complete |
-| 2026-06-21 | `53907018` | Defensive historical NVARC/Qwen3 v3 fallback after Jun21 review | pending | Pending |
+| 2026-06-21 | `53907018` | Defensive historical NVARC/Qwen3 v3 fallback after Jun21 review | `29.31` | Complete |
+| 2026-06-22 | `53945254` | Defensive historical NVARC/Qwen3 v3 fallback after Jun22 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -367,8 +368,14 @@ Context note: the previous Koushik Plus replay returned `30.69`, below the proje
 
 ### 2026-06-21: Defensive Historical v3 After Jun21 Review
 
-The latest accepted submission is ref `53907018`, submitted on `2026-06-21T08:14:19.333Z`. The public score was pending at the time of record update.
+Submission ref `53907018`, submitted on `2026-06-21T08:14:19.333Z`, later returned public score `29.31`.
 
 Context note: the previous historical v3 rerun returned `29.31`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included symbolic-search guides, a plasticity-schedule notebook, an AFP rerun, an Andres rerun, and a Koushik Original KG variant. The new outputs either lacked a valid submission, mapped to weak source-team scores, or were nearly identical to already tested variants. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
 
 Additional check: an owned replay of the Koushik Original KG variant completed with a valid 120-task evaluation output, but local evaluation remained at `3/172` output-correct and `2/120` task-all-correct. The replay output differed from historical v3 on only two tasks, so it was recorded as low-upside evidence rather than a separate accepted submission.
+
+### 2026-06-22: Defensive Historical v3 After Jun22 Review
+
+The latest accepted submission is ref `53945254`, submitted on `2026-06-22T12:05:54.013Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 rerun returned `29.31`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included a Hydra solver, a program-search extension, AFP and Kokin reruns, and older Qwen/Koushik candidates. The Hydra solver scored `0/172` on public evaluation, the program-search extension reported only a low training solve rate, and the other checked candidates remained tied to weak source-team scores or near-duplicate evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
