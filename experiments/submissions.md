@@ -55,7 +55,8 @@
 | 2026-06-19 | `53828333` | Owned Koushik 33.89 Plus selector replay | `30.69` | Complete |
 | 2026-06-20 | `53864255` | Defensive historical NVARC/Qwen3 v3 fallback after Jun20 review | `29.31` | Complete |
 | 2026-06-21 | `53907018` | Defensive historical NVARC/Qwen3 v3 fallback after Jun21 review | `29.31` | Complete |
-| 2026-06-22 | `53945254` | Defensive historical NVARC/Qwen3 v3 fallback after Jun22 review | pending | Pending |
+| 2026-06-22 | `53945254` | Defensive historical NVARC/Qwen3 v3 fallback after Jun22 review | `30.14` | Complete |
+| 2026-06-23 | `53961176` | Defensive historical NVARC/Qwen3 v3 fallback after Jun23 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -376,6 +377,12 @@ Additional check: an owned replay of the Koushik Original KG variant completed w
 
 ### 2026-06-22: Defensive Historical v3 After Jun22 Review
 
-The latest accepted submission is ref `53945254`, submitted on `2026-06-22T12:05:54.013Z`. The public score was pending at the time of record update.
+Submission ref `53945254`, submitted on `2026-06-22T12:05:54.013Z`, later returned public score `30.14`.
 
 Context note: the previous historical v3 rerun returned `29.31`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included a Hydra solver, a program-search extension, AFP and Kokin reruns, and older Qwen/Koushik candidates. The Hydra solver scored `0/172` on public evaluation, the program-search extension reported only a low training solve rate, and the other checked candidates remained tied to weak source-team scores or near-duplicate evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-06-23: Defensive Historical v3 After Jun23 Review
+
+The latest accepted submission is ref `53961176`, submitted on `2026-06-23T00:14:20.990Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `30.14`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included Anas ARC 2026, Andres Qwen+LoRA Stop Loss, and Kokin Transparent Symbolic Search reruns. The Anas output was nearly identical to the historical v3 output and weak on public-evaluation reload, the Andres rerun did not expose a usable submission artifact, and the Kokin rerun remained weak. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
