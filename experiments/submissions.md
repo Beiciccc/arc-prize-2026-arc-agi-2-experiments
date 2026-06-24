@@ -56,7 +56,8 @@
 | 2026-06-20 | `53864255` | Defensive historical NVARC/Qwen3 v3 fallback after Jun20 review | `29.31` | Complete |
 | 2026-06-21 | `53907018` | Defensive historical NVARC/Qwen3 v3 fallback after Jun21 review | `29.31` | Complete |
 | 2026-06-22 | `53945254` | Defensive historical NVARC/Qwen3 v3 fallback after Jun22 review | `30.14` | Complete |
-| 2026-06-23 | `53961176` | Defensive historical NVARC/Qwen3 v3 fallback after Jun23 review | pending | Pending |
+| 2026-06-23 | `53961176` | Defensive historical NVARC/Qwen3 v3 fallback after Jun23 review | `31.81` | Complete |
+| 2026-06-24 | `54010143` | Defensive historical NVARC/Qwen3 v3 fallback after Jun24 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -383,6 +384,12 @@ Context note: the previous historical v3 rerun returned `29.31`, below the proje
 
 ### 2026-06-23: Defensive Historical v3 After Jun23 Review
 
-The latest accepted submission is ref `53961176`, submitted on `2026-06-23T00:14:20.990Z`. The public score was pending at the time of record update.
+Submission ref `53961176`, submitted on `2026-06-23T00:14:20.990Z`, later returned public score `31.81`.
 
 Context note: the previous historical v3 fallback returned `30.14`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included Anas ARC 2026, Andres Qwen+LoRA Stop Loss, and Kokin Transparent Symbolic Search reruns. The Anas output was nearly identical to the historical v3 output and weak on public-evaluation reload, the Andres rerun did not expose a usable submission artifact, and the Kokin rerun remained weak. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-06-24: Defensive Historical v3 After Jun24 Review
+
+The latest accepted submission is ref `54010143`, submitted on `2026-06-24T11:50:57.120Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `31.81`, still below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; new visible notebooks included Boristown ARC-AGI-2 2026 and HermesARC v12. The matching public leaderboard signals for those authors were weaker than the recent v3 result or zero, and the available public-code metadata did not expose a stronger validated candidate. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
