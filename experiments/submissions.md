@@ -58,7 +58,8 @@
 | 2026-06-22 | `53945254` | Defensive historical NVARC/Qwen3 v3 fallback after Jun22 review | `30.14` | Complete |
 | 2026-06-23 | `53961176` | Defensive historical NVARC/Qwen3 v3 fallback after Jun23 review | `31.81` | Complete |
 | 2026-06-24 | `54010143` | Defensive historical NVARC/Qwen3 v3 fallback after Jun24 review | `29.31` | Complete |
-| 2026-06-28 | `54152660` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 review | pending | Pending |
+| 2026-06-28 | `54152660` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 review | `28.47` | Complete |
+| 2026-06-29 | `54182634` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 late review | pending | Pending |
 
 ## Experiment Notes
 
@@ -397,6 +398,12 @@ Context note: the previous historical v3 fallback returned `31.81`, still below 
 
 ### 2026-06-28: Defensive Historical v3 After Jun29 Review
 
-The latest accepted submission is ref `54152660`, submitted on `2026-06-28T23:09:18.860Z` after the Jun29 local review. The public score was pending at the time of record update.
+Submission ref `54152660`, submitted on `2026-06-28T23:09:18.860Z` after the Jun29 local review, later returned public score `28.47`.
 
 Context note: the previous historical v3 fallback returned `29.31`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`; top 20 required `32.64`, and the project remained at best `32.22`. Recent visible notebooks included THTennant 33.89 TTT, Boristown Route 3, Waquar NVARC, and an Andres rerun. The runnable new outputs either matched the historical v3 public-evaluation result without stronger leaderboard evidence or scored lower on local reload, while the other checked notebooks did not provide usable submission output. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-06-29: Defensive Historical v3 After Jun29 Late Review
+
+The latest accepted submission is ref `54182634`, submitted on `2026-06-29T23:00:41.373Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `28.47`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context added new visible notebooks from Aevion and Roman and updated reruns from Boristown, Andres, Waquar, and Stellaris. The new notebooks were not available as validated submit-ready outputs, and the schema-valid checked candidates did not improve over the historical v3 public-evaluation reload. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
