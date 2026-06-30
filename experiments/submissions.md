@@ -59,7 +59,8 @@
 | 2026-06-23 | `53961176` | Defensive historical NVARC/Qwen3 v3 fallback after Jun23 review | `31.81` | Complete |
 | 2026-06-24 | `54010143` | Defensive historical NVARC/Qwen3 v3 fallback after Jun24 review | `29.31` | Complete |
 | 2026-06-28 | `54152660` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 review | `28.47` | Complete |
-| 2026-06-29 | `54182634` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 late review | pending | Pending |
+| 2026-06-29 | `54182634` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 late review | `26.81` | Complete |
+| 2026-06-30 | `54214338` | Defensive historical NVARC/Qwen3 v3 fallback after Jun30 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -404,6 +405,12 @@ Context note: the previous historical v3 fallback returned `29.31`, below the pr
 
 ### 2026-06-29: Defensive Historical v3 After Jun29 Late Review
 
-The latest accepted submission is ref `54182634`, submitted on `2026-06-29T23:00:41.373Z`. The public score was pending at the time of record update.
+Submission ref `54182634`, submitted on `2026-06-29T23:00:41.373Z`, later returned public score `26.81`.
 
 Context note: the previous historical v3 fallback returned `28.47`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context added new visible notebooks from Aevion and Roman and updated reruns from Boristown, Andres, Waquar, and Stellaris. The new notebooks were not available as validated submit-ready outputs, and the schema-valid checked candidates did not improve over the historical v3 public-evaluation reload. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-06-30: Defensive Historical v3 After Jun30 Review
+
+The latest accepted submission is ref `54214338`, submitted on `2026-06-30T23:17:57.403Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `26.81`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`, top 20 at `32.64`, and this project at rank `40`. New visible notebooks included Stellaris, Suncrest, Busya PRIME, Roman, and Andreas Holberg. The only schema-valid output above v3 on public-evaluation reload was an already-known public-prepass artifact, while the other new outputs were invalid or errored. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
