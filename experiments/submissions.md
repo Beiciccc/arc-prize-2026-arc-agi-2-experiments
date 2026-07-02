@@ -60,8 +60,9 @@
 | 2026-06-24 | `54010143` | Defensive historical NVARC/Qwen3 v3 fallback after Jun24 review | `29.31` | Complete |
 | 2026-06-28 | `54152660` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 review | `28.47` | Complete |
 | 2026-06-29 | `54182634` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 late review | `26.81` | Complete |
-| 2026-06-30 | `54214338` | Defensive historical NVARC/Qwen3 v3 fallback after Jun30 review | pending | Pending |
-| 2026-07-01 | `54219121` | Defensive historical NVARC/Qwen3 v3 fallback after Jul1 review | pending | Pending |
+| 2026-06-30 | `54214338` | Defensive historical NVARC/Qwen3 v3 fallback after Jun30 review | `28.89` | Complete |
+| 2026-07-01 | `54219121` | Defensive historical NVARC/Qwen3 v3 fallback after Jul1 review | `31.81` | Complete |
+| 2026-07-02 | `54251140` | Defensive historical NVARC/Qwen3 v3 fallback after Jul2 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -412,12 +413,18 @@ Context note: the previous historical v3 fallback returned `28.47`, below the pr
 
 ### 2026-06-30: Defensive Historical v3 After Jun30 Review
 
-Submission ref `54214338`, submitted on `2026-06-30T23:17:57.403Z`, remained pending at the time of the Jul1 record update.
+Submission ref `54214338`, submitted on `2026-06-30T23:17:57.403Z`, later returned public score `28.89`.
 
 Context note: the previous historical v3 fallback returned `26.81`, below the project best `32.22` and below the top-20 threshold `32.64`. The refreshed public context showed top score `50.56`, top 20 at `32.64`, and this project at rank `40`. New visible notebooks included Stellaris, Suncrest, Busya PRIME, Roman, and Andreas Holberg. The only schema-valid output above v3 on public-evaluation reload was an already-known public-prepass artifact, while the other new outputs were invalid or errored. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
 
 ### 2026-07-01: Defensive Historical v3 After Jul1 Review
 
-The latest accepted submission is ref `54219121`, submitted on `2026-07-01T03:16:46.490Z`. The public score was pending at the time of record update.
+Submission ref `54219121`, submitted on `2026-07-01T03:16:46.490Z`, later returned public score `31.81`.
 
 Context note: the previous historical v3 fallback remained pending, and the latest completed score was `26.81`. The refreshed public context showed no discussion change, top score `50.56`, top 20 at `32.64`, and this project at rank `40`. The only new visible notebook was a harness test without validated output, and the THTennant rerun could not be downloaded during rate limiting and had weak prior evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-02: Defensive Historical v3 After Jul2 Review
+
+The latest accepted submission is ref `54251140`, submitted on `2026-07-02T03:10:54.513Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `31.81`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no discussion changes. Newly reviewed public notebooks included one source-only Helix/Llama candidate without visible output and one clean symbolic candidate whose output was schema-valid but dominated by input-copy fallback behavior. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
