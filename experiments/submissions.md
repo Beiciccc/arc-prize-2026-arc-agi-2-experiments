@@ -62,7 +62,8 @@
 | 2026-06-29 | `54182634` | Defensive historical NVARC/Qwen3 v3 fallback after Jun29 late review | `26.81` | Complete |
 | 2026-06-30 | `54214338` | Defensive historical NVARC/Qwen3 v3 fallback after Jun30 review | `28.89` | Complete |
 | 2026-07-01 | `54219121` | Defensive historical NVARC/Qwen3 v3 fallback after Jul1 review | `31.81` | Complete |
-| 2026-07-02 | `54251140` | Defensive historical NVARC/Qwen3 v3 fallback after Jul2 review | pending | Pending |
+| 2026-07-02 | `54251140` | Defensive historical NVARC/Qwen3 v3 fallback after Jul2 review | `28.47` | Complete |
+| 2026-07-03 | `54292075` | Defensive historical NVARC/Qwen3 v3 fallback after Jul3 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -425,6 +426,12 @@ Context note: the previous historical v3 fallback remained pending, and the late
 
 ### 2026-07-02: Defensive Historical v3 After Jul2 Review
 
-The latest accepted submission is ref `54251140`, submitted on `2026-07-02T03:10:54.513Z`. The public score was pending at the time of record update.
+Submission ref `54251140`, submitted on `2026-07-02T03:10:54.513Z`, later returned public score `28.47`.
 
 Context note: the previous historical v3 fallback returned `31.81`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no discussion changes. Newly reviewed public notebooks included one source-only Helix/Llama candidate without visible output and one clean symbolic candidate whose output used a 240-task task set incompatible with the local evaluation schema. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-03: Defensive Historical v3 After Jul3 Review
+
+The latest accepted submission is ref `54292075`, submitted on `2026-07-03T08:37:17.820Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `28.47`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no new discussion topic, one vote-only topic change, and several recent public notebooks. The only fresh higher-validation candidate had no official leaderboard score attached and required further compliant reproduction before it could safely replace the established v3 path. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
