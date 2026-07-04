@@ -63,7 +63,8 @@
 | 2026-06-30 | `54214338` | Defensive historical NVARC/Qwen3 v3 fallback after Jun30 review | `28.89` | Complete |
 | 2026-07-01 | `54219121` | Defensive historical NVARC/Qwen3 v3 fallback after Jul1 review | `31.81` | Complete |
 | 2026-07-02 | `54251140` | Defensive historical NVARC/Qwen3 v3 fallback after Jul2 review | `28.47` | Complete |
-| 2026-07-03 | `54292075` | Defensive historical NVARC/Qwen3 v3 fallback after Jul3 review | pending | Pending |
+| 2026-07-03 | `54292075` | Defensive historical NVARC/Qwen3 v3 fallback after Jul3 review | `29.31` | Complete |
+| 2026-07-04 | `54317354` | Defensive historical NVARC/Qwen3 v3 fallback after Jul4 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -432,6 +433,12 @@ Context note: the previous historical v3 fallback returned `31.81`, while the pr
 
 ### 2026-07-03: Defensive Historical v3 After Jul3 Review
 
-The latest accepted submission is ref `54292075`, submitted on `2026-07-03T08:37:17.820Z`. The public score was pending at the time of record update.
+Submission ref `54292075`, submitted on `2026-07-03T08:37:17.820Z`, later returned public score `29.31`.
 
 Context note: the previous historical v3 fallback returned `28.47`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no new discussion topic, one vote-only topic change, and several recent public notebooks. The only fresh higher-validation candidate had no official leaderboard score attached and required further compliant reproduction before it could safely replace the established v3 path. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-04: Defensive Historical v3 After Jul4 Review
+
+The latest accepted submission is ref `54317354`, submitted on `2026-07-04T03:55:43.670Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `29.31`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no new discussion topic and only one vote-only discussion change. New or changed public notebooks either produced 240-task outputs incompatible with the local evaluation schema or tied historical v3 on local reload while carrying weaker leaderboard evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
