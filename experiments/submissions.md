@@ -445,6 +445,12 @@ Context note: the previous historical v3 fallback returned `29.31`, while the pr
 
 ### 2026-07-05: Defensive Historical v3 After Jul5 Review
 
-The latest accepted submission is ref `54355223`, submitted on `2026-07-05T08:07:45.610Z`. The public score was pending at the time of record update.
+Submission ref `54355223`, submitted on `2026-07-05T08:07:45.610Z`, later returned public score `28.89`.
 
 Context note: the previous historical v3 fallback returned `30.97`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no new discussion topic; one discussion about zero-score behavior received comments but did not change competition constraints. Newly checked public notebooks either lacked a submission output, tied historical v3 on local reload while carrying weak leaderboard evidence, or had no local evaluation transfer signal. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-06: Defensive Historical v3 After Jul6 Review
+
+The latest accepted submission is ref `54379363`, submitted on `2026-07-06T01:54:57.123Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `28.89`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context added a visual baseline discussion and several visible notebook updates, but the checked artifacts either lacked a valid submission output, had invalid schema, or carried leaderboard evidence below the project best. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
