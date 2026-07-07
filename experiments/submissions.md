@@ -451,6 +451,12 @@ Context note: the previous historical v3 fallback returned `30.97`, while the pr
 
 ### 2026-07-06: Defensive Historical v3 After Jul6 Review
 
-The latest accepted submission is ref `54379363`, submitted on `2026-07-06T01:54:57.123Z`. The public score was pending at the time of record update.
+Submission ref `54379363`, submitted on `2026-07-06T01:54:57.123Z`, later returned public score `30.14`.
 
 Context note: the previous historical v3 fallback returned `28.89`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context added a visual baseline discussion and several visible notebook updates, but the checked artifacts either lacked a valid submission output, had invalid schema, or carried leaderboard evidence below the project best. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-07: Defensive Historical v3 After Jul7 Review
+
+The latest accepted submission is ref `54410326`, submitted on `2026-07-07T00:27:31.917Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `30.14`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no new discussion topic and several visible notebook updates. A new Boristown perfpatch output improved local public-evaluation reload by one output but remained tied to weaker official leaderboard evidence, while other checked outputs were missing or unsuitable. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
