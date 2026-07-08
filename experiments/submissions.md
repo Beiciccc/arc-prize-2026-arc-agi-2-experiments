@@ -457,6 +457,12 @@ Context note: the previous historical v3 fallback returned `28.89`, while the pr
 
 ### 2026-07-07: Defensive Historical v3 After Jul7 Review
 
-The latest accepted submission is ref `54410326`, submitted on `2026-07-07T00:27:31.917Z`. The public score was pending at the time of record update.
+Submission ref `54410326`, submitted on `2026-07-07T00:27:31.917Z`, later returned public score `28.47`.
 
 Context note: the previous historical v3 fallback returned `30.14`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed public context showed no new discussion topic and several visible notebook updates. A new Boristown perfpatch output improved local public-evaluation reload by one output but remained tied to weaker official leaderboard evidence, while other checked outputs were missing or unsuitable. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-08: Defensive Historical v3 After Jul8 Review
+
+The latest accepted submission is ref `54457260`, submitted on `2026-07-08T09:36:11.843Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `28.47`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed a new top score of `55.14`, but no public executable artifact mapped to that frontier change. Newly checked public notebooks included Aman, Zeroday, and Lucifer variants; Zeroday improved local public-evaluation reload but carried weak official leaderboard evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
