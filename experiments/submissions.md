@@ -64,7 +64,12 @@
 | 2026-07-01 | `54219121` | Defensive historical NVARC/Qwen3 v3 fallback after Jul1 review | `31.81` | Complete |
 | 2026-07-02 | `54251140` | Defensive historical NVARC/Qwen3 v3 fallback after Jul2 review | `28.47` | Complete |
 | 2026-07-03 | `54292075` | Defensive historical NVARC/Qwen3 v3 fallback after Jul3 review | `29.31` | Complete |
-| 2026-07-04 | `54317354` | Defensive historical NVARC/Qwen3 v3 fallback after Jul4 review | pending | Pending |
+| 2026-07-04 | `54317354` | Defensive historical NVARC/Qwen3 v3 fallback after Jul4 review | `30.97` | Complete |
+| 2026-07-05 | `54355223` | Defensive historical NVARC/Qwen3 v3 fallback after Jul5 review | `28.89` | Complete |
+| 2026-07-06 | `54379363` | Defensive historical NVARC/Qwen3 v3 fallback after Jul6 review | `30.14` | Complete |
+| 2026-07-07 | `54410326` | Defensive historical NVARC/Qwen3 v3 fallback after Jul7 review | `28.47` | Complete |
+| 2026-07-08 | `54457260` | Defensive historical NVARC/Qwen3 v3 fallback after Jul8 review | `28.47` | Complete |
+| 2026-07-09 | `54481956` | Defensive historical NVARC/Qwen3 v3 fallback after Jul9 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -463,6 +468,12 @@ Context note: the previous historical v3 fallback returned `30.14`, while the pr
 
 ### 2026-07-08: Defensive Historical v3 After Jul8 Review
 
-The latest accepted submission is ref `54457260`, submitted on `2026-07-08T09:36:11.843Z`. The public score was pending at the time of record update.
+Submission ref `54457260`, submitted on `2026-07-08T09:36:11.843Z`, later returned public score `28.47`.
 
 Context note: the previous historical v3 fallback returned `28.47`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed a new top score of `55.14`, but no public executable artifact mapped to that frontier change. Newly checked public notebooks included Aman, Zeroday, and Lucifer variants; Zeroday improved local public-evaluation reload but carried weak official leaderboard evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-09: Defensive Historical v3 After Jul9 Review
+
+The latest accepted submission is ref `54481956`, submitted on `2026-07-09T04:28:46.143Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `28.47`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed top score `55.14`. New or rerun public notebooks included Kevin Russell CPU-selector, Lucifer Symmetry Forge, AFP HelixARC, Andres Qwen+LoRA, and Teisnes variants. The checked outputs were either invalid for the current public-evaluation schema, missing a usable submission file, tied historical v3 on local reload, or mapped to weaker official leaderboard evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
