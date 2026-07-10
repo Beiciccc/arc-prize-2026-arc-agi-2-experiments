@@ -69,7 +69,8 @@
 | 2026-07-06 | `54379363` | Defensive historical NVARC/Qwen3 v3 fallback after Jul6 review | `30.14` | Complete |
 | 2026-07-07 | `54410326` | Defensive historical NVARC/Qwen3 v3 fallback after Jul7 review | `28.47` | Complete |
 | 2026-07-08 | `54457260` | Defensive historical NVARC/Qwen3 v3 fallback after Jul8 review | `28.47` | Complete |
-| 2026-07-09 | `54481956` | Defensive historical NVARC/Qwen3 v3 fallback after Jul9 review | pending | Pending |
+| 2026-07-09 | `54481956` | Defensive historical NVARC/Qwen3 v3 fallback after Jul9 review | `29.31` | Complete |
+| 2026-07-10 | `54513617` | Defensive historical NVARC/Qwen3 v3 fallback after Jul10 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -474,6 +475,12 @@ Context note: the previous historical v3 fallback returned `28.47`, while the pr
 
 ### 2026-07-09: Defensive Historical v3 After Jul9 Review
 
-The latest accepted submission is ref `54481956`, submitted on `2026-07-09T04:28:46.143Z`. The public score was pending at the time of record update.
+Submission ref `54481956`, submitted on `2026-07-09T04:28:46.143Z`, later returned public score `29.31`.
 
 Context note: the previous historical v3 fallback returned `28.47`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed top score `55.14`. New or rerun public notebooks included Kevin Russell CPU-selector, Lucifer Symmetry Forge, AFP HelixARC, Andres Qwen+LoRA, and Teisnes variants. The checked outputs were either invalid for the current public-evaluation schema, missing a usable submission file, tied historical v3 on local reload, or mapped to weaker official leaderboard evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-10: Defensive Historical v3 After Jul10 Review
+
+The latest accepted submission is ref `54513617`, submitted on `2026-07-10T02:53:53.237Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `29.31`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed top score `55.14`. A new discussion about the first public task did not change competition rules or submission format. The newly indexed Aegis Triad output was schema-valid but tied historical v3 on public-evaluation reload, changed only two output records, and lacked exact-version attribution to its source team's `33.89` best. A new HRM-Text NVARC run did not expose a complete submission artifact, while other reruns carried weaker official evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
