@@ -70,7 +70,8 @@
 | 2026-07-07 | `54410326` | Defensive historical NVARC/Qwen3 v3 fallback after Jul7 review | `28.47` | Complete |
 | 2026-07-08 | `54457260` | Defensive historical NVARC/Qwen3 v3 fallback after Jul8 review | `28.47` | Complete |
 | 2026-07-09 | `54481956` | Defensive historical NVARC/Qwen3 v3 fallback after Jul9 review | `29.31` | Complete |
-| 2026-07-10 | `54513617` | Defensive historical NVARC/Qwen3 v3 fallback after Jul10 review | pending | Pending |
+| 2026-07-10 | `54513617` | Defensive historical NVARC/Qwen3 v3 fallback after Jul10 review | `29.31` | Complete |
+| 2026-07-11 | `54571164` | Defensive historical NVARC/Qwen3 v3 fallback after Jul11 review | pending | Pending |
 
 ## Experiment Notes
 
@@ -481,6 +482,12 @@ Context note: the previous historical v3 fallback returned `28.47`, while the pr
 
 ### 2026-07-10: Defensive Historical v3 After Jul10 Review
 
-The latest accepted submission is ref `54513617`, submitted on `2026-07-10T02:53:53.237Z`. The public score was pending at the time of record update.
+Submission ref `54513617`, submitted on `2026-07-10T02:53:53.237Z`, later returned public score `29.31`.
 
 Context note: the previous historical v3 fallback returned `29.31`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed top score `55.14`. A new discussion about the first public task did not change competition rules or submission format. The newly indexed Aegis Triad output was schema-valid but tied historical v3 on public-evaluation reload, changed only two output records, and lacked exact-version attribution to its source team's `33.89` best. A new HRM-Text NVARC run did not expose a complete submission artifact, while other reruns carried weaker official evidence. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-11: Defensive Historical v3 After Jul11 Review
+
+The latest accepted submission is ref `54571164`, submitted on `2026-07-11T12:20:25.880Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `29.31`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed top score `55.14`, while Junhua Yang improved to `35.97` and rabbithole appeared at `34.03`; no matching public executable artifact was available. A new discussion clarified that the public test challenges are placeholders and scoring uses different hidden tasks. The newly indexed NVARC baseline tied historical v3 on public-evaluation reload and its source account scored `28.47`. A rerun of Symmetry Forge disabled its neural path after an import failure and fell to `0/172`. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
