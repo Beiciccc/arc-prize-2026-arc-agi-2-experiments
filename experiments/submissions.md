@@ -71,7 +71,8 @@
 | 2026-07-08 | `54457260` | Defensive historical NVARC/Qwen3 v3 fallback after Jul8 review | `28.47` | Complete |
 | 2026-07-09 | `54481956` | Defensive historical NVARC/Qwen3 v3 fallback after Jul9 review | `29.31` | Complete |
 | 2026-07-10 | `54513617` | Defensive historical NVARC/Qwen3 v3 fallback after Jul10 review | `29.31` | Complete |
-| 2026-07-11 | `54571164` | Defensive historical NVARC/Qwen3 v3 fallback after Jul11 review | pending | Pending |
+| 2026-07-11 | `54571164` | Defensive historical NVARC/Qwen3 v3 fallback after Jul11 review | `27.64` | Complete |
+| 2026-07-12 | `54593627` | Owned Koushik 3389 Plus rerun after plateau review | pending | Pending |
 
 ## Experiment Notes
 
@@ -488,6 +489,12 @@ Context note: the previous historical v3 fallback returned `29.31`, while the pr
 
 ### 2026-07-11: Defensive Historical v3 After Jul11 Review
 
-The latest accepted submission is ref `54571164`, submitted on `2026-07-11T12:20:25.880Z`. The public score was pending at the time of record update.
+Submission ref `54571164`, submitted on `2026-07-11T12:20:25.880Z`, later returned public score `27.64`.
 
 Context note: the previous historical v3 fallback returned `29.31`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed top score `55.14`, while Junhua Yang improved to `35.97` and rabbithole appeared at `34.03`; no matching public executable artifact was available. A new discussion clarified that the public test challenges are placeholders and scoring uses different hidden tasks. The newly indexed NVARC baseline tied historical v3 on public-evaluation reload and its source account scored `28.47`. A rerun of Symmetry Forge disabled its neural path after an import failure and fell to `0/172`. This run therefore used historical NVARC/Qwen3 v3 as the defensive fallback.
+
+### 2026-07-12: Owned Koushik 3389 Plus Rerun
+
+The latest accepted submission is ref `54593627`, submitted on `2026-07-12T03:36:34.073Z`. The public score was pending at the time of record update.
+
+Context note: the previous historical v3 fallback returned `27.64`, while the project best remained `32.22` and top 20 remained `32.64`. Rabbithole improved to `38.19`, but no matching public executable notebook was available from its listed accounts. Newly visible public solvers either produced a one-task mock file, reported only `3.6%` development task accuracy, mapped to `0.00`, or retained weaker source evidence. The owned Koushik Plus path had previously scored `30.69` and solved one additional public-evaluation output over historical v3. This run therefore used Koushik Plus as a bounded exploration away from the heavily sampled v3 plateau.
