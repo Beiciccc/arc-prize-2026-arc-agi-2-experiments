@@ -495,6 +495,12 @@ Context note: the previous historical v3 fallback returned `29.31`, while the pr
 
 ### 2026-07-12: Owned Koushik 3389 Plus Rerun
 
-The latest accepted submission is ref `54593627`, submitted on `2026-07-12T03:36:34.073Z`. The public score was pending at the time of record update.
+Submission ref `54593627`, submitted on `2026-07-12T03:36:34.073Z`, later returned public score `27.78`.
 
 Context note: the previous historical v3 fallback returned `27.64`, while the project best remained `32.22` and top 20 remained `32.64`. Rabbithole improved to `38.19`, but no matching public executable notebook was available from its listed accounts. Newly visible public solvers either produced a one-task mock file, reported only `3.6%` development task accuracy, mapped to `0.00`, or retained weaker source evidence. The owned Koushik Plus path had previously scored `30.69` and solved one additional public-evaluation output over historical v3. This run therefore used Koushik Plus as a bounded exploration away from the heavily sampled v3 plateau.
+
+### 2026-07-13: Owned Learned from AIMO Replay
+
+The latest accepted submission is ref `54627482`, submitted on `2026-07-13T01:05:20.360Z`. The public score was pending at the time of record update.
+
+Context note: the Koushik Plus rerun returned `27.78`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `55.14`, second place at `38.19`, and this project at rank `43`. Newly visible notebooks either lacked a complete submission artifact, mapped to weaker leaderboard evidence, or had no validation signal. Learned from AIMO was the only new complete executable candidate with meaningful source-account evidence. Its owned reproduction passed the 120-task schema check and matched the public run on `170/172` output pairs while differing from historical v3 on five pairs. This run therefore used the exact owned reproduction as a bounded exploration beyond the repeated v3 and Koushik families.
