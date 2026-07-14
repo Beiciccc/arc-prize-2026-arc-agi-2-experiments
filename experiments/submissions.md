@@ -72,7 +72,9 @@
 | 2026-07-09 | `54481956` | Defensive historical NVARC/Qwen3 v3 fallback after Jul9 review | `29.31` | Complete |
 | 2026-07-10 | `54513617` | Defensive historical NVARC/Qwen3 v3 fallback after Jul10 review | `29.31` | Complete |
 | 2026-07-11 | `54571164` | Defensive historical NVARC/Qwen3 v3 fallback after Jul11 review | `27.64` | Complete |
-| 2026-07-12 | `54593627` | Owned Koushik 3389 Plus rerun after plateau review | pending | Pending |
+| 2026-07-12 | `54593627` | Owned Koushik 3389 Plus rerun after plateau review | `27.78` | Complete |
+| 2026-07-13 | `54627482` | Owned Learned from AIMO replay after public-code review | `16.81` | Complete |
+| 2026-07-14 | `54676596` | Defensive historical v3 fallback after source-mapping failure | pending | Pending |
 
 ## Experiment Notes
 
@@ -501,6 +503,14 @@ Context note: the previous historical v3 fallback returned `27.64`, while the pr
 
 ### 2026-07-13: Owned Learned from AIMO Replay
 
-The latest accepted submission is ref `54627482`, submitted on `2026-07-13T01:05:20.360Z`. The public score was pending at the time of record update.
+Submission ref `54627482`, submitted on `2026-07-13T01:05:20.360Z`, later returned public score `16.81`.
 
 Context note: the Koushik Plus rerun returned `27.78`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `55.14`, second place at `38.19`, and this project at rank `43`. Newly visible notebooks either lacked a complete submission artifact, mapped to weaker leaderboard evidence, or had no validation signal. Learned from AIMO was the only new complete executable candidate with meaningful source-account evidence. Its owned reproduction passed the 120-task schema check and matched the public run on `170/172` output pairs while differing from historical v3 on five pairs. This run therefore used the exact owned reproduction as a bounded exploration beyond the repeated v3 and Koushik families.
+
+Postmortem: the source account's `32.22` best could not be attributed to this exact public Notebook version and did not transfer. Future public candidates require an exact-version score link, materially stronger owned evidence, or a substantive method change before replacing the verified fallback.
+
+### 2026-07-14: Defensive Historical v3 After Source-Mapping Failure
+
+The latest accepted submission is ref `54676596`, submitted on `2026-07-14T07:15:30.457Z`. The public score was pending at the time of record update.
+
+Context note: the Learned from AIMO replay returned `16.81`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed first place at `55.14`, second place at `38.19`, and this project at rank `43`. No substantive discussion changed. Newly indexed or rerun public notebooks were old replays, errored, unrelated, mapped to `0.00–0.83`, or retained only `3.6%` development task accuracy. Historical v3 remained the only owned family to have reached `32.22`; its 57 nonzero reruns had mean `29.20` and median `29.31`. This run therefore returned to the validated historical v3 artifact as the lowest-risk fallback.
