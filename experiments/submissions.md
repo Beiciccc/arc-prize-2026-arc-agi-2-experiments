@@ -518,6 +518,12 @@ Context note: the Learned from AIMO replay returned `16.81`, while the project b
 
 ### 2026-07-15: Defensive Historical v3 After Perfpatch Replay Check
 
-The latest accepted submission is ref `54707068`, submitted on `2026-07-15T01:22:23.700Z`. The public score was pending at the time of record update.
+Submission ref `54707068`, submitted on `2026-07-15T01:22:23.700Z`, later returned public score `29.72`.
 
 Context note: the previous historical v3 fallback returned `30.56`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard still showed first place at `55.14`, second place at `38.19`, and this project at rank `43`. Two new visible notebook variants revisited the known LB33.89 perfpatch family. The standard public output improved local evaluation from `3/172` to `4/172`, but an exact private replay returned to `3/172`, two fully solved tasks, and reload `2.5`; the quantile-selector variant also remained at `3/172`. Because neither new run preserved a stronger reproducible result or supplied exact-version leaderboard evidence above `32.22`, this submission used the verified historical v3 fallback.
+
+### 2026-07-16: Defensive Historical v3 After Symbolic-Ensemble Review
+
+The latest accepted submission is ref `54748508`, submitted on `2026-07-16T00:25:34.350Z`. Its public score was pending at the time of this update.
+
+Context note: the previous historical v3 fallback returned `29.72`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `55.83`, second place at `38.19`, and this project at rank `43`. A newly updated symbolic-ensemble notebook passed the 120-task schema and reached `4/172` output-correct on public evaluation, but its 123 symbolic candidates were all unverified and scored `0/123` exactly; the corresponding account did not provide an exact result for the reviewed version. Another current perfpatch notebook was byte-identical to the variant already replayed on July 15. With no reproducible, exactly attributed replacement above the established family, this submission used the verified historical v3 fallback.
