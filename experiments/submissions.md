@@ -524,6 +524,12 @@ Context note: the previous historical v3 fallback returned `30.56`, while the pr
 
 ### 2026-07-16: Defensive Historical v3 After Symbolic-Ensemble Review
 
-The latest accepted submission is ref `54748508`, submitted on `2026-07-16T00:25:34.350Z`. Its public score was pending at the time of this update.
+Submission ref `54748508`, submitted on `2026-07-16T00:25:34.350Z`, later returned public score `28.89`.
 
 Context note: the previous historical v3 fallback returned `29.72`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `55.83`, second place at `38.19`, and this project at rank `43`. A newly updated symbolic-ensemble notebook passed the 120-task schema and reached `4/172` output-correct on public evaluation, but its 123 symbolic candidates were all unverified and scored `0/123` exactly; the corresponding account did not provide an exact result for the reviewed version. Another current perfpatch notebook was byte-identical to the variant already replayed on July 15. With no reproducible, exactly attributed replacement above the established family, this submission used the verified historical v3 fallback.
+
+### 2026-07-17: Owned V40 Grammar Replay
+
+The latest accepted submission is ref `54791614`, submitted on `2026-07-17T20:10:38.917Z`. Its public score was pending at the time of this update.
+
+Context note: the previous historical v3 fallback returned `28.89`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `57.22`, second place at `38.61`, and this project at rank `43`. A newly visible V40 grammar-constrained notebook introduced stricter grid decoding, missing-view rescue, bounded task execution, and isolated workers. Its public output reached `4/172` output-correct, three fully solved tasks, and reload `3.0`, compared with historical v3 at `3/172`, two fully solved tasks, and reload `2.5`. An exact private reproduction preserved the source and module hashes, completed successfully, and matched the same validation gate. This run therefore used the reproduced V40 version for one controlled comparison beyond the repeatedly sampled historical baseline.
