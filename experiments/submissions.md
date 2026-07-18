@@ -75,7 +75,10 @@
 | 2026-07-12 | `54593627` | Owned Koushik 3389 Plus rerun after plateau review | `27.78` | Complete |
 | 2026-07-13 | `54627482` | Owned Learned from AIMO replay after public-code review | `16.81` | Complete |
 | 2026-07-14 | `54676596` | Defensive historical v3 fallback after source-mapping failure | `30.56` | Complete |
-| 2026-07-15 | `54707068` | Defensive historical v3 fallback after perfpatch replay check | pending | Pending |
+| 2026-07-15 | `54707068` | Defensive historical v3 fallback after perfpatch replay check | `29.72` | Complete |
+| 2026-07-16 | `54748508` | Defensive historical v3 fallback after symbolic-ensemble review | `28.89` | Complete |
+| 2026-07-17 | `54791614` | Owned V40 grammar replay | pending | Pending |
+| 2026-07-18 | `54797396` | Independent V40 grammar rerun | pending | Pending |
 
 ## Experiment Notes
 
@@ -533,3 +536,9 @@ Context note: the previous historical v3 fallback returned `29.72`, while the pr
 The latest accepted submission is ref `54791614`, submitted on `2026-07-17T20:10:38.917Z`. Its public score was pending at the time of this update.
 
 Context note: the previous historical v3 fallback returned `28.89`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `57.22`, second place at `38.61`, and this project at rank `43`. A newly visible V40 grammar-constrained notebook introduced stricter grid decoding, missing-view rescue, bounded task execution, and isolated workers. Its public output reached `4/172` output-correct, three fully solved tasks, and reload `3.0`, compared with historical v3 at `3/172`, two fully solved tasks, and reload `2.5`. An exact private reproduction preserved the source and module hashes, completed successfully, and matched the same validation gate. This run therefore used the reproduced V40 version for one controlled comparison beyond the repeatedly sampled historical baseline.
+
+### 2026-07-18: Independent V40 Grammar Rerun
+
+The latest accepted submission is ref `54797396`, submitted on `2026-07-18T02:53:00.223Z`. Both this row and the July 17 V40 row were pending at the time of this update.
+
+Context note: the project best remained `32.22`, while top 20 remained `32.64`. The refreshed leaderboard showed first place at `57.22`, second place at `38.61`, and this project at rank `43`. The only newly indexed notebook mapped to an adjacent `0.00` result, while another updated notebook remained diagnostic-only and produced no submission artifact. No new discussion changed the method or competition constraints. The exact V40 version remained complete and preserved its `4/172`, three-task, reload `3.0` validation result. This run therefore used an independent rerun of that validated version rather than another draw from the historical v3 family, which had not reached the top-20 threshold in 61 recorded runs.
