@@ -533,12 +533,20 @@ Context note: the previous historical v3 fallback returned `29.72`, while the pr
 
 ### 2026-07-17: Owned V40 Grammar Replay
 
-The latest accepted submission is ref `54791614`, submitted on `2026-07-17T20:10:38.917Z`. Its public score was pending at the time of this update.
+Submission ref `54791614`, submitted on `2026-07-17T20:10:38.917Z`, later returned public score `31.94`.
 
 Context note: the previous historical v3 fallback returned `28.89`, while the project best remained `32.22` and top 20 remained `32.64`. The refreshed leaderboard showed first place at `57.22`, second place at `38.61`, and this project at rank `43`. A newly visible V40 grammar-constrained notebook introduced stricter grid decoding, missing-view rescue, bounded task execution, and isolated workers. Its public output reached `4/172` output-correct, three fully solved tasks, and reload `3.0`, compared with historical v3 at `3/172`, two fully solved tasks, and reload `2.5`. An exact private reproduction preserved the source and module hashes, completed successfully, and matched the same validation gate. This run therefore used the reproduced V40 version for one controlled comparison beyond the repeatedly sampled historical baseline.
 
 ### 2026-07-18: Independent V40 Grammar Rerun
 
-The latest accepted submission is ref `54797396`, submitted on `2026-07-18T02:53:00.223Z`. Both this row and the July 17 V40 row were pending at the time of this update.
+Submission ref `54797396`, submitted on `2026-07-18T02:53:00.223Z`, later returned public score `29.03`. The July 17 run returned `31.94`, giving the two exact V40 runs an average of `30.485`.
 
 Context note: the project best remained `32.22`, while top 20 remained `32.64`. The refreshed leaderboard showed first place at `57.22`, second place at `38.61`, and this project at rank `43`. The only newly indexed notebook mapped to an adjacent `0.00` result, while another updated notebook remained diagnostic-only and produced no submission artifact. No new discussion changed the method or competition constraints. The exact V40 version remained complete and preserved its `4/172`, three-task, reload `3.0` validation result. This run therefore used an independent rerun of that validated version rather than another draw from the historical v3 family, which had not reached the top-20 threshold in 61 recorded runs.
+
+### 2026-07-19: Bala V2 Verified-Only Full Validation
+
+The latest accepted submission is ref `54826987`, submitted on `2026-07-19T09:11:30.433Z`. Its public score was pending at the time of this update.
+
+Context note: the exact V40 pair returned `31.94` and `29.03`, while the project best remained `32.22` and top 20 remained `32.64`. No new discussion changed the competition rules. The latest public Bala V2 source was reproduced with two bounded changes: all 120 public evaluation tasks were run instead of four selected tasks, and symbolic candidates were admitted only when explicitly verified.
+
+The completed validation produced a schema-valid 120-task, 172-record output with `39/172` correct records, 25 fully solved tasks, and reload `29.5`. All 123 symbolic candidates were unverified and therefore excluded from selection. The decoder ranked 140 records; 32 records used placeholders, which remains a coverage risk. This run used the verified-only full version for one controlled hidden comparison rather than a third exact V40 rerun.
