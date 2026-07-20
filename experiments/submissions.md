@@ -552,3 +552,13 @@ Context note: the exact V40 pair returned `31.94` and `29.03`, while the project
 The completed validation produced a schema-valid 120-task, 172-record output with `39/172` correct records, 25 fully solved tasks, and reload `29.5`. All 123 symbolic candidates were unverified and therefore excluded from selection. The decoder ranked 140 records; 32 records used placeholders, which remains a coverage risk. This run used the verified-only full version for one controlled hidden comparison rather than a third exact V40 rerun.
 
 Post-accept risk note: the scoring rerun queues 240 tasks / 259 records and stops new work at `11h50m`, while the 120-task validation took about `7h04m`. Full scoring-set coverage was therefore not established; this row should be treated as an exploratory comparison with material runtime risk.
+
+Postmortem: ref `54826987` later returned public score `23.33`. The result did not improve on V40 and was consistent with the documented runtime and coverage risks, so the full-validation branch was not reused.
+
+### 2026-07-20: V40 Attempt-2 Replay Specialists
+
+The accepted submission is ref `54844328`, submitted on `2026-07-20T03:47:32.503Z` from kernel Version 2 / scriptVersionId `336595110`. Its public score was pending at the time of this update.
+
+Context note: the July 19 full-validation branch returned `23.33`, while the exact V40 pair remained `31.94` and `29.03`. The project best remained `32.22` against a `32.64` top-20 threshold. The refreshed public context showed no rule change. New public runs were either incomplete or weaker as full replacements, but one exposed seven deterministic structural families suitable for a bounded second-attempt extension.
+
+This experiment preserved the V40 neural solver and every first attempt. A structural family could replace only the second attempt after reproducing every training pair exactly and producing a distinct valid test grid. The completed run selected seven families across ten output records. The pre-extension V40 output retained `4/172` correct records, three fully solved tasks, and reload `3.0`; the final output reached `14/172`, ten fully solved tasks, and reload `10.0`, with no original hit lost. The kernel completed in about 25 minutes with all four workers finishing normally and passed the 120-task, 172-record schema check.
