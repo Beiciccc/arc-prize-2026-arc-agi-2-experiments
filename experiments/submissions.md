@@ -77,8 +77,12 @@
 | 2026-07-14 | `54676596` | Defensive historical v3 fallback after source-mapping failure | `30.56` | Complete |
 | 2026-07-15 | `54707068` | Defensive historical v3 fallback after perfpatch replay check | `29.72` | Complete |
 | 2026-07-16 | `54748508` | Defensive historical v3 fallback after symbolic-ensemble review | `28.89` | Complete |
-| 2026-07-17 | `54791614` | Owned V40 grammar replay | pending | Pending |
-| 2026-07-18 | `54797396` | Independent V40 grammar rerun | pending | Pending |
+| 2026-07-17 | `54791614` | Owned V40 grammar replay | `31.94` | Complete |
+| 2026-07-18 | `54797396` | Independent V40 grammar rerun | `29.03` | Complete |
+| 2026-07-19 | `54826987` | Bala V2 verified-only full validation | `23.33` | Complete |
+| 2026-07-20 | `54844328` | V40 attempt-2 replay specialists | `29.44` | Complete |
+| 2026-07-21 | `54866011` | Exact V40 fallback after protected-slot gate | `26.53` | Complete |
+| 2026-07-22 | `54891516` | V42 protected replay one-shot replication | pending | Pending |
 
 ## Experiment Notes
 
@@ -567,10 +571,20 @@ Postmortem: ref `54844328` later returned public score `29.44`. This remained in
 
 ### 2026-07-21: Exact V40 Fallback After Protected-Slot Gate
 
-The accepted submission is ref `54866011`, submitted on `2026-07-21T01:24:53.783Z` from exact V40 Version 1 / scriptVersionId `336086393`. Its public score was pending at the time of this update.
+The accepted submission is ref `54866011`, submitted on `2026-07-21T01:24:53.783Z` from exact V40 Version 1 / scriptVersionId `336086393`. It later returned public score `26.53`. The three exact V40 runs therefore scored `31.94`, `29.03`, and `26.53`, with mean `29.17`.
 
 Context note: the July 20 replay-specialist run returned `29.44`. The project best remained `32.22`, rank 44, against a `32.64` top-20 threshold. The refreshed leaderboard reached `65.83` at rank 1 and `38.61` at rank 2. No new discussion changed the rules. Newly indexed notebooks either had no usable submission output or retained weaker validation and source-account score evidence; the strongest new symbolic variant reached `13/172`, reload `9.5`, while its source account remained at `30.97`.
 
 The protected-slot experiment kept the V40 solver unchanged and allowed an exact-training-replay specialist to fill only an empty or duplicated second attempt. The deterministic policy checks passed: seven selected task families, ten changed records, every first attempt preserved, and zero independent second-attempt overwrites. However, this stochastic V40 run lost one previously retained public-evaluation output, so the final result was `13/172`, nine fully solved tasks, and reload `9.5`, below the predeclared `14/172`, ten-task, reload `10.0` gate. That Version 3 candidate was rejected without weakening the gate or rerunning until a favorable draw.
 
 The accepted row therefore used the predeclared exact V40 Version 1 fallback. Its saved validation remains `4/172`, three fully solved tasks, reload `3.0`; its two prior hidden reruns scored `31.94` and `29.03`. Future stochastic comparisons will predeclare replication counts or distributional bounds separately from deterministic safety checks rather than select on one exact public hit set.
+
+### 2026-07-22: V42 Protected Replay One-Shot Replication
+
+The accepted submission is ref `54891516`, submitted on `2026-07-22T01:58:48.797Z` from Version 4 / scriptVersionId `337049771`. Its public score was pending at the time of this update.
+
+Context note: the July 21 exact V40 fallback returned `26.53`. The three exact V40 runs now have mean `29.17`, while the project best remained `32.22`, rank 44, against a `32.64` top-20 threshold. The refreshed leaderboard showed rank 1 at `65.83` and rank 2 at `40.69`. No substantive rule change was found. Newly checked public notebooks had weak training evidence, invalid output structure, missing artifacts, incomplete execution, runtime errors, or source-account evidence below the project best, so none qualified as a stronger full replacement.
+
+This experiment used one predeclared replication of the protected-slot source. The V40 solver and every substantive neural candidate were preserved. Exact-training-replay specialists could fill only a vacant second attempt or replace one that duplicated the first; they could not alter any first attempt or overwrite an independent second candidate. Because the V40 base is stochastic, validation measured deterministic safety and additive effect relative to the same-run baseline rather than requiring a fixed absolute public-evaluation hit count. Only one run was allowed.
+
+Version 4 completed successfully. Its same-run baseline reached `4/172` correct records, three fully solved tasks, and reload `3.0`; the protected output reached `14/172`, ten fully solved tasks, and reload `10.0`. The exact gains were `+10` correct records, `+7` fully solved tasks, and `+7.0` reload. Every baseline hit and non-placeholder candidate was retained, all first attempts were unchanged, and no independent second attempt was overwritten. The output passed the 120-task, 172-record schema and all predeclared deterministic checks before submission.
