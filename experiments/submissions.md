@@ -82,7 +82,8 @@
 | 2026-07-19 | `54826987` | Bala V2 verified-only full validation | `23.33` | Complete |
 | 2026-07-20 | `54844328` | V40 attempt-2 replay specialists | `29.44` | Complete |
 | 2026-07-21 | `54866011` | Exact V40 fallback after protected-slot gate | `26.53` | Complete |
-| 2026-07-22 | `54891516` | V42 protected replay one-shot replication | pending | Pending |
+| 2026-07-22 | `54891516` | V42 protected replay one-shot replication | `27.36` | Complete |
+| 2026-07-23 | `54919917` | Historical v3 with protected replay extension | pending | Pending |
 
 ## Experiment Notes
 
@@ -588,3 +589,15 @@ Context note: the July 21 exact V40 fallback returned `26.53`. The three exact V
 This experiment used one predeclared replication of the protected-slot source. The V40 solver and every substantive neural candidate were preserved. Exact-training-replay specialists could fill only a vacant second attempt or replace one that duplicated the first; they could not alter any first attempt or overwrite an independent second candidate. Because the V40 base is stochastic, validation measured deterministic safety and additive effect relative to the same-run baseline rather than requiring a fixed absolute public-evaluation hit count. Only one run was allowed.
 
 Version 4 completed successfully. Its same-run baseline reached `4/172` correct records, three fully solved tasks, and reload `3.0`; the protected output reached `14/172`, ten fully solved tasks, and reload `10.0`. The exact gains were `+10` correct records, `+7` fully solved tasks, and `+7.0` reload. Every baseline hit and non-placeholder candidate was retained, all first attempts were unchanged, and no independent second attempt was overwritten. The output passed the 120-task, 172-record schema and all predeclared deterministic checks before submission.
+
+Postmortem: ref `54891516` later returned public score `27.36`. The result did not improve the project best. The replay extension was deterministically additive on the same-run public evaluation, but one hidden result could not separate its effect from the underlying solver's run-to-run variance.
+
+### 2026-07-23: Historical v3 With Protected Replay Extension
+
+The accepted submission is ref `54919917`, submitted on `2026-07-23T05:22:26.330Z` from Version 1 / scriptVersionId `337327734`. Its public score was pending when this record was updated.
+
+Context note: the July 22 protected V40 run returned `27.36`. The project best remained `32.22`, rank 44, against a `32.64` top-20 threshold. The refreshed leaderboard showed rank 1 at `65.83` and rank 2 at `40.69`. Newly reviewed public candidates either had weak exact-result evidence, no submission artifact, invalid output grids, or substantial unverified coverage, so none qualified as a stronger full replacement.
+
+This experiment restored the historical v3 core, the only family in this record to have reached `32.22`, while retaining the bounded replay extension. Every historical code cell was preserved. A replay specialist could fill only a vacant second attempt or replace one that duplicated the first; it could not alter any first attempt or overwrite an independent second candidate. One run was predeclared, with deterministic safety and additive-effect checks rather than an absolute stochastic hit threshold.
+
+Version 1 completed successfully with all four workers finishing normally. The same-run historical baseline reached `3/172` correct records, two fully solved tasks, and reload `2.5`; the protected output reached `13/172`, nine fully solved tasks, and reload `9.5`. The exact gains were `+10` correct records, `+7` fully solved tasks, and `+7.0` reload. Seven replay families changed ten records, while every baseline hit and non-placeholder candidate was retained, all first attempts were unchanged, and no independent second attempt was overwritten. The output passed the 120-task, 172-record schema and all 20 predeclared deterministic checks before submission.
