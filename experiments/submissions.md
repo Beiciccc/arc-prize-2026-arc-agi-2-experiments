@@ -83,7 +83,9 @@
 | 2026-07-20 | `54844328` | V40 attempt-2 replay specialists | `29.44` | Complete |
 | 2026-07-21 | `54866011` | Exact V40 fallback after protected-slot gate | `26.53` | Complete |
 | 2026-07-22 | `54891516` | V42 protected replay one-shot replication | `27.36` | Complete |
-| 2026-07-23 | `54919917` | Historical v3 with protected replay extension | pending | Pending |
+| 2026-07-23 | `54919917` | Historical v3 with protected replay extension | `29.31` | Complete |
+| 2026-07-24 | `54939731` | Source-proven historical v3 replication | `29.72` | Complete |
+| 2026-07-26 | `54995652` | H4 protected replay extension | pending | Pending |
 
 ## Experiment Notes
 
@@ -606,10 +608,20 @@ Postmortem: ref `54919917` later returned public score `29.31`. The result remai
 
 ### 2026-07-24: Source-Proven Historical v3 Replication
 
-The accepted submission is ref `54939731`, submitted on `2026-07-24T01:09:17.897Z` from Version 2 / scriptVersionId `337526539`. Its public score was pending at the time of this update.
+The accepted submission is ref `54939731`, submitted on `2026-07-24T01:09:17.897Z` from Version 2 / scriptVersionId `337526539`. It later returned public score `29.72`.
 
 Context note: the July 23 protected historical v3 run returned `29.31`. The project best remained `32.22`, rank 44, against a `32.64` top-20 threshold. The refreshed leaderboard showed rank 1 at `65.83`, rank 2 at `40.69`, and rank 3 at `36.39`. No substantive rule or method update appeared in the reviewed discussions. Newly reviewed public notebooks either lacked exact-version score attribution, mapped to source accounts below the established fallback, produced weak or invalid artifacts, or required substantially longer execution without stronger evidence.
 
 This experiment used one independent replication of the same historical v3 plus seven-family replay method. The neural core and replay predictions were unchanged. Validation was strengthened before execution: the seven selected task IDs and prediction hashes were frozen, all exact-training-fit programs were enumerated, and their outputs were checked across four Python hash seeds. The reports were identical across seeds, each selected task had a single valid exact-fit family, and the normal chooser matched the full enumeration.
 
 Version 2 completed successfully with all four workers finishing normally. The same-run historical baseline again reached `3/172` correct records, two fully solved tasks, and reload `2.5`; the protected output again reached `13/172`, nine fully solved tasks, and reload `9.5`. The exact gains were `+10` correct records, `+7` fully solved tasks, and `+7.0` reload. The decoder exposed nine sourced neural candidates and all nine remained in the final two-attempt sets. Each of the ten changed records had no sourced second candidate, all first attempts were unchanged, and no independent candidate was overwritten. The output passed the 120-task, 172-record schema and all deterministic gates before submission.
+
+### 2026-07-26: H4 Protected Replay Extension
+
+The accepted submission is ref `54995652`, submitted on `2026-07-26T08:12:33.333Z` from Version 2 / scriptVersionId `337819147`. Its public score was pending at the time of this update.
+
+Context note: the July 24 source-proven replication returned `29.72`. Before this submission, the project best remained `32.22`, rank 44, against a `32.64` top-20 threshold. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `40.69`, and rank 3 at `36.81`. Newly reviewed public candidates reached at most `4/172` on the same public evaluation or produced no usable submission, and the new discussion supplied no reproducible implementation.
+
+H4 retained the historical v3 core and seven protected replay families, then added two high-specificity exact-replay rules for framed component counts and keyed stamp-stack growth. Every exact-training-fit rule was enumerated, and the chooser abstained if valid rules disagreed on a test prediction. Specialists could change only a vacant or duplicated second attempt; first attempts and independent sourced candidates were protected.
+
+The completed run selected nine families across twelve records. Its same-run baseline reached `3/172` correct records, two fully solved tasks, and reload `2.5`; the final output reached `15/172`, eleven fully solved tasks, and reload `11.5`. Exact gains were `+12` correct records, `+9` fully solved tasks, and `+9.0` reload. All four workers finished, the exact-version executed notebook took `29.25` minutes, and the final artifact passed the 120-task, 172-record schema and the full `26/26` regression suite. Exact-version downloads linked the validated source and outputs to scriptVersionId `337819147`.
