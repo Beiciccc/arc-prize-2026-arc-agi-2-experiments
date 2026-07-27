@@ -85,7 +85,8 @@
 | 2026-07-22 | `54891516` | V42 protected replay one-shot replication | `27.36` | Complete |
 | 2026-07-23 | `54919917` | Historical v3 with protected replay extension | `29.31` | Complete |
 | 2026-07-24 | `54939731` | Source-proven historical v3 replication | `29.72` | Complete |
-| 2026-07-26 | `54995652` | H4 protected replay extension | pending | Pending |
+| 2026-07-26 | `54995652` | H4 protected replay extension | `28.89` | Complete |
+| 2026-07-27 | `55023331` | H4 protected replay independent replication | pending | Pending |
 
 ## Experiment Notes
 
@@ -618,10 +619,20 @@ Version 2 completed successfully with all four workers finishing normally. The s
 
 ### 2026-07-26: H4 Protected Replay Extension
 
-The accepted submission is ref `54995652`, submitted on `2026-07-26T08:12:33.333Z` from Version 2 / scriptVersionId `337819147`. Its public score was pending at the time of this update.
+The accepted submission is ref `54995652`, submitted on `2026-07-26T08:12:33.333Z` from Version 2 / scriptVersionId `337819147`. It later returned public score `28.89`.
 
 Context note: the July 24 source-proven replication returned `29.72`. Before this submission, the project best remained `32.22`, rank 44, against a `32.64` top-20 threshold. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `40.69`, and rank 3 at `36.81`. Newly reviewed public candidates reached at most `4/172` on the same public evaluation or produced no usable submission, and the new discussion supplied no reproducible implementation.
 
 H4 retained the historical v3 core and seven protected replay families, then added two high-specificity exact-replay rules for framed component counts and keyed stamp-stack growth. Every exact-training-fit rule was enumerated, and the chooser abstained if valid rules disagreed on a test prediction. Specialists could change only a vacant or duplicated second attempt; first attempts and independent sourced candidates were protected.
 
 The completed run selected nine families across twelve records. Its same-run baseline reached `3/172` correct records, two fully solved tasks, and reload `2.5`; the final output reached `15/172`, eleven fully solved tasks, and reload `11.5`. Exact gains were `+12` correct records, `+9` fully solved tasks, and `+9.0` reload. All four workers finished, the exact-version executed notebook took `29.25` minutes, and the final artifact passed the 120-task, 172-record schema and the full `26/26` regression suite. Exact-version downloads linked the validated source and outputs to scriptVersionId `337819147`.
+
+Postmortem: ref `54995652` returned public score `28.89`. It did not improve the project best, so the same source was evaluated once more through the predeclared independent replication rather than selected from multiple reruns.
+
+### 2026-07-27: H4 Protected Replay Independent Replication
+
+The accepted submission is ref `55023331`, submitted on `2026-07-27T08:37:46.093Z` from Version 3 / scriptVersionId `338027445`. Its public score was pending at the time of this update.
+
+This submission is the single predeclared independent replication of the July 26 H4 source. The notebook source and replay specialists were unchanged. The exact-version run completed successfully, took `26.78` minutes, and produced a distinct artifact from Version 2 while preserving the same deterministic validation result: the same-run baseline reached `3/172` correct records, two fully solved tasks, and reload `2.5`; the protected output reached `15/172`, eleven fully solved tasks, and reload `11.5`.
+
+The strict gate authenticated the exact Version 3 outputs and executed notebook, reproduced all twelve expected second-attempt changes, preserved every first attempt and independent sourced candidate, and passed every required check before the accepted row was recorded.
