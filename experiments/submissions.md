@@ -631,10 +631,24 @@ Postmortem: ref `54995652` returned public score `28.89`. It did not improve the
 
 ### 2026-07-27: H4 Protected Replay Independent Replication
 
-The accepted submission is ref `55023331`, submitted on `2026-07-27T08:37:46.093Z` from Version 3 / scriptVersionId `338027445`. Its public score was pending at the time of this update.
+The accepted submission is ref `55023331`, submitted on `2026-07-27T08:37:46.093Z` from Version 3 / scriptVersionId `338027445`. It later returned public score `30.97`.
 
 This submission is the single predeclared independent replication of the July 26 H4 source. The notebook source and replay specialists were unchanged. The exact-version run completed successfully, took `26.78` minutes, and produced a distinct artifact from Version 2 while preserving the same deterministic validation result: the same-run baseline reached `3/172` correct records, two fully solved tasks, and reload `2.5`; the protected output reached `15/172`, eleven fully solved tasks, and reload `11.5`.
 
 The strict gate authenticated the exact Version 3 outputs and executed notebook, reproduced all twelve expected second-attempt changes, preserved every first attempt and independent sourced candidate, and passed every required check before the accepted row was recorded.
 
 A separate routing audit over the competition test inputs found 240 tasks and 259 output records but zero selected replay tasks. This submission should therefore be interpreted as an independent historical-v3 stochastic replication, not as evidence that the visible-evaluation replay gains transfer to the hidden scoring set.
+
+Postmortem: the `30.97` result improved on the first H4 run but remained below both the project best of `32.22` and the `32.64` top-20 threshold. Because the formal scoring-set router selected zero replay tasks, this result is treated as another observation from the historical-v3 stochastic family. No additional H4 rerun is planned without evidence that the specialists activate on the scoring set.
+
+### 2026-07-30: Exact V40 V1 Upper-Tail Rerun
+
+The accepted submission is ref `55097543`, submitted on `2026-07-30T02:43:21.237Z` from exact V40 Version 1 / scriptVersionId `336086393`. Its public score was pending at the time of this update.
+
+Context note: the July 27 H4 replication returned `30.97`. Before this submission, the project best remained `32.22`, rank 46, against a `32.64` top-20 threshold; the refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `40.69`, and rank 3 at `36.81`. No substantive discussion update changed the rules or supplied a stronger reproducible method. Newly reviewed public candidates were rejected as replacements because they produced only `3/172` correct records across two tasks, returned placeholders for every record, or were evaluation-only identity outputs.
+
+This experiment used one predeclared independent rerun of the exact V40 Version 1 artifact. Its three prior exact hidden runs scored `31.94`, `29.03`, and `26.53`, with mean `29.17`; it was selected to measure the upper tail of an authenticated stochastic family rather than on an expectation of higher mean performance. The saved public validation remained schema-valid at 120 tasks and 172 records, with `4/172` correct records, three fully solved tasks, and reload `3.0`.
+
+Before submission, exact-version downloads authenticated the executed notebook, submission artifact, four source modules, kernel metadata, container image, GPU type, model source, and competition data source against scriptVersionId `336086393`. The formal branch contained 240 tasks and 259 output records, all four workers completed normally, the executed runtime was `23.65` minutes, all `72/72` predeclared gate checks passed, and the complete test suite passed `30/30`.
+
+The outcome thresholds were fixed before submission: a score at or above `32.64` reaches the current top-20 threshold; `31.81` to `32.63` supports the observed upper tail without reaching top 20; below `31.81` does not strengthen the upper-tail case; and below `29.03` is strong negative evidence for another exact rerun. This is a one-run distributional test, not a claim of deterministic improvement.
