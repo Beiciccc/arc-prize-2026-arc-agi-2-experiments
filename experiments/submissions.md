@@ -643,7 +643,7 @@ Postmortem: the `30.97` result improved on the first H4 run but remained below b
 
 ### 2026-07-30: Exact V40 V1 Upper-Tail Rerun
 
-The accepted submission is ref `55097543`, submitted on `2026-07-30T02:43:21.237Z` from exact V40 Version 1 / scriptVersionId `336086393`. Its public score was pending at the time of this update.
+The accepted submission is ref `55097543`, submitted on `2026-07-30T02:43:21.237Z` from exact V40 Version 1 / scriptVersionId `336086393`. It later returned public score `27.36`.
 
 Context note: the July 27 H4 replication returned `30.97`. Before this submission, the project best remained `32.22`, rank 46, against a `32.64` top-20 threshold; the refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `40.69`, and rank 3 at `36.81`. No substantive discussion update changed the rules or supplied a stronger reproducible method. Newly reviewed public candidates were rejected as replacements because they produced only `3/172` correct records across two tasks, returned placeholders for every record, or were evaluation-only identity outputs.
 
@@ -652,3 +652,19 @@ This experiment used one predeclared independent rerun of the exact V40 Version 
 Before submission, exact-version downloads authenticated the executed notebook, submission artifact, four source modules, kernel metadata, container image, GPU type, model source, and competition data source against scriptVersionId `336086393`. The formal branch contained 240 tasks and 259 output records, all four workers completed normally, the executed runtime was `23.65` minutes, all `72/72` predeclared gate checks passed, and the complete test suite passed `30/30`.
 
 The outcome thresholds were fixed before submission: a score at or above `32.64` reaches the current top-20 threshold; `31.81` to `32.63` supports the observed upper tail without reaching top 20; below `31.81` does not strengthen the upper-tail case; and below `29.03` is strong negative evidence for another exact rerun. This is a one-run distributional test, not a claim of deterministic improvement.
+
+Postmortem: the `27.36` result crossed the predeclared strong-negative boundary. It did not support the V40 upper-tail hypothesis, so exact V40 reruns are retired.
+
+### 2026-07-31: Owned Foysal 2026D Task-Guard Validation
+
+The accepted submission is ref `55129608`, submitted on `2026-07-31T06:40:31.973Z` from Version 1 / scriptVersionId `339176946`. Its public score was pending at the time of this update.
+
+Context note: the July 30 exact V40 rerun returned `27.36`, while the project best remained `32.22`, rank 47. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `36.81`. Scores of `32.64` occupied a large tie block, so the next observed score bucket, `32.78`, was used as the practical top-20 target. No discussion update changed the competition rules. Newly reviewed notebooks were incomplete, errored, evaluation-only, or lacked a valid submit-ready output.
+
+This experiment reproduced the full Foysal 2026D executable solver and retained its Qwen3 task-specific training and dual selection rules. The source run had strong public-evaluation transfer evidence but terminated its four-worker process group after one late CUDA out-of-memory error, leaving part of the queue unprocessed. The owned version added task-level CUDA OOM recovery, explicit task terminal states, and per-task memory cleanup without changing the model, training, decoding, data, selector, or seed strategy.
+
+One private validation run was fixed in advance; rerun selection was not allowed. Version 1 completed in `17,547.9` seconds. All four workers started and exited normally, and all 120 evaluation tasks reached a unique terminal state. One task ended `OOM_PARTIAL`; the same worker then completed three later tasks before exiting. The resulting 120-task, 172-record artifact reached `48/172` correct records, 32 fully solved tasks, reload `35.1667`, and 16 placeholder records. It differed meaningfully from historical v3 on 155 records.
+
+Exact-version downloads bound the executed notebook, five output files, kernel metadata, Nvidia L4 environment, model source, and competition source to scriptVersionId `339176946`. The run passed all `53/53` frozen identity, runtime, recovery, schema, quality, and exact-output checks, and the supporting gate tests passed `8/8`. The formal branch retains the 240-task rerun switch; the public-task throughput implies an approximately `9.66` hour conservative runtime estimate against the 12-hour competition limit.
+
+The result thresholds were frozen before submission: `>=32.78` reaches the next observed top-20 score bucket; `32.23-32.77` is a new project best without guaranteed top-20 placement; `32.22` ties the project best; `31.81-32.21` remains competitive but below the best; and `<29.03` is strong negative evidence for reuse.
