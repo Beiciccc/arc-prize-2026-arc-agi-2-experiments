@@ -657,7 +657,7 @@ Postmortem: the `27.36` result crossed the predeclared strong-negative boundary.
 
 ### 2026-07-31: Owned Foysal 2026D Task-Guard Validation
 
-The accepted submission is ref `55129608`, submitted on `2026-07-31T06:40:31.973Z` from Version 1 / scriptVersionId `339176946`. Its public score was pending at the time of this update.
+The accepted submission is ref `55129608`, submitted on `2026-07-31T06:40:31.973Z` from Version 1 / scriptVersionId `339176946`. It later returned public score `28.89`.
 
 Context note: the July 30 exact V40 rerun returned `27.36`, while the project best remained `32.22`, rank 47. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `36.81`. Scores of `32.64` occupied a large tie block, so the next observed score bucket, `32.78`, was used as the practical top-20 target. No discussion update changed the competition rules. Newly reviewed notebooks were incomplete, errored, evaluation-only, or lacked a valid submit-ready output.
 
@@ -668,3 +668,19 @@ One private validation run was fixed in advance; rerun selection was not allowed
 Exact-version downloads bound the executed notebook, five output files, kernel metadata, Nvidia L4 environment, model source, and competition source to scriptVersionId `339176946`. The run passed all `53/53` frozen identity, runtime, recovery, schema, quality, and exact-output checks, and the supporting gate tests passed `8/8`. The formal branch retains the 240-task rerun switch; the public-task throughput implies an approximately `9.66` hour conservative runtime estimate against the 12-hour competition limit.
 
 The result thresholds were frozen before submission: `>=32.78` reaches the next observed top-20 score bucket; `32.23-32.77` is a new project best without guaranteed top-20 placement; `32.22` ties the project best; `31.81-32.21` remains competitive but below the best; and `<29.03` is strong negative evidence for reuse.
+
+Postmortem: the `28.89` result crossed the predeclared strong-negative boundary. Despite much stronger public-evaluation coverage than the established fallback, the task-guard variant did not transfer to the hidden score, so this exact candidate is retired.
+
+### 2026-08-01: Frozen Historical v3 Defensive Rerun
+
+The accepted submission is ref `55154470`, submitted on `2026-08-01T05:22:44.957Z` from exact Version 3 / scriptVersionId `315432491`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the July 31 Foysal task-guard run returned `28.89`, crossing its predeclared retirement boundary. The project best remained `32.22`, rank 48. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `36.81`; a fresh top-20 entry required at least `32.78`. Competition rules and substantive discussion guidance were unchanged.
+
+New public notebooks did not supply a direct replacement. The most substantive artifact, Soren E48, processed only four selected public tasks and had no exact-version leaderboard attribution above the project best. Other new artifacts lacked a complete submission, failed during execution, belonged to the paper track, or mapped to `0.00` accounts. The new `67.50` and `33.47` leaderboard moves exposed no reproducible notebook, weight, or dataset version.
+
+The experiment therefore froze one independent run of the established NVARC/Qwen3 v3 artifact. This is a defensive variance measurement rather than a new top-20 method: 62 prior observations had a nonzero mean of `29.24`, a maximum of `32.22`, and no result at or above `32.78`.
+
+Five exact-version downloads resolved to scriptVersionId `315432491`, and the executed nine-cell source signature matched the saved source. The output SHA256 was `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`. It passed the 120-task, 172-record schema and reproduced `3/172` correct records, two fully solved tasks, and reload `2.5`. The kernel was complete and all four ranks finished without a traceback or CUDA out-of-memory error.
+
+Outcome bands were fixed before submission: `>=32.78` reaches the practical top-20 target; `32.23-32.77` is a new project best; `31.81-32.22` is an upper-tail result without a new best; `28.00-31.80` remains inside the historical range; and `<28.00` is strong negative evidence.
