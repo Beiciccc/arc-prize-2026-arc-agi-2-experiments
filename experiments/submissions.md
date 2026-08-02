@@ -86,7 +86,11 @@
 | 2026-07-23 | `54919917` | Historical v3 with protected replay extension | `29.31` | Complete |
 | 2026-07-24 | `54939731` | Source-proven historical v3 replication | `29.72` | Complete |
 | 2026-07-26 | `54995652` | H4 protected replay extension | `28.89` | Complete |
-| 2026-07-27 | `55023331` | H4 protected replay independent replication | pending | Pending |
+| 2026-07-27 | `55023331` | H4 protected replay independent replication | `30.97` | Complete |
+| 2026-07-30 | `55097543` | Exact V40 independent hidden rerun | `27.36` | Complete |
+| 2026-07-31 | `55129608` | Foysal 2026D task-guard validation | `28.89` | Complete |
+| 2026-08-01 | `55154470` | Frozen historical v3 defensive rerun | `30.56` | Complete |
+| 2026-08-02 | `55174269` | Frozen v3 fallback after E48 input-mount failure | pending | Pending |
 
 ## Experiment Notes
 
@@ -673,7 +677,7 @@ Postmortem: the `28.89` result crossed the predeclared strong-negative boundary.
 
 ### 2026-08-01: Frozen Historical v3 Defensive Rerun
 
-The accepted submission is ref `55154470`, submitted on `2026-08-01T05:22:44.957Z` from exact Version 3 / scriptVersionId `315432491`. Its public score will be recorded during the next experiment cycle.
+The accepted submission is ref `55154470`, submitted on `2026-08-01T05:22:44.957Z` from exact Version 3 / scriptVersionId `315432491`. It later returned public score `30.56`.
 
 Context note: the July 31 Foysal task-guard run returned `28.89`, crossing its predeclared retirement boundary. The project best remained `32.22`, rank 48. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `36.81`; a fresh top-20 entry required at least `32.78`. Competition rules and substantive discussion guidance were unchanged.
 
@@ -682,5 +686,23 @@ New public notebooks did not supply a direct replacement. The most substantive a
 The experiment therefore froze one independent run of the established NVARC/Qwen3 v3 artifact. This is a defensive variance measurement rather than a new top-20 method: 62 prior observations had a nonzero mean of `29.24`, a maximum of `32.22`, and no result at or above `32.78`.
 
 Five exact-version downloads resolved to scriptVersionId `315432491`, and the executed nine-cell source signature matched the saved source. The output SHA256 was `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`. It passed the 120-task, 172-record schema and reproduced `3/172` correct records, two fully solved tasks, and reload `2.5`. The kernel was complete and all four ranks finished without a traceback or CUDA out-of-memory error.
+
+Outcome bands were fixed before submission: `>=32.78` reaches the practical top-20 target; `32.23-32.77` is a new project best; `31.81-32.22` is an upper-tail result without a new best; `28.00-31.80` remains inside the historical range; and `<28.00` is strong negative evidence.
+
+Postmortem: the `30.56` result remained inside the historical v3 range. It did not improve the `32.22` project best or reach the `32.78` practical top-20 target.
+
+### 2026-08-02: Frozen v3 Fallback After E48 Input-Mount Failure
+
+The accepted submission is ref `55174269`, submitted on `2026-08-02T01:03:02.693Z` from exact Version 3 / scriptVersionId `315432491`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the August 1 historical v3 rerun returned `30.56`. The project best remained `32.22`, rank 48. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `37.22`. Scores of `32.78` occupied ranks 16 through 19, while the rank-20 tie block began at `32.64`; a fresh top-20 entry still required at least `32.78`. Competition rules and substantive discussion guidance were unchanged.
+
+The primary experiment froze an independent byte-identical replay of Soren E48 Version 1. The source had one exact attributable hidden result of `31.39`, making it more informative than another heavily sampled v3 draw. E48v2 had no substantive method delta, the public LPT variant supplied only a small scheduling gain, and the other newly visible candidates lacked stronger exact-version evidence or reused retired code.
+
+The owned E48 notebook matched the public source SHA256 exactly. Its predeclared gate required a complete run within 30 minutes, four worker/task receipts, a 120-task and 172-record artifact, no more than 168 double-placeholder records, and clean exception and memory logs. The run failed after 47 seconds because the current private competition input did not expose the evaluation challenge file required by the byte-identical public-save branch. The frozen gate therefore failed. The source was not changed, the gate was not relaxed, and E48 was not submitted.
+
+This failure added a new guardrail: exact-source replays must first verify that every branch-selected competition, model, dataset, and notebook input exists in the same private save-version mode used for validation. Missing input paths are compatibility failures, not model-quality evidence.
+
+The predeclared fallback was the established NVARC/Qwen3 v3 exact Version 3 artifact. Its exact downloads resolve to scriptVersionId `315432491`; the fixed output passes the 120-task and 172-record schema, reaches `3/172` correct records, solves two tasks completely, and has reload `2.5`. All four ranks completed without traceback or CUDA out-of-memory evidence.
 
 Outcome bands were fixed before submission: `>=32.78` reaches the practical top-20 target; `32.23-32.77` is a new project best; `31.81-32.22` is an upper-tail result without a new best; `28.00-31.80` remains inside the historical range; and `<28.00` is strong negative evidence.
