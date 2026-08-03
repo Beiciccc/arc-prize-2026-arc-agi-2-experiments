@@ -693,7 +693,7 @@ Postmortem: the `30.56` result remained inside the historical v3 range. It did n
 
 ### 2026-08-02: Frozen v3 Fallback After E48 Input-Mount Failure
 
-The accepted submission is ref `55174269`, submitted on `2026-08-02T01:03:02.693Z` from exact Version 3 / scriptVersionId `315432491`. Its public score will be recorded during the next experiment cycle.
+The accepted submission is ref `55174269`, submitted on `2026-08-02T01:03:02.693Z` from exact Version 3 / scriptVersionId `315432491`. It later returned public score `28.89`.
 
 Context note: the August 1 historical v3 rerun returned `30.56`. The project best remained `32.22`, rank 48. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `37.22`. Scores of `32.78` occupied ranks 16 through 19, while the rank-20 tie block began at `32.64`; a fresh top-20 entry still required at least `32.78`. Competition rules and substantive discussion guidance were unchanged.
 
@@ -706,3 +706,19 @@ This failure added a new guardrail: exact-source replays must first verify that 
 The predeclared fallback was the established NVARC/Qwen3 v3 exact Version 3 artifact. Its exact downloads resolve to scriptVersionId `315432491`; the fixed output passes the 120-task and 172-record schema, reaches `3/172` correct records, solves two tasks completely, and has reload `2.5`. All four ranks completed without traceback or CUDA out-of-memory evidence.
 
 Outcome bands were fixed before submission: `>=32.78` reaches the practical top-20 target; `32.23-32.77` is a new project best; `31.81-32.22` is an upper-tail result without a new best; `28.00-31.80` remains inside the historical range; and `<28.00` is strong negative evidence.
+
+Postmortem: the `28.89` result remained inside the historical v3 range. It did not improve the `32.22` project best or reach the `32.78` practical top-20 target.
+
+### 2026-08-03: Exact Sankalp Perfpatch Independent Replay
+
+The accepted submission is ref `55203234`, submitted on `2026-08-03T05:30:57.977Z` from Version 2 / scriptVersionId `339823723`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the August 2 historical v3 fallback returned `28.89`. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, rank 3 at `37.22`, and ranks 16 through 20 at `32.78`; this project remained at best `32.22`, rank 49. Competition rules and substantive discussion guidance were unchanged.
+
+The new public artifacts did not provide a stronger direct replacement. One hybrid notebook failed its TRM path and produced a 48-task benchmark file incompatible with the competition schema. The updated Bala output reached only `3/172` correct records, while the Prvsiyan evidence output used placeholders throughout. The current FOYSAL original output had strong public-evaluation coverage but ended with an unhandled CUDA out-of-memory error; its reliable derivative had already returned `28.89`.
+
+Sankalp's public perfpatch notebook completed on August 1, and the account's only official submission followed about 28 minutes later with score `31.81`. The source was byte-identical to the audited minimal perfpatch implementation, giving the strongest current exact-version attribution among executable candidates. One independent validation run was fixed before execution; rerun selection was not allowed.
+
+Version 2 completed in `1490.693` seconds. Its executed nine-cell source signature matched the frozen source, all four ranks started and completed normally, and no traceback, CUDA out-of-memory, or process exception appeared. The output passed the 120-task, 172-record schema and reached `4/172` correct records, three fully solved tasks, reload `3.0`, and 167 placeholder records. Six exact-version downloads resolved to one timestamp and scriptVersionId `339823723`, and the focused identity and schema checks passed `9/9`.
+
+Outcome bands were fixed before submission: `>=32.78` reaches the practical top-20 target; `32.23-32.77` is a new project best; `31.81-32.22` replicates the source range without a new best; `29.03-31.80` is negative; and `<29.03` retires exact perfpatch reruns. No score or status check was made after the accepted row was confirmed.
