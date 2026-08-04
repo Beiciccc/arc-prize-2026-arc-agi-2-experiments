@@ -711,7 +711,7 @@ Postmortem: the `28.89` result remained inside the historical v3 range. It did n
 
 ### 2026-08-03: Exact Sankalp Perfpatch Independent Replay
 
-The accepted submission is ref `55203234`, submitted on `2026-08-03T05:30:57.977Z` from Version 2 / scriptVersionId `339823723`. Its public score will be recorded during the next experiment cycle.
+The accepted submission is ref `55203234`, submitted on `2026-08-03T05:30:57.977Z` from Version 2 / scriptVersionId `339823723`. It later returned public score `28.89`.
 
 Context note: the August 2 historical v3 fallback returned `28.89`. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, rank 3 at `37.22`, and ranks 16 through 20 at `32.78`; this project remained at best `32.22`, rank 49. Competition rules and substantive discussion guidance were unchanged.
 
@@ -722,3 +722,19 @@ Sankalp's public perfpatch notebook completed on August 1, and the account's onl
 Version 2 completed in `1490.693` seconds. Its executed nine-cell source signature matched the frozen source, all four ranks started and completed normally, and no traceback, CUDA out-of-memory, or process exception appeared. The output passed the 120-task, 172-record schema and reached `4/172` correct records, three fully solved tasks, reload `3.0`, and 167 placeholder records. Six exact-version downloads resolved to one timestamp and scriptVersionId `339823723`, and the focused identity and schema checks passed `9/9`.
 
 Outcome bands were fixed before submission: `>=32.78` reaches the practical top-20 target; `32.23-32.77` is a new project best; `31.81-32.22` replicates the source range without a new best; `29.03-31.80` is negative; and `<29.03` retires exact perfpatch reruns. No score or status check was made after the accepted row was confirmed.
+
+Postmortem: the `28.89` result crossed the predeclared strong-negative boundary, so exact reruns of this perfpatch are retired.
+
+### 2026-08-04: Exact Sigint Symbolic-Hybrid Replay
+
+The accepted submission is ref `55224886`, submitted on `2026-08-04T00:38:09.450Z` from Version 1 / scriptVersionId `340021300`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the August 3 exact perfpatch replay returned `28.89` and crossed its retirement boundary. The project best remained `32.22`, rank 50. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, rank 3 at `37.22`, and ranks 16 through 20 at `32.78`; the next visible score bucket was `33.06`. Competition rules and substantive discussion guidance were unchanged.
+
+The selected source was Sigint symbolic-hybrid public Version 2 / scriptVersionId `339894855`. Its NVARC worker, LPT scheduling, decoder, and ranking path were unchanged from the prior LPT variant. It added nine deterministic structural specialists that may replace `attempt_2` only after reproducing every training pair exactly. The source account's `31.39` best preceded publication of this hybrid, so that score is treated only as base-family context rather than an exact-version result.
+
+The owned source was byte-identical to the public source, with SHA256 `8baeff8468991c3048773e19532dcebdae546f48d9a7fb28311814bc8946e822`. Version 1 completed in `234.88` seconds and passed the 120-task, 172-record schema. Its saved output reached `13/172` correct records, nine fully solved tasks, reload `9.0`, and zero double-placeholder records. All required completion markers were present and no traceback, CUDA out-of-memory, process, or notebook-execution error appeared.
+
+Transfer checks retained the unfavorable evidence. The specialists triggered zero times across 1,000 public training tasks, triggered on nine public evaluation tasks and solved all 13 associated records, and triggered zero times across the 240-task, 259-record formal public test set. The disclosed evaluation gains are therefore not treated as hidden-score evidence. The saved run also intentionally skipped the NVARC workers, so it validates source identity, schema, and the structural overlay rather than the private scoring execution path.
+
+Outcome bands were fixed before submission: a score above `32.78` reaches a robust top-20 position, with `33.06` the next visible bucket; `32.23-32.78` is a new project best; `31.39-32.22` is base-family replication without a new best; `29.03-31.38` is negative; and `<29.03` is strong negative evidence. No score or status check was made after the accepted row was confirmed.
