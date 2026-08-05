@@ -727,7 +727,7 @@ Postmortem: the `28.89` result crossed the predeclared strong-negative boundary,
 
 ### 2026-08-04: Exact Sigint Symbolic-Hybrid Replay
 
-The accepted submission is ref `55224886`, submitted on `2026-08-04T00:38:09.450Z` from Version 1 / scriptVersionId `340021300`. Its public score will be recorded during the next experiment cycle.
+The accepted submission is ref `55224886`, submitted on `2026-08-04T00:38:09.450Z` from Version 1 / scriptVersionId `340021300`. It later returned public score `30.14`.
 
 Context note: the August 3 exact perfpatch replay returned `28.89` and crossed its retirement boundary. The project best remained `32.22`, rank 50. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, rank 3 at `37.22`, and ranks 16 through 20 at `32.78`; the next visible score bucket was `33.06`. Competition rules and substantive discussion guidance were unchanged.
 
@@ -738,3 +738,23 @@ The owned source was byte-identical to the public source, with SHA256 `8baeff846
 Transfer checks retained the unfavorable evidence. The specialists triggered zero times across 1,000 public training tasks, triggered on nine public evaluation tasks and solved all 13 associated records, and triggered zero times across the 240-task, 259-record formal public test set. The disclosed evaluation gains are therefore not treated as hidden-score evidence. The saved run also intentionally skipped the NVARC workers, so it validates source identity, schema, and the structural overlay rather than the private scoring execution path.
 
 Outcome bands were fixed before submission: a score above `32.78` reaches a robust top-20 position, with `33.06` the next visible bucket; `32.23-32.78` is a new project best; `31.39-32.22` is base-family replication without a new best; `29.03-31.38` is negative; and `<29.03` is strong negative evidence. No score or status check was made after the accepted row was confirmed.
+
+Postmortem: ref `55224886` returned `30.14`, inside the predeclared negative band. The visible evaluation specialists did not provide hidden-score evidence, so this exact symbolic-hybrid route is retired.
+
+### 2026-08-05: Frozen V3 Fallback After E48 Dependency-Mount Preflight
+
+The accepted submission is ref `55253576`, submitted on `2026-08-05T00:30:18.937Z` from exact Version 3 / scriptVersionId `315432491`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the August 4 symbolic-hybrid replay returned `30.14`, while the project best remained `32.22`, rank 51. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `37.22`. Six teams occupied the `32.78` tie block at ranks 16 through 21. Because submission time breaks ties, a new `32.78` result would remain outside the top 20; the strict target is the next visible bucket, `33.06`. Competition rules and Code Requirements were unchanged.
+
+Newly visible notebooks did not supply a stronger submit-ready replacement. The Nex-N2 mini probe reported `0/64` solves on evaluation and explicitly was not a submission. Two other new notebooks were incomplete templates, while the Helix source lacked its attached public dependencies and mapped to an account best of `0.00`. No newly disclosed method could be attributed to a score above the current project best.
+
+The primary candidate was Soren E48 Version 1 / scriptVersionId `339418576`, which has one exact source-account observation at `31.39`. The experiment preserved its private rerun branch, model, TTT-80, augmentation, decoder, adaptive budget, queue, and deadline. The only planned change was save-mode resolution of a pinned public evaluation challenge/solution pair with fixed hashes.
+
+A lightweight same-mode preflight validated the 120-task, 172-record evaluation pair, the 240-task, 259-record competition test file, and the model input. It then failed before inference because its final assertion assumed that an attached notebook dependency must appear under the standard input root. Kaggle can expose notebook libraries through a separate library mount. The experiment gate had already declared that any preflight failure requires the fallback, so the assertion was not relaxed and the full E48 run was not started.
+
+This adds a public reproducibility correction: future preflights must inspect both standard input and notebook-library mounts, and must verify a dependency by a required file marker rather than by its source slug. Challenge and solution files must remain a same-directory pair with frozen hashes and matching task keys.
+
+The accepted fallback was the established NVARC/Qwen3 V3 artifact. Five fresh exact-version downloads resolved to scriptVersionId `315432491`. Its fixed output SHA256 was `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`; it passed the 120-task, 172-record schema and reproduced `3/172` correct records, two fully solved tasks, and reload `2.5`.
+
+Outcome bands were fixed before submission: `>=33.06` reaches the strict current top-20 target; `32.78` ties the threshold but remains behind the existing tie block; `32.23-32.77` is a new project best; `31.40-32.22` is above the E48 source observation without a new best; `29.03-31.39` does not improve on the source observation; and `<29.03` is strong negative evidence. No score or status check was made after the accepted row was confirmed.
