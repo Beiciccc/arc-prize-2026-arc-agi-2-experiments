@@ -743,7 +743,7 @@ Postmortem: ref `55224886` returned `30.14`, inside the predeclared negative ban
 
 ### 2026-08-05: Frozen V3 Fallback After E48 Dependency-Mount Preflight
 
-The accepted submission is ref `55253576`, submitted on `2026-08-05T00:30:18.937Z` from exact Version 3 / scriptVersionId `315432491`. Its public score will be recorded during the next experiment cycle.
+The accepted submission is ref `55253576`, submitted on `2026-08-05T00:30:18.937Z` from exact Version 3 / scriptVersionId `315432491`. It later returned public score `30.00`.
 
 Context note: the August 4 symbolic-hybrid replay returned `30.14`, while the project best remained `32.22`, rank 51. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `44.86`, and rank 3 at `37.22`. Six teams occupied the `32.78` tie block at ranks 16 through 21. Because submission time breaks ties, a new `32.78` result would remain outside the top 20; the strict target is the next visible bucket, `33.06`. Competition rules and Code Requirements were unchanged.
 
@@ -758,3 +758,25 @@ This adds a public reproducibility correction: future preflights must inspect bo
 The accepted fallback was the established NVARC/Qwen3 V3 artifact. Five fresh exact-version downloads resolved to scriptVersionId `315432491`. Its fixed output SHA256 was `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`; it passed the 120-task, 172-record schema and reproduced `3/172` correct records, two fully solved tasks, and reload `2.5`.
 
 Outcome bands were fixed before submission: `>=33.06` reaches the strict current top-20 target; `32.78` ties the threshold but remains behind the existing tie block; `32.23-32.77` is a new project best; `31.40-32.22` is above the E48 source observation without a new best; `29.03-31.39` does not improve on the source observation; and `<29.03` is strong negative evidence. No score or status check was made after the accepted row was confirmed.
+
+Postmortem: the `30.00` result stayed inside the established V3 range but did not improve the project best of `32.22` or reach the strict `33.06` top-20 target.
+
+### 2026-08-06: Soren E48 Mount-Only Replay
+
+The accepted submission is ref `55304770`, submitted on `2026-08-06T18:17:36.757Z` from owned Version 1 / scriptVersionId `340637572`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the August 5 V3 fallback returned `30.00`. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `47.78`, rank 3 at `37.22`, and rank 20 at `32.78`. Because a new `32.78` loses the timestamp tie, the strict top-20 target remained the next visible bucket, `33.06`. Competition rules, evaluation, timeline, and code requirements were unchanged.
+
+The newly indexed public notebooks did not provide a stronger replacement. They were one-task hardcoded examples, identity baselines, EDA-only artifacts, incomplete implementations, or a hybrid with strong `27.78` attribution. Recent leaderboard improvements above `33.06` exposed no attributable public method.
+
+The selected source was Soren E48 Version 1 / scriptVersionId `339418576`, source SHA256 `52dd6117d1caf9a799f291cc23b39afbb581df127d48b41e73a3e53322238d88`, with one exact source-account observation at `31.39`. The owned notebook SHA256 was `bd7dc539c20021b1cf55d88609f0636dc937ff355aa0e28cf62df7ae5128cf4b`. Its only source change resolved a pinned challenge/solution pair in public save mode; the formal test branch, model, TTT-80, LoRA, augmentation, decoder, queue, adaptive budget, and global deadline were unchanged.
+
+A corrected CPU preflight completed before the GPU run. It validated the 120-task, 172-record evaluation pair; the 240-task, 259-record competition test file; exact data hashes; fixed model file sizes; and three content-hashed files from the attached Unsloth notebook library. This replaced the prior directory-name assumption with payload identity checks.
+
+Owned Version 1 completed in `1335.728138` seconds against the frozen `1800` second limit. All four ranks and four required tasks finished without traceback or CUDA out-of-memory evidence. Six exact-version downloads shared one timestamp and scriptVersionId `340637572`, and the executed source signature matched the local candidate.
+
+The run generated five output records. `submission.json` passed the 120-task, 172-record schema and contained 167 double-placeholder records. Public diagnostics were `3/172` correct records, two fully solved tasks, and reload `2.5`; these values were fixed as diagnostics rather than a selection gate. All `30/30` identity, runtime, completion, schema, and exact-artifact checks passed.
+
+Evidence hashes: frozen gate `a9efc35c067e95056f408453bb33b3efa5d9967c244a34baf69127fc1c4de9d3`; exact gate result `2b4c3c92f11e469cd00667feedda98d6a789d0726ae86e2e0486a58ab07c73a6`; saved submission `02396144130eeab850dadb02d52ffc2db8681377b1abfbf7b4ac7691d2ad0f98`.
+
+Outcome bands were fixed before submission: `>=33.06` reaches the strict current top-20 target; `32.78` ties the visible threshold but remains behind earlier submissions; `32.23-32.77` is a new project best; `31.40-32.22` is above the E48 source observation without a new best; `29.03-31.39` does not improve on the source observation; and `<29.03` is strong negative evidence. No score or status check was made after the accepted row was confirmed.
