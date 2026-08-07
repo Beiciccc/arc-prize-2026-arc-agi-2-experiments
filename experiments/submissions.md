@@ -90,7 +90,12 @@
 | 2026-07-30 | `55097543` | Exact V40 independent hidden rerun | `27.36` | Complete |
 | 2026-07-31 | `55129608` | Foysal 2026D task-guard validation | `28.89` | Complete |
 | 2026-08-01 | `55154470` | Frozen historical v3 defensive rerun | `30.56` | Complete |
-| 2026-08-02 | `55174269` | Frozen v3 fallback after E48 input-mount failure | pending | Pending |
+| 2026-08-02 | `55174269` | Frozen v3 fallback after E48 input-mount failure | `28.89` | Complete |
+| 2026-08-03 | `55203234` | Exact Sankalp perfpatch independent replay | `28.89` | Complete |
+| 2026-08-04 | `55224886` | Exact Sigint symbolic-hybrid replay | `30.14` | Complete |
+| 2026-08-05 | `55253576` | Frozen v3 fallback after dependency preflight | `30.00` | Complete |
+| 2026-08-06 | `55304770` | Soren E48 mount-only replay | `26.94` | Complete |
+| 2026-08-07 | `55325560` | Frozen V3 with protected static synthesis overlay | pending | Pending |
 
 ## Experiment Notes
 
@@ -763,7 +768,7 @@ Postmortem: the `30.00` result stayed inside the established V3 range but did no
 
 ### 2026-08-06: Soren E48 Mount-Only Replay
 
-The accepted submission is ref `55304770`, submitted on `2026-08-06T18:17:36.757Z` from owned Version 1 / scriptVersionId `340637572`. Its public score will be recorded during the next experiment cycle.
+The accepted submission is ref `55304770`, submitted on `2026-08-06T18:17:36.757Z` from owned Version 1 / scriptVersionId `340637572`. It returned public score `26.94`, below the predeclared `29.03` retirement line.
 
 Context note: the August 5 V3 fallback returned `30.00`. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `47.78`, rank 3 at `37.22`, and rank 20 at `32.78`. Because a new `32.78` loses the timestamp tie, the strict top-20 target remained the next visible bucket, `33.06`. Competition rules, evaluation, timeline, and code requirements were unchanged.
 
@@ -780,3 +785,25 @@ The run generated five output records. `submission.json` passed the 120-task, 17
 Evidence hashes: frozen gate `a9efc35c067e95056f408453bb33b3efa5d9967c244a34baf69127fc1c4de9d3`; exact gate result `2b4c3c92f11e469cd00667feedda98d6a789d0726ae86e2e0486a58ab07c73a6`; saved submission `02396144130eeab850dadb02d52ffc2db8681377b1abfbf7b4ac7691d2ad0f98`.
 
 Outcome bands were fixed before submission: `>=33.06` reaches the strict current top-20 target; `32.78` ties the visible threshold but remains behind earlier submissions; `32.23-32.77` is a new project best; `31.40-32.22` is above the E48 source observation without a new best; `29.03-31.39` does not improve on the source observation; and `<29.03` is strong negative evidence. No score or status check was made after the accepted row was confirmed.
+
+Postmortem: `26.94` is materially below the source observation and the current project best. This exact E48 replay is retired.
+
+### 2026-08-07: V3 Protected Static Synthesis Overlay
+
+The accepted submission is ref `55325560`, submitted on `2026-08-07T13:17:40.507Z` from owned Version 1 / scriptVersionId `340789659`. Its public score will be recorded during the next experiment cycle.
+
+Context note: the August 6 E48 replay returned `26.94`. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `47.78`, rank 3 at `37.22`, and the `32.78` tie band at ranks 18 through 22. Because a new tied score loses the timestamp tie, the strict top-20 target remained `33.06`. Rules, evaluation, timeline, and code requirements were unchanged.
+
+A public discussion released 67 offline-generated `transform(grid)` programs. Exact task-ID routing covered 67 formal-test tasks and 71 records while matching no public evaluation task IDs. All 67 programs passed a fixed AST allowlist, reproduced 215 training pairs, and generated valid non-identity predictions. Broad first-fit matching was rejected because it introduced cross-task matches.
+
+The submitted notebook retains frozen historical V3 Version 3 as its base. The 71 program outputs were statically materialized before the GPU run, so the final notebook neither executes function strings nor mounts the source library. `attempt_1` is immutable, and a static prediction can fill `attempt_2` only when fewer than two sourced neural candidates exist. This preserves every sourced V3 candidate.
+
+The static overlay SHA256 is `ccc7717b5e0f6f3128e8999d9064e1321205f4d0ef6579e6a0478a48535945cf`; its canonical prediction SHA256 is `f1393feb1c9f5fd026b768ea67a4efcf10145f6cb9f6de59bbdf375d8d7d1530`. Materialization was identical under four Python hash seeds.
+
+A Kaggle CPU preflight verified the public library hash, AST checks, 215 training pairs, 71 predictions, model files, and attached dependency payloads. The private 4xL4 validation then completed in `1545.376229` seconds. All four ranks finished without traceback or CUDA out-of-memory evidence.
+
+The public save run produced five sourced outputs and passed the 120-task, 172-record schema with 167 double-placeholder records. The public split had zero overlay IDs and zero changes; the pre-overlay and final files were byte-identical with SHA256 `ddbc843264a375b199792fa8e60e6e245cf77fa1d62a815541360f5e28616113`. Eight exact downloads shared scriptVersionId `340789659` and every frozen gate passed.
+
+Evidence hashes: frozen gate `15a4cc6ca4bc0a5d9f575fa8193819e074e6582a4ad23b45c813143e77c34801`; exact gate result `e36400a3967051eb8e905bc35ccacca91ec0f7a0c67ff9b1c667121af77fbf5f`; saved submission `ddbc843264a375b199792fa8e60e6e245cf77fa1d62a815541360f5e28616113`.
+
+Outcome bands were fixed before submission: `>=33.06` reaches the strict current top-20 target; `32.23-33.05` is a new project best without a robust top-20 position; `29.03-32.22` is no top-20 improvement; and `<29.03` retires this exact overlay. No score or status check was made after the accepted row was confirmed.
