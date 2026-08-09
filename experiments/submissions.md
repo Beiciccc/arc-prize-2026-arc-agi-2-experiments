@@ -96,7 +96,8 @@
 | 2026-08-05 | `55253576` | Frozen v3 fallback after dependency preflight | `30.00` | Complete |
 | 2026-08-06 | `55304770` | Soren E48 mount-only replay | `26.94` | Complete |
 | 2026-08-07 | `55325560` | Frozen V3 with protected static synthesis overlay | `28.47` | Complete |
-| 2026-08-08 | `55338457` | Frozen V3 fallback after Program063 environment validation | pending | Pending |
+| 2026-08-08 | `55338457` | Frozen V3 fallback after Program063 environment validation | `29.31` | Complete |
+| 2026-08-09 | `55368951` | Exact Program063 V73 with a pinned runtime | pending | Pending |
 
 ## Experiment Notes
 
@@ -813,7 +814,7 @@ Postmortem: `28.47` did not improve the project best and retired the exact stati
 
 ### 2026-08-08: Program063 Environment Gate and Frozen V3 Fallback
 
-The accepted submission is ref `55338457`, submitted on `2026-08-08T02:07:50.627Z` from historical V3 Version 3 / scriptVersionId `315432491`. Its public score is intentionally left pending until the next experiment cycle.
+The accepted submission is ref `55338457`, submitted on `2026-08-08T02:07:50.627Z` from historical V3 Version 3 / scriptVersionId `315432491`. It later returned public score `29.31`.
 
 Context note: the August 7 static-overlay run returned `28.47`. The refreshed leaderboard showed rank 1 at `67.50`, rank 2 at `47.78`, rank 3 at `37.22`, and the strict top-20 target at `33.06`. No rule change, discussion update, or newly published exact method provided attributable evidence above that threshold.
 
@@ -824,3 +825,19 @@ The owned notebook retained the exact source-cell signature `34cec48171ac8ccabdc
 The fallback was the frozen historical V3 artifact. Fresh exact-version downloads all resolved to scriptVersionId `315432491`; the output SHA256 remained `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`. Its executed source matched the current source, all four workers had completed, no traceback or CUDA out-of-memory evidence appeared, and local replay again produced `3/172` correct records, two fully solved tasks, reload `2.5`, and 167 placeholder records.
 
 The official submission list changed from zero to one August 8 row after the request and bound ref `55338457` to the expected exact V3 script version. No score or status query was made after that acceptance confirmation.
+
+Postmortem: `29.31` remained inside the observed historical V3 range but did not improve the project best of `32.22` or reach the strict `33.06` top-20 target. The Program063 runtime gap was repaired in the next experiment rather than weakening the source-preservation gate.
+
+### 2026-08-09: Exact Program063 V73 With Pinned Runtime
+
+The accepted submission is ref `55368951`, submitted on `2026-08-09T05:21:44.487Z` from owned Version 1 / scriptVersionId `341141537`. Its public score is intentionally left pending until the next experiment cycle.
+
+Context note: the August 8 V3 fallback returned `29.31`. The refreshed leaderboard kept the strict top-20 target at `33.06`, while the project best remained `32.22`. Rules and reviewed competition pages were unchanged. New Code and Discussion entries supplied diagnostics and weaker candidates but no exact, attributable method above the project best.
+
+This experiment reproduced public Program063 Version 73 / scriptVersionId `340694501`, whose source submission scored `31.81`. The Program024 candidate generator and KGMon first prediction remained unchanged; only a narrowly qualified cross-symmetry candidate could replace the second prediction. The source-cell signature remained `34cec48171ac8ccabdcc7f1239e40d2a7c5eabb116179c92e77b188b19e2494e`.
+
+To preserve the source environment, a matching CPU image exported the required legacy runtime into a stable, version-pinned notebook input, and the GPU candidate retained the image family that supplied `ptxas`. The completed run mounted exactly one owned runtime root with `accelerate 1.11.0`, `peft 0.17.1`, and `bitsandbytes 0.48.2`. The Triton preflight passed before inference.
+
+Version 1 completed in `1641.195971` seconds. All four workers finished normally, with no traceback or CUDA out-of-memory evidence. The output passed the 120-task, 172-record schema and reproduced `3/172` correct records, two fully solved tasks, reload `2.5`, and 167 placeholder records. The guarded ranker changed neither a first prediction nor a second prediction on the public evaluation split. Submission SHA256: `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. Validation evidence SHA256: `3eedd97bdd6ad2b7a28bb7c03c00327d52ab66a6ffcda61766bba781797f734b`.
+
+The official submission list changed from zero to one August 9 row after the request and bound ref `55368951` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
