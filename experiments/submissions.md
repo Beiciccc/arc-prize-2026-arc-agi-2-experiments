@@ -97,7 +97,8 @@
 | 2026-08-06 | `55304770` | Soren E48 mount-only replay | `26.94` | Complete |
 | 2026-08-07 | `55325560` | Frozen V3 with protected static synthesis overlay | `28.47` | Complete |
 | 2026-08-08 | `55338457` | Frozen V3 fallback after Program063 environment validation | `29.31` | Complete |
-| 2026-08-09 | `55368951` | Exact Program063 V73 with a pinned runtime | pending | Pending |
+| 2026-08-09 | `55368951` | Exact Program063 V73 with a pinned runtime | `29.72` | Complete |
+| 2026-08-11 | `55420680` | Program063 pinned-runtime fallback after Program067 validation | pending | Pending |
 
 ## Experiment Notes
 
@@ -830,7 +831,7 @@ Postmortem: `29.31` remained inside the observed historical V3 range but did not
 
 ### 2026-08-09: Exact Program063 V73 With Pinned Runtime
 
-The accepted submission is ref `55368951`, submitted on `2026-08-09T05:21:44.487Z` from owned Version 1 / scriptVersionId `341141537`. Its public score is intentionally left pending until the next experiment cycle.
+The accepted submission is ref `55368951`, submitted on `2026-08-09T05:21:44.487Z` from owned Version 1 / scriptVersionId `341141537`. It later returned public score `29.72`.
 
 Context note: the August 8 V3 fallback returned `29.31`. The refreshed leaderboard kept the strict top-20 target at `33.06`, while the project best remained `32.22`. Rules and reviewed competition pages were unchanged. New Code and Discussion entries supplied diagnostics and weaker candidates but no exact, attributable method above the project best.
 
@@ -841,3 +842,17 @@ To preserve the source environment, a matching CPU image exported the required l
 Version 1 completed in `1641.195971` seconds. All four workers finished normally, with no traceback or CUDA out-of-memory evidence. The output passed the 120-task, 172-record schema and reproduced `3/172` correct records, two fully solved tasks, reload `2.5`, and 167 placeholder records. The guarded ranker changed neither a first prediction nor a second prediction on the public evaluation split. Submission SHA256: `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. Validation evidence SHA256: `3eedd97bdd6ad2b7a28bb7c03c00327d52ab66a6ffcda61766bba781797f734b`.
 
 The official submission list changed from zero to one August 9 row after the request and bound ref `55368951` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
+
+Postmortem: `29.72` improved on the previous V3 fallback but remained below the project best of `32.22` and the strict `33.06` target used before the leaderboard tie update.
+
+### 2026-08-11: Program067 Validation And Program063 Fallback
+
+The accepted submission is ref `55420680`, submitted on `2026-08-11T02:09:52.910Z` from owned Program063 Version 1 / scriptVersionId `341141537`. Its public score is intentionally left pending until the next experiment cycle.
+
+Context note: the August 9 Program063 run returned `29.72`. The refreshed leaderboard showed ranks 18 through 23 in the `32.78` tie group, so the strict top-20 target remained above that bucket. Rules and competition pages were unchanged. New discussions measured a substantially harder evaluation distribution and warned that headline training-set scores do not transfer directly.
+
+The primary candidate was Yusuke Togashi's public Program067 run, scriptVersionId `341506403`. It kept Program024 candidate generation and KGMon top-1 unchanged, computed Program063 as a shadow, and accepted a Program063 second-slot promotion only under a stricter champion-shaped support condition. Its completed public run passed the 120-task, 172-record format gate. The ranker audit recorded one Program063 promotion suppressed by the new condition, zero Program067 second-slot changes, and zero top-1 changes. Output manifest SHA256: `57fedaa2efbf5bbb44bd3edd69b6bf2b734ebe8a30f55362a52cb3f5fa1c2985`; ranker audit SHA256: `da9142241d53c241091952aacced819f92b6f7562571e198c88a87cfeaaecf32`.
+
+The public Program067 kernel submission request was rejected by Kaggle with HTTP `403`, and the official list remained at zero August 11 rows. The candidate therefore did not consume the daily slot. The fallback reused the exact owned Program063 pinned-runtime kernel, whose previous accepted run scored `29.72` and whose complete GPU validation remains schema-valid with four workers and no runtime errors.
+
+The official submission list then changed from zero to one August 11 row and bound ref `55420680` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
