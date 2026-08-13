@@ -856,3 +856,11 @@ The primary candidate was Yusuke Togashi's public Program067 run, scriptVersionI
 The public Program067 kernel submission request was rejected by Kaggle with HTTP `403`, and the official list remained at zero August 11 rows. The candidate therefore did not consume the daily slot. The fallback reused the exact owned Program063 pinned-runtime kernel, whose previous accepted run scored `29.72` and whose complete GPU validation remains schema-valid with four workers and no runtime errors.
 
 The official submission list then changed from zero to one August 11 row and bound ref `55420680` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
+
+### 2026-08-13: Validated Program063 Repeat
+
+The accepted submission is ref `55490292`, submitted on `2026-08-13T19:42:05.957Z` from owned Program063 Version 1 / scriptVersionId `341141537`. Its public score is intentionally left pending until the next experiment cycle.
+
+Context note: the August 11 run later returned `30.14`. The August 13 refresh indexed newer public notebooks and discussions; the reviewed material did not provide a reproducible, locally validated candidate with a demonstrated advantage over the owned Program063 artifact. Recent analysis continued to indicate that the evaluation distribution is harder than training.
+
+The selected artifact was therefore the exact validated Program063 V73 pinned-runtime submission. The local `submission.json` passed the 240-task schema check before submission. The official submission list changed from zero to one August 13 row and bound ref `55490292` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
