@@ -1,0 +1,248 @@
+sortBy,ref,title,author,lastRunTime,totalVotes,url
+dateRun,sml0820/nvarc-stage1-gate-eval-v2-four-arm,nvarc stage1 gate eval v2 four arm,sml0820,2026-09-01T11:16:45.990Z,,https://www.kaggle.com/code/sml0820/nvarc-stage1-gate-eval-v2-four-arm
+dateRun,anglolodorf/arc-2026-hybrid-solver-our-solver-nvarc-qwen,ARC 2026 Hybrid Solver (Our Solver + NVARC Qwen),ANGOUAH,2026-09-01T07:16:52.150Z,1,https://www.kaggle.com/code/anglolodorf/arc-2026-hybrid-solver-our-solver-nvarc-qwen
+dateRun,balamuruganaiml/arc-version-2,ARC-Version 2,Bala Murugan AIML,2026-09-01T04:27:06.787Z,1,https://www.kaggle.com/code/balamuruganaiml/arc-version-2
+dateRun,yusuketogashi/arc-baseline-rebuild,ARC Baseline Rebuild,Yusuke Togashi,2026-09-01T01:58:34.177Z,65,https://www.kaggle.com/code/yusuketogashi/arc-baseline-rebuild
+dateRun,alexbilltai/notebook2b6080e881,notebook2b6080e881,alex bill tai,2026-09-01T00:41:09.113Z,1,https://www.kaggle.com/code/alexbilltai/notebook2b6080e881
+dateRun,tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner,ARC Prize 2026 ARC AGI 2 Ultra Reasoner,K.THARUN KUMAR,2026-09-01T00:40:15.817Z,,https://www.kaggle.com/code/tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner
+dateRun,teisnestech/notebook128c76283c,notebook128c76283c,Teisnes Tech,2026-08-31T22:09:46.107Z,2,https://www.kaggle.com/code/teisnestech/notebook128c76283c
+dateRun,sophie555/arc26-exp031-c3264,arc26-exp031-c3264,Sophie555,2026-08-31T14:01:50.187Z,1,https://www.kaggle.com/code/sophie555/arc26-exp031-c3264
+dateRun,sunseekerrx/savr-arc-v2-binding-preserving-reasoning,SAVR ARC v2 Binding Preserving Reasoning,SunSeeker染汐,2026-08-30T09:43:07.340Z,,https://www.kaggle.com/code/sunseekerrx/savr-arc-v2-binding-preserving-reasoning
+dateRun,yjsh2003/arc2026-qwen3-4b-ttt-4xl4-1,ARC2026_Qwen3_4B_TTT_4xL4 (1),JiashengYun,2026-08-30T07:41:04.413Z,,https://www.kaggle.com/code/yjsh2003/arc2026-qwen3-4b-ttt-4xl4-1
+dateRun,mdmahfujulkarim/arcagi2-dsl-baseline-v2,Arcagi2 Dsl Baseline V2,Md.Mahfujul Karim,2026-08-29T04:51:52.783Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2
+dateRun,mhsung/ai-triz-arc-sufield-solver,ai-triz-arc-sufield-solver,ClemsonTigerTW,2026-08-29T03:09:35.330Z,2,https://www.kaggle.com/code/mhsung/ai-triz-arc-sufield-solver
+dateRun,quarkliu/arc2-qwen35-9b-best-replay-public-20260828,ARC2 Qwen35 9B Best Replay Public 20260828,Positive Quark,2026-08-29T00:14:47.607Z,1,https://www.kaggle.com/code/quarkliu/arc2-qwen35-9b-best-replay-public-20260828
+dateRun,abhirajhiwale/arc-agi-2-verified-repro-fork-of-the-v73-baseline,ARC-AGI-2 Verified Repro Fork of the V73 Baseline,ABHIRAJ,2026-08-28T16:09:16.903Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-verified-repro-fork-of-the-v73-baseline
+dateRun,ashokgaire/notebookbb9e587dbc,notebookbb9e587dbc,Ashok Gaire,2026-08-28T15:38:10.167Z,,https://www.kaggle.com/code/ashokgaire/notebookbb9e587dbc
+dateRun,sml0820/nvarc-ttdpo-pilot,nvarc ttdpo pilot,sml0820,2026-08-28T14:52:13.697Z,,https://www.kaggle.com/code/sml0820/nvarc-ttdpo-pilot
+dateRun,sml0820/nvarc-ttdpo-smoke,nvarc ttdpo smoke,sml0820,2026-08-28T14:21:06.597Z,,https://www.kaggle.com/code/sml0820/nvarc-ttdpo-smoke
+dateRun,evgendvorkin/arc-2-2026,ARC_2_2026,Дворкин Евгений Владимирович,2026-08-28T13:46:15.973Z,4,https://www.kaggle.com/code/evgendvorkin/arc-2-2026
+dateRun,suprasm/arc-agi-2-nvarc-p100,arc-agi-2-nvarc-p100,Ricky,2026-08-28T02:22:38.880Z,,https://www.kaggle.com/code/suprasm/arc-agi-2-nvarc-p100
+dateRun,fayche/arc-prize-2026-solver,ARC Prize 2026 Solver,Fayche,2026-08-27T22:44:29.910Z,40,https://www.kaggle.com/code/fayche/arc-prize-2026-solver
+dateRun,sml0820/nvarc-ablate-b-11native,nvarc ablate b 11native,sml0820,2026-08-27T20:11:50.557Z,,https://www.kaggle.com/code/sml0820/nvarc-ablate-b-11native
+dateRun,stmugiwara/hermes-arc-agi2-baseline-v3,Hermes ARC AGI2 Baseline v3,St Mugiwara,2026-08-27T17:11:16.527Z,,https://www.kaggle.com/code/stmugiwara/hermes-arc-agi2-baseline-v3
+dateRun,adebayoobademi/arc-agi-2-hybrid-neuro-symbolic-solver-with-dsl-b,ARC-AGI-2: Hybrid Neuro-Symbolic Solver with DSL B,Adebayo Obademi,2026-08-27T05:15:17.830Z,,https://www.kaggle.com/code/adebayoobademi/arc-agi-2-hybrid-neuro-symbolic-solver-with-dsl-b
+dateRun,oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2,ARC2 Mikelou LB33.89 Public Reproduction v2,Lindicaphxag,2026-08-26T13:58:58.217Z,3,https://www.kaggle.com/code/oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2
+dateRun,johnsmall11/jxg-bss-da5d9e,jxg-bss da5d9e,John Small11,2026-08-26T10:00:01.037Z,1,https://www.kaggle.com/code/johnsmall11/jxg-bss-da5d9e
+dateRun,sml0820/nvarc-ttt-s6,nvarc ttt s6,sml0820,2026-08-25T19:13:51.780Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s6
+dateRun,manderson240/cohezion-arc-agi-2-autoharness-solver,cohezion-arc-agi-2-autoharness-solver,Mike Anderson,2026-08-25T19:12:16.320Z,2,https://www.kaggle.com/code/manderson240/cohezion-arc-agi-2-autoharness-solver
+dateRun,peter123321123/six-class-best4-direct-legacy-replay-63e-p100,Six Class Best4 Direct Legacy Replay 63E P100,peter123321123,2026-08-25T17:14:20.480Z,,https://www.kaggle.com/code/peter123321123/six-class-best4-direct-legacy-replay-63e-p100
+dateRun,sml0820/nvarc-ttt-s6-eval,nvarc ttt s6 eval,sml0820,2026-08-25T15:04:30.353Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s6-eval
+dateRun,salvapiol/fork-of-arc-2026,Fork of ARC 2026 ,Salvapiol,2026-08-25T08:31:46.237Z,4,https://www.kaggle.com/code/salvapiol/fork-of-arc-2026
+dateRun,abhirajhiwale/arc-agi-2-pinned-v73-baseline,ARC AGI 2 Pinned V73 Baseline,ABHIRAJ,2026-08-25T07:13:34.867Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-pinned-v73-baseline
+dateRun,darkmatternet/arc2-nvarc-public-anchor-v1,ARC2 NVARC Public Anchor V1,DarkMatterNet,2026-08-25T03:10:36.730Z,5,https://www.kaggle.com/code/darkmatternet/arc2-nvarc-public-anchor-v1
+dateRun,sml0820/nvarc-ttt-s5-eval,nvarc ttt s5 eval,sml0820,2026-08-24T23:13:00.280Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s5-eval
+dateRun,sml0820/arc-oracle-audit,arc oracle audit,sml0820,2026-08-24T23:12:57.630Z,,https://www.kaggle.com/code/sml0820/arc-oracle-audit
+dateRun,sml0820/nvarc-family-s4b-eval,nvarc family s4b eval,sml0820,2026-08-24T18:01:57.773Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4b-eval
+dateRun,sml0820/nvarc-ttt-s5,nvarc ttt s5,sml0820,2026-08-24T17:29:59.587Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s5
+dateRun,maximolorenzoylosada/arc-agi-2-a-structural-atlas-of-the-corpus,ARC-AGI-2: A Structural Atlas of the Corpus,maximo lorenzo y losada,2026-08-24T16:27:35.347Z,3,https://www.kaggle.com/code/maximolorenzoylosada/arc-agi-2-a-structural-atlas-of-the-corpus
+dateRun,sml0820/nvarc-family-s4b,nvarc family s4b,sml0820,2026-08-24T03:26:40.020Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4b
+dateRun,sml0820/nvarc-family-s4,nvarc family s4,sml0820,2026-08-24T01:15:43.380Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4
+dateRun,luxluxshan/arc2-nvarc-v1,ARC2 NVARC+ v1,Luxshan Thavarasa,2026-08-23T10:06:24.453Z,26,https://www.kaggle.com/code/luxluxshan/arc2-nvarc-v1
+dateRun,mdmahfujulkarim/arcagi2-dsl-baseline-v2-public,ARCAGI2 DSL Baseline v2 (Public),Md.Mahfujul Karim,2026-08-23T02:41:52.657Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2-public
+dateRun,najunghwan/arcagi2-rokaiya-nvarc-pathfix,arcagi2-rokaiya-nvarc-pathfix,JungHwan,2026-08-22T15:31:30.870Z,,https://www.kaggle.com/code/najunghwan/arcagi2-rokaiya-nvarc-pathfix
+dateRun,najunghwan/arcagi2-koushik-orig-verbatim,arcagi2 koushik orig verbatim,JungHwan,2026-08-22T15:13:56.710Z,,https://www.kaggle.com/code/najunghwan/arcagi2-koushik-orig-verbatim
+dateRun,najunghwan/arcagi2-madarsh-nvarc-pathfix,arcagi2-madarsh-nvarc-pathfix,JungHwan,2026-08-22T15:01:50.650Z,,https://www.kaggle.com/code/najunghwan/arcagi2-madarsh-nvarc-pathfix
+dateRun,carlysipahutar/arc-agi-2-dsl-symbolic-search-v0-2-0,arc-agi-2-dsl-symbolic-search-v0.2.0,carly sipahutar,2026-08-22T14:41:34.450Z,,https://www.kaggle.com/code/carlysipahutar/arc-agi-2-dsl-symbolic-search-v0-2-0
+dateRun,najunghwan/arc-agi2-sigint-symbolic-hybrid-testmode,arc-agi2-sigint-symbolic-hybrid-testmode,JungHwan,2026-08-22T14:31:41.610Z,,https://www.kaggle.com/code/najunghwan/arc-agi2-sigint-symbolic-hybrid-testmode
+dateRun,koushikkumardinda/arc-prize-2026-arc-agi-2,ARC Prize 2026 - ARC-AGI-2,KOUSHIK KUMAR DINDA,2026-08-22T11:39:18.707Z,2,https://www.kaggle.com/code/koushikkumardinda/arc-prize-2026-arc-agi-2
+dateRun,najunghwan/arcagi2-yusuke-p073-vendor-runtime,arcagi2-yusuke-p073-vendor-runtime,JungHwan,2026-08-22T05:54:34.917Z,,https://www.kaggle.com/code/najunghwan/arcagi2-yusuke-p073-vendor-runtime
+dateRun,carlysipahutar/arc-agi-2-dsl-program-synthesis-v0-1-0,arc-agi-2-dsl-program-synthesis-v0.1.0,carly sipahutar,2026-08-21T20:03:07.053Z,,https://www.kaggle.com/code/carlysipahutar/arc-agi-2-dsl-program-synthesis-v0-1-0
+dateCreated,alexbilltai/notebook2b6080e881,notebook2b6080e881,alex bill tai,2026-09-01T00:41:09.113Z,1,https://www.kaggle.com/code/alexbilltai/notebook2b6080e881
+dateCreated,tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner,ARC Prize 2026 ARC AGI 2 Ultra Reasoner,K.THARUN KUMAR,2026-09-01T00:40:15.817Z,,https://www.kaggle.com/code/tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner
+dateCreated,anglolodorf/arc-2026-hybrid-solver-our-solver-nvarc-qwen,ARC 2026 Hybrid Solver (Our Solver + NVARC Qwen),ANGOUAH,2026-09-01T07:16:52.150Z,1,https://www.kaggle.com/code/anglolodorf/arc-2026-hybrid-solver-our-solver-nvarc-qwen
+dateCreated,sophie555/arc26-exp031-c3264,arc26-exp031-c3264,Sophie555,2026-08-31T14:01:50.187Z,1,https://www.kaggle.com/code/sophie555/arc26-exp031-c3264
+dateCreated,sml0820/nvarc-stage1-gate-eval-v2-four-arm,nvarc stage1 gate eval v2 four arm,sml0820,2026-09-01T11:16:45.990Z,,https://www.kaggle.com/code/sml0820/nvarc-stage1-gate-eval-v2-four-arm
+dateCreated,sunseekerrx/savr-arc-v2-binding-preserving-reasoning,SAVR ARC v2 Binding Preserving Reasoning,SunSeeker染汐,2026-08-30T09:43:07.340Z,,https://www.kaggle.com/code/sunseekerrx/savr-arc-v2-binding-preserving-reasoning
+dateCreated,yjsh2003/arc2026-qwen3-4b-ttt-4xl4-1,ARC2026_Qwen3_4B_TTT_4xL4 (1),JiashengYun,2026-08-30T07:41:04.413Z,,https://www.kaggle.com/code/yjsh2003/arc2026-qwen3-4b-ttt-4xl4-1
+dateCreated,quarkliu/arc2-qwen35-9b-best-replay-public-20260828,ARC2 Qwen35 9B Best Replay Public 20260828,Positive Quark,2026-08-29T00:14:47.607Z,1,https://www.kaggle.com/code/quarkliu/arc2-qwen35-9b-best-replay-public-20260828
+dateCreated,abhirajhiwale/arc-agi-2-verified-repro-fork-of-the-v73-baseline,ARC-AGI-2 Verified Repro Fork of the V73 Baseline,ABHIRAJ,2026-08-28T16:09:16.903Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-verified-repro-fork-of-the-v73-baseline
+dateCreated,sml0820/nvarc-ttdpo-pilot,nvarc ttdpo pilot,sml0820,2026-08-28T14:52:13.697Z,,https://www.kaggle.com/code/sml0820/nvarc-ttdpo-pilot
+dateCreated,sml0820/nvarc-ttdpo-smoke,nvarc ttdpo smoke,sml0820,2026-08-28T14:21:06.597Z,,https://www.kaggle.com/code/sml0820/nvarc-ttdpo-smoke
+dateCreated,ashokgaire/notebookbb9e587dbc,notebookbb9e587dbc,Ashok Gaire,2026-08-28T15:38:10.167Z,,https://www.kaggle.com/code/ashokgaire/notebookbb9e587dbc
+dateCreated,sml0820/nvarc-ablate-b-11native,nvarc ablate b 11native,sml0820,2026-08-27T20:11:50.557Z,,https://www.kaggle.com/code/sml0820/nvarc-ablate-b-11native
+dateCreated,stmugiwara/hermes-arc-agi2-baseline-v3,Hermes ARC AGI2 Baseline v3,St Mugiwara,2026-08-27T17:11:16.527Z,,https://www.kaggle.com/code/stmugiwara/hermes-arc-agi2-baseline-v3
+dateCreated,suprasm/arc-agi-2-nvarc-p100,arc-agi-2-nvarc-p100,Ricky,2026-08-28T02:22:38.880Z,,https://www.kaggle.com/code/suprasm/arc-agi-2-nvarc-p100
+dateCreated,oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2,ARC2 Mikelou LB33.89 Public Reproduction v2,Lindicaphxag,2026-08-26T13:58:58.217Z,3,https://www.kaggle.com/code/oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2
+dateCreated,sml0820/nvarc-ttt-s6,nvarc ttt s6,sml0820,2026-08-25T19:13:51.780Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s6
+dateCreated,sml0820/nvarc-ttt-s6-eval,nvarc ttt s6 eval,sml0820,2026-08-25T15:04:30.353Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s6-eval
+dateCreated,abhirajhiwale/arc-agi-2-pinned-v73-baseline,ARC AGI 2 Pinned V73 Baseline,ABHIRAJ,2026-08-25T07:13:34.867Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-pinned-v73-baseline
+dateCreated,peter123321123/six-class-best4-direct-legacy-replay-63e-p100,Six Class Best4 Direct Legacy Replay 63E P100,peter123321123,2026-08-25T17:14:20.480Z,,https://www.kaggle.com/code/peter123321123/six-class-best4-direct-legacy-replay-63e-p100
+dateCreated,darkmatternet/arc2-nvarc-public-anchor-v1,ARC2 NVARC Public Anchor V1,DarkMatterNet,2026-08-25T03:10:36.730Z,5,https://www.kaggle.com/code/darkmatternet/arc2-nvarc-public-anchor-v1
+dateCreated,mdmahfujulkarim/arcagi2-dsl-baseline-v2,Arcagi2 Dsl Baseline V2,Md.Mahfujul Karim,2026-08-29T04:51:52.783Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2
+dateCreated,sml0820/nvarc-family-s4b-eval,nvarc family s4b eval,sml0820,2026-08-24T18:01:57.773Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4b-eval
+dateCreated,sml0820/nvarc-ttt-s5-eval,nvarc ttt s5 eval,sml0820,2026-08-24T23:13:00.280Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s5-eval
+dateCreated,sml0820/nvarc-ttt-s5,nvarc ttt s5,sml0820,2026-08-24T17:29:59.587Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s5
+dateCreated,manderson240/cohezion-arc-agi-2-autoharness-solver,cohezion-arc-agi-2-autoharness-solver,Mike Anderson,2026-08-25T19:12:16.320Z,2,https://www.kaggle.com/code/manderson240/cohezion-arc-agi-2-autoharness-solver
+dateCreated,sml0820/nvarc-family-s4b,nvarc family s4b,sml0820,2026-08-24T03:26:40.020Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4b
+dateCreated,sml0820/nvarc-family-s4,nvarc family s4,sml0820,2026-08-24T01:15:43.380Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4
+dateCreated,adebayoobademi/arc-agi-2-hybrid-neuro-symbolic-solver-with-dsl-b,ARC-AGI-2: Hybrid Neuro-Symbolic Solver with DSL B,Adebayo Obademi,2026-08-27T05:15:17.830Z,,https://www.kaggle.com/code/adebayoobademi/arc-agi-2-hybrid-neuro-symbolic-solver-with-dsl-b
+dateCreated,evgendvorkin/arc-2-2026,ARC_2_2026,Дворкин Евгений Владимирович,2026-08-28T13:46:15.973Z,4,https://www.kaggle.com/code/evgendvorkin/arc-2-2026
+dateCreated,mhsung/ai-triz-arc-sufield-solver,ai-triz-arc-sufield-solver,ClemsonTigerTW,2026-08-29T03:09:35.330Z,2,https://www.kaggle.com/code/mhsung/ai-triz-arc-sufield-solver
+dateCreated,luxluxshan/arc2-nvarc-v1,ARC2 NVARC+ v1,Luxshan Thavarasa,2026-08-23T10:06:24.453Z,26,https://www.kaggle.com/code/luxluxshan/arc2-nvarc-v1
+dateCreated,mdmahfujulkarim/arcagi2-dsl-baseline-v2-public,ARCAGI2 DSL Baseline v2 (Public),Md.Mahfujul Karim,2026-08-23T02:41:52.657Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2-public
+dateCreated,najunghwan/arcagi2-rokaiya-nvarc-pathfix,arcagi2-rokaiya-nvarc-pathfix,JungHwan,2026-08-22T15:31:30.870Z,,https://www.kaggle.com/code/najunghwan/arcagi2-rokaiya-nvarc-pathfix
+dateCreated,najunghwan/arcagi2-madarsh-nvarc-pathfix,arcagi2-madarsh-nvarc-pathfix,JungHwan,2026-08-22T15:01:50.650Z,,https://www.kaggle.com/code/najunghwan/arcagi2-madarsh-nvarc-pathfix
+dateCreated,carlysipahutar/arc-agi-2-dsl-symbolic-search-v0-2-0,arc-agi-2-dsl-symbolic-search-v0.2.0,carly sipahutar,2026-08-22T14:41:34.450Z,,https://www.kaggle.com/code/carlysipahutar/arc-agi-2-dsl-symbolic-search-v0-2-0
+dateCreated,najunghwan/arc-agi2-sigint-symbolic-hybrid-testmode,arc-agi2-sigint-symbolic-hybrid-testmode,JungHwan,2026-08-22T14:31:41.610Z,,https://www.kaggle.com/code/najunghwan/arc-agi2-sigint-symbolic-hybrid-testmode
+dateCreated,najunghwan/arcagi2-koushik-orig-verbatim,arcagi2 koushik orig verbatim,JungHwan,2026-08-22T15:13:56.710Z,,https://www.kaggle.com/code/najunghwan/arcagi2-koushik-orig-verbatim
+dateCreated,najunghwan/arcagi2-yusuke-p073-vendor-runtime,arcagi2-yusuke-p073-vendor-runtime,JungHwan,2026-08-22T05:54:34.917Z,,https://www.kaggle.com/code/najunghwan/arcagi2-yusuke-p073-vendor-runtime
+dateCreated,beacontwins/beacon-arc-v16-ship,beacon arc v16 ship,BeaconTwins,2026-08-21T19:53:04.657Z,,https://www.kaggle.com/code/beacontwins/beacon-arc-v16-ship
+dateCreated,carlysipahutar/arc-agi-2-dsl-program-synthesis-v0-1-0,arc-agi-2-dsl-program-synthesis-v0.1.0,carly sipahutar,2026-08-21T20:03:07.053Z,,https://www.kaggle.com/code/carlysipahutar/arc-agi-2-dsl-program-synthesis-v0-1-0
+dateCreated,fayche/arc-prize-2026-solver,ARC Prize 2026 Solver,Fayche,2026-08-27T22:44:29.910Z,40,https://www.kaggle.com/code/fayche/arc-prize-2026-solver
+dateCreated,sml0820/arc-oracle-audit,arc oracle audit,sml0820,2026-08-24T23:12:57.630Z,,https://www.kaggle.com/code/sml0820/arc-oracle-audit
+dateCreated,beacontwins/beacon-arc-v14-ship,beacon arc v14 ship,BeaconTwins,2026-08-20T20:11:53.670Z,2,https://www.kaggle.com/code/beacontwins/beacon-arc-v14-ship
+dateCreated,beacontwins/beacon-arc-v13-1-ship,beacon arc v13 1 ship,BeaconTwins,2026-08-20T17:39:43.617Z,,https://www.kaggle.com/code/beacontwins/beacon-arc-v13-1-ship
+dateCreated,thierrytuz/arc2-audit-elagage-certifie,arc2 audit elagage certifie,Thierry Tuz,2026-08-20T14:38:48.887Z,,https://www.kaggle.com/code/thierrytuz/arc2-audit-elagage-certifie
+dateCreated,najunghwan/arcagi2-nvarc-resubmit-0820,arcagi2 nvarc resubmit 0820,JungHwan,2026-08-20T00:54:36.347Z,1,https://www.kaggle.com/code/najunghwan/arcagi2-nvarc-resubmit-0820
+dateCreated,najunghwan/arcagi2-nvarc3222-direct,arcagi2-nvarc3222-direct,JungHwan,2026-08-19T04:43:02.497Z,1,https://www.kaggle.com/code/najunghwan/arcagi2-nvarc3222-direct
+dateCreated,sushanthtiruvaipati/arc-agi2-rule-based-solver-v1,ARC AGI2 Rule Based Solver v1,Sushanth Tiruvaipati,2026-08-19T04:37:51.717Z,,https://www.kaggle.com/code/sushanthtiruvaipati/arc-agi2-rule-based-solver-v1
+voteCount,koushikrudra/failed-in-aimo,Failed in AIMO,Koushik Rudra,2026-08-03T07:27:34.347Z,454,https://www.kaggle.com/code/koushikrudra/failed-in-aimo
+voteCount,nihilisticneuralnet/baseline-nvarc-arc-25-winning-solution-for-t4x2,[Baseline]NVARC ARC'25 Winning Solution (for T4x2),parthenos,2026-04-03T07:34:30.730Z,202,https://www.kaggle.com/code/nihilisticneuralnet/baseline-nvarc-arc-25-winning-solution-for-t4x2
+voteCount,yiheng/reproduce-nvarc-2025-results,Reproduce NVARC 2025 Results,Yiheng Wang,2026-04-08T07:26:02.110Z,171,https://www.kaggle.com/code/yiheng/reproduce-nvarc-2025-results
+voteCount,junaid512/arc-agi-enhanced-solution,ARC-AGI Enhanced Solution,Muhammad Junaid,2026-04-15T14:51:36.597Z,133,https://www.kaggle.com/code/junaid512/arc-agi-enhanced-solution
+voteCount,chiakazirim/learned-from-aimo,Learned from AIMO,Akagha Chimgozirim,2026-07-11T01:27:43.843Z,124,https://www.kaggle.com/code/chiakazirim/learned-from-aimo
+voteCount,koushikrudra/arc-agi2-original-kg,ARC AGI2 Original KG,Koushik Rudra,2026-06-18T14:47:16.273Z,93,https://www.kaggle.com/code/koushikrudra/arc-agi2-original-kg
+voteCount,albartrose/nvarc-winning-2025-for-2xt4s-best-score-19-17,NVARC winning 2025 - for 2xT4s (best score 19.17),Richard Emslie,2026-04-07T11:27:38.770Z,83,https://www.kaggle.com/code/albartrose/nvarc-winning-2025-for-2xt4s-best-score-19-17
+voteCount,mikelou1/arc-agi2-lb33-89-minimal-perfpatch,ARC AGI2 LB33.89 Minimal Perfpatch,mikelou1,2026-07-14T19:33:41.207Z,81,https://www.kaggle.com/code/mikelou1/arc-agi2-lb33-89-minimal-perfpatch
+voteCount,pragnyanramtha/11-25-lb-5,[11.25] LB 5,Pragnyan Ramtha,2026-04-06T07:41:46.060Z,76,https://www.kaggle.com/code/pragnyanramtha/11-25-lb-5
+voteCount,baidalinadilzhan/prev-year-s-compressarc-method-p100-gpu-lb-1-67,Prev Year's CompressARC Method P100 gpu LB[1.67],Baidalin Adilzhan [dsmlkz],2026-03-27T13:38:24.300Z,74,https://www.kaggle.com/code/baidalinadilzhan/prev-year-s-compressarc-method-p100-gpu-lb-1-67
+voteCount,mirzamilanfarabi/arc-2-2026-qwen3-unsloth-mar-26,ARC-2 (2026) Qwen3 Unsloth Mar-26,Mirza Milan Farabi,2026-03-27T22:17:33.860Z,68,https://www.kaggle.com/code/mirzamilanfarabi/arc-2-2026-qwen3-unsloth-mar-26
+voteCount,yusuketogashi/arc-baseline-rebuild,ARC Baseline Rebuild,Yusuke Togashi,2026-09-01T01:58:34.177Z,65,https://www.kaggle.com/code/yusuketogashi/arc-baseline-rebuild
+voteCount,sigmaborov/arc-agi-2-baseline-starter,ARC-AGI-2 Baseline Starter,sigmaborov,2026-03-25T21:26:15.033Z,65,https://www.kaggle.com/code/sigmaborov/arc-agi-2-baseline-starter
+voteCount,foysalemonshanto/arc-2026d,ARC_2026D,FOYSAL,2026-04-26T09:47:28.887Z,54,https://www.kaggle.com/code/foysalemonshanto/arc-2026d
+voteCount,kaiserm/nvarc-winning-solution-2025-4xl4s,NVARC winning solution 2025 -  4xL4s ,Kaiser,2026-04-08T06:53:37.263Z,54,https://www.kaggle.com/code/kaiserm/nvarc-winning-solution-2025-4xl4s
+voteCount,karnakbaevarthur/logic-profiler-for-each-task,Logic Profiler for Each Task,Karnakbayev Artur,2026-04-26T09:22:37.650Z,48,https://www.kaggle.com/code/karnakbaevarthur/logic-profiler-for-each-task
+voteCount,fayche/arc-prize-2026-solver,ARC Prize 2026 Solver,Fayche,2026-08-27T22:44:29.910Z,40,https://www.kaggle.com/code/fayche/arc-prize-2026-solver
+voteCount,mpwolke/raider-of-the-arc-agi,Raider of the ARC AGI,Marília Prata,2026-03-25T21:43:05.683Z,40,https://www.kaggle.com/code/mpwolke/raider-of-the-arc-agi
+voteCount,christopherdaleman/arc-2026-nvarc-trm-evidence-cost-v1,ARC 2026 NVARC TRM Evidence Cost V1,ChristopherDAleman,2026-07-24T12:44:25.827Z,36,https://www.kaggle.com/code/christopherdaleman/arc-2026-nvarc-trm-evidence-cost-v1
+voteCount,rokaiyasomapti/reproduce-nvarc-2025-results,Reproduce NVARC 2025 Results,Rokaiya Somapti,2026-07-31T14:35:15.667Z,35,https://www.kaggle.com/code/rokaiyasomapti/reproduce-nvarc-2025-results
+voteCount,lucifer19/blackcat-stable-anchor-nvarc-guard,🐈‍⬛🛡️ BlackCat Stable Anchor — NVARC Guard,Krizsó Gergely,2026-07-12T17:53:48.340Z,31,https://www.kaggle.com/code/lucifer19/blackcat-stable-anchor-nvarc-guard
+voteCount,foysalemonshanto/2025-winning-solution-updated-for-2026,2025 Winning Solution Updated for 2026,FOYSAL,2026-06-01T01:58:40.880Z,30,https://www.kaggle.com/code/foysalemonshanto/2025-winning-solution-updated-for-2026
+voteCount,cmirani/nvarc-bf16-four-prepass-working-baseline,NVARC BF16 - four prepass working baseline,Chirag,2026-04-25T11:21:46.627Z,30,https://www.kaggle.com/code/cmirani/nvarc-bf16-four-prepass-working-baseline
+voteCount,yaroslavkholmirzayev/nvarc-2026-results,NVARC 2026 Results,Yaroslav kholmirzayev,2026-04-12T16:42:48.880Z,30,https://www.kaggle.com/code/yaroslavkholmirzayev/nvarc-2026-results
+voteCount,adaluvu/arc-agi-2-eda-training-qwen3-baseline,[ARC-AGI-2] EDA + Training Qwen3 baseline,Adaluvu,2026-03-27T03:38:30.997Z,30,https://www.kaggle.com/code/adaluvu/arc-agi-2-eda-training-qwen3-baseline
+voteCount,eslamelokpy/best-submission-gqa,Best submission gqa,Eslam Elokpy,2026-05-06T10:15:56.177Z,28,https://www.kaggle.com/code/eslamelokpy/best-submission-gqa
+voteCount,allegich/arc-agi-2026-visualization-all-1000-120-t,ARC-AGI 2026: Visualization all 1000+120 t,neoleg,2026-03-25T21:30:07.487Z,27,https://www.kaggle.com/code/allegich/arc-agi-2026-visualization-all-1000-120-t
+voteCount,luxluxshan/arc2-nvarc-v1,ARC2 NVARC+ v1,Luxshan Thavarasa,2026-08-23T10:06:24.453Z,26,https://www.kaggle.com/code/luxluxshan/arc2-nvarc-v1
+voteCount,koushikrudra/arc-agi2-aegis-triad-v1,ARC AGI2 Aegis Triad v1,Koushik Rudra,2026-07-14T07:42:36.640Z,23,https://www.kaggle.com/code/koushikrudra/arc-agi2-aegis-triad-v1
+voteCount,boristown/agi-arc-agi2-lb33-minimal-perfpatch,【暗黑AGI】arc_agi2_LB33_minimal_perfpatch,暗黑AGI,2026-07-06T09:17:51.880Z,22,https://www.kaggle.com/code/boristown/agi-arc-agi2-lb33-minimal-perfpatch
+voteCount,caoyupeng/aimo3-v1,AIMO3-v1,SpeedSci,2026-06-12T11:48:53.263Z,22,https://www.kaggle.com/code/caoyupeng/aimo3-v1
+voteCount,gastondana/arc-agi-2-starter,ARC-AGI-2-Starter,GasMan,2026-04-07T01:58:57.783Z,22,https://www.kaggle.com/code/gastondana/arc-agi-2-starter
+voteCount,boristown/agi-arc-route-2-qwen3-5-4b-lora-compat,【暗黑AGI】ARC Route 2 Qwen3.5-4B LoRA Compat,暗黑AGI,2026-06-26T18:16:50.513Z,20,https://www.kaggle.com/code/boristown/agi-arc-route-2-qwen3-5-4b-lora-compat
+voteCount,aminmahmoudalifayed/truth-guard,TRUTH GUARD 🥇,Dr/ameen Fayed,2026-03-29T00:08:48.140Z,20,https://www.kaggle.com/code/aminmahmoudalifayed/truth-guard
+voteCount,andreshzapke/starter-notebook-qwen-lora-stop-loss,Starter Notebook: Qwen+LoRa. Stop Loss,Andres H. Zapke,2026-07-23T06:54:22.093Z,17,https://www.kaggle.com/code/andreshzapke/starter-notebook-qwen-lora-stop-loss
+voteCount,poonszesen/nvarc-solution,NVARC Solution,theredbluepill,2026-04-06T02:42:59.807Z,17,https://www.kaggle.com/code/poonszesen/nvarc-solution
+voteCount,lucifer19/arc-agi-2-blackcat-raw-signal-challenger,ARC-AGI-2 BlackCat Raw-Signal Challenger,Krizsó Gergely,2026-08-11T06:13:19.240Z,16,https://www.kaggle.com/code/lucifer19/arc-agi-2-blackcat-raw-signal-challenger
+voteCount,ravi123a321at/arc-agi-2,Arc Agi 2,Ravindra,2026-07-02T06:04:27.653Z,16,https://www.kaggle.com/code/ravi123a321at/arc-agi-2
+voteCount,madarshbb/reproduce-nvarc-2025-results,Reproduce NVARC 2025 Results,Adarsh,2026-07-27T19:43:24.693Z,16,https://www.kaggle.com/code/madarshbb/reproduce-nvarc-2025-results
+voteCount,yaroslavkholmirzayev/arc-2-2026-qwen3-unsloth-arpl-2,ARC-2 2026 -- Qwen3 Unsloth Arpl-2,Yaroslav kholmirzayev,2026-04-01T23:13:18.890Z,16,https://www.kaggle.com/code/yaroslavkholmirzayev/arc-2-2026-qwen3-unsloth-arpl-2
+voteCount,prvsiyan/arc-agi-2-public-frontier-perfpatch-evidence-lab,ARC-AGI-2 Public Frontier Perfpatch Evidence Lab,prvsiyan,2026-08-02T06:39:10.553Z,15,https://www.kaggle.com/code/prvsiyan/arc-agi-2-public-frontier-perfpatch-evidence-lab
+voteCount,christopherdaleman/arc-2026-nvarc-trm-aggressive-cost-order,ARC 2026 NVARC TRM Aggressive Cost Order,ChristopherDAleman,2026-07-23T18:51:09.393Z,15,https://www.kaggle.com/code/christopherdaleman/arc-2026-nvarc-trm-aggressive-cost-order
+voteCount,mirzamilanfarabi/arc2-qwen3-unsloth-flash-lora-batch4-queue-mar-26,arc2_qwen3_unsloth_flash_lora_batch4_queue Mar-26,Mirza Milan Farabi,2026-03-25T18:55:13.763Z,15,https://www.kaggle.com/code/mirzamilanfarabi/arc2-qwen3-unsloth-flash-lora-batch4-queue-mar-26
+voteCount,ravi123a321at/failed-in-aimo,Failed in AIMO,Ravindra,2026-07-05T08:27:43.650Z,14,https://www.kaggle.com/code/ravi123a321at/failed-in-aimo
+voteCount,boristown/agi-arc-route-3-direct-large-model-no-lora,【暗黑AGI】ARC Route 3 Direct Large-Model No-LoRA,暗黑AGI,2026-06-29T12:23:25.820Z,14,https://www.kaggle.com/code/boristown/agi-arc-route-3-direct-large-model-no-lora
+voteCount,mirzamilanfarabi/nvarc-2025-new-updates-2-apr-24,NVARC 2025 - New updates 2 Apr-24,Mirza Milan Farabi,2026-04-25T18:23:12.227Z,14,https://www.kaggle.com/code/mirzamilanfarabi/nvarc-2025-new-updates-2-apr-24
+voteCount,aidensong123/arc-agi-2-rule-based-baseline,ARC-AGI-2 Rule-Based Baseline,AidenSong123,2026-03-28T01:48:20.173Z,14,https://www.kaggle.com/code/aidensong123/arc-agi-2-rule-based-baseline
+voteCount,adaluvu/arc-agi-2-inference-fine-tuned-qwen3-v1,[ARC-AGI-2] Inference fine tuned qwen3 v1,Adaluvu,2026-03-27T03:55:14.093Z,14,https://www.kaggle.com/code/adaluvu/arc-agi-2-inference-fine-tuned-qwen3-v1
+voteCount,sankalpsthakur/arc-agi2-nvarc-perfpatch-baseline-v1,arc-agi2-nvarc-perfpatch-baseline-v1,Sankalp Thakur,2026-08-01T19:46:16.247Z,13,https://www.kaggle.com/code/sankalpsthakur/arc-agi2-nvarc-perfpatch-baseline-v1
+voteCount,boristown/agi-arc-agi-2-2026,【暗黑AGI】ARC-AGI-2-2026,暗黑AGI,2026-06-26T01:00:30.953Z,13,https://www.kaggle.com/code/boristown/agi-arc-agi-2-2026
+hotness,tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner,ARC Prize 2026 ARC AGI 2 Ultra Reasoner,K.THARUN KUMAR,2026-09-01T00:40:15.817Z,,https://www.kaggle.com/code/tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner
+hotness,sophie555/arc26-exp031-c3264,arc26-exp031-c3264,Sophie555,2026-08-31T14:01:50.187Z,1,https://www.kaggle.com/code/sophie555/arc26-exp031-c3264
+hotness,luxluxshan/arc2-nvarc-v1,ARC2 NVARC+ v1,Luxshan Thavarasa,2026-08-23T10:06:24.453Z,26,https://www.kaggle.com/code/luxluxshan/arc2-nvarc-v1
+hotness,fayche/arc-prize-2026-solver,ARC Prize 2026 Solver,Fayche,2026-08-27T22:44:29.910Z,40,https://www.kaggle.com/code/fayche/arc-prize-2026-solver
+hotness,darkmatternet/arc2-nvarc-public-anchor-v1,ARC2 NVARC Public Anchor V1,DarkMatterNet,2026-08-25T03:10:36.730Z,5,https://www.kaggle.com/code/darkmatternet/arc2-nvarc-public-anchor-v1
+hotness,oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2,ARC2 Mikelou LB33.89 Public Reproduction v2,Lindicaphxag,2026-08-26T13:58:58.217Z,3,https://www.kaggle.com/code/oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2
+hotness,alexbilltai/notebook2b6080e881,notebook2b6080e881,alex bill tai,2026-09-01T00:41:09.113Z,1,https://www.kaggle.com/code/alexbilltai/notebook2b6080e881
+hotness,evgendvorkin/arc-2-2026,ARC_2_2026,Дворкин Евгений Владимирович,2026-08-28T13:46:15.973Z,4,https://www.kaggle.com/code/evgendvorkin/arc-2-2026
+hotness,sml0820/arc-lb33-fork,arc lb33 fork,sml0820,2026-08-19T03:15:27.597Z,3,https://www.kaggle.com/code/sml0820/arc-lb33-fork
+hotness,foysalemonshanto/failed-in-aimo,Failed in AIMO,FOYSAL,2026-06-14T10:21:25.613Z,3,https://www.kaggle.com/code/foysalemonshanto/failed-in-aimo
+hotness,mhsung/ai-triz-arc-sufield-solver,ai-triz-arc-sufield-solver,ClemsonTigerTW,2026-08-29T03:09:35.330Z,2,https://www.kaggle.com/code/mhsung/ai-triz-arc-sufield-solver
+hotness,michaeloflaherty/arc-agi-2-frozen-v0-8-offline-baseline,ARC-AGI-2 Frozen v0.8 Offline Baseline,Michael O'Flaherty,2026-08-17T13:13:56.340Z,2,https://www.kaggle.com/code/michaeloflaherty/arc-agi-2-frozen-v0-8-offline-baseline
+hotness,manderson240/cohezion-arc-agi-2-autoharness-solver,cohezion-arc-agi-2-autoharness-solver,Mike Anderson,2026-08-25T19:12:16.320Z,2,https://www.kaggle.com/code/manderson240/cohezion-arc-agi-2-autoharness-solver
+hotness,beacontwins/beacon-arc-v14-ship,beacon arc v14 ship,BeaconTwins,2026-08-20T20:11:53.670Z,2,https://www.kaggle.com/code/beacontwins/beacon-arc-v14-ship
+hotness,olzhaskolzhabay/arc-prize-2026-from-pixels-to-objects,ARC Prize 2026: From Pixels to Objects,Olzhas Kolzhabay,2026-08-18T16:00:37.450Z,2,https://www.kaggle.com/code/olzhaskolzhabay/arc-prize-2026-from-pixels-to-objects
+hotness,ayodejiibrahimlateef/arc2-v45-stable-perf-l4,ARC2 v45 Stable Perf L4,Ayodeji,2026-07-22T06:21:49.240Z,2,https://www.kaggle.com/code/ayodejiibrahimlateef/arc2-v45-stable-perf-l4
+hotness,anvithpothula/arc-aegis-fork,ARC Aegis Fork,Anvith Pothula,2026-07-14T01:43:48.903Z,2,https://www.kaggle.com/code/anvithpothula/arc-aegis-fork
+hotness,quarkliu/arc2-qwen35-9b-best-replay-public-20260828,ARC2 Qwen35 9B Best Replay Public 20260828,Positive Quark,2026-08-29T00:14:47.607Z,1,https://www.kaggle.com/code/quarkliu/arc2-qwen35-9b-best-replay-public-20260828
+hotness,daguniang/arc-agi-2-mdl-program-synthesis-solver,ARC-AGI-2 MDL Program Synthesis Solver,daguniang,2026-08-17T13:10:45.623Z,1,https://www.kaggle.com/code/daguniang/arc-agi-2-mdl-program-synthesis-solver
+hotness,najunghwan/arcagi2-madarsh-nvarc-pathfix,arcagi2-madarsh-nvarc-pathfix,JungHwan,2026-08-22T15:01:50.650Z,,https://www.kaggle.com/code/najunghwan/arcagi2-madarsh-nvarc-pathfix
+hotness,carlysipahutar/arc-agi-2-dsl-symbolic-search-v0-2-0,arc-agi-2-dsl-symbolic-search-v0.2.0,carly sipahutar,2026-08-22T14:41:34.450Z,,https://www.kaggle.com/code/carlysipahutar/arc-agi-2-dsl-symbolic-search-v0-2-0
+hotness,beacontwins/beacon-arc-v13-1-ship,beacon arc v13 1 ship,BeaconTwins,2026-08-20T17:39:43.617Z,,https://www.kaggle.com/code/beacontwins/beacon-arc-v13-1-ship
+hotness,thierrytuz/arc2-audit-elagage-certifie,arc2 audit elagage certifie,Thierry Tuz,2026-08-20T14:38:48.887Z,,https://www.kaggle.com/code/thierrytuz/arc2-audit-elagage-certifie
+hotness,najunghwan/arc-agi2-sigint-symbolic-hybrid-testmode,arc-agi2-sigint-symbolic-hybrid-testmode,JungHwan,2026-08-22T14:31:41.610Z,,https://www.kaggle.com/code/najunghwan/arc-agi2-sigint-symbolic-hybrid-testmode
+hotness,mdmahfujulkarim/arcagi2-dsl-baseline-v2,Arcagi2 Dsl Baseline V2,Md.Mahfujul Karim,2026-08-29T04:51:52.783Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2
+hotness,suprasm/arc-agi-2-nvarc-p100,arc-agi-2-nvarc-p100,Ricky,2026-08-28T02:22:38.880Z,,https://www.kaggle.com/code/suprasm/arc-agi-2-nvarc-p100
+hotness,mdmahfujulkarim/arcagi2-dsl-baseline-v2-public,ARCAGI2 DSL Baseline v2 (Public),Md.Mahfujul Karim,2026-08-23T02:41:52.657Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2-public
+hotness,stmugiwara/hermes-arc-agi2-baseline-v3,Hermes ARC AGI2 Baseline v3,St Mugiwara,2026-08-27T17:11:16.527Z,,https://www.kaggle.com/code/stmugiwara/hermes-arc-agi2-baseline-v3
+hotness,beacontwins/beacon-arc-v16-ship,beacon arc v16 ship,BeaconTwins,2026-08-21T19:53:04.657Z,,https://www.kaggle.com/code/beacontwins/beacon-arc-v16-ship
+hotness,carlysipahutar/arc-agi-2-dsl-program-synthesis-v0-1-0,arc-agi-2-dsl-program-synthesis-v0.1.0,carly sipahutar,2026-08-21T20:03:07.053Z,,https://www.kaggle.com/code/carlysipahutar/arc-agi-2-dsl-program-synthesis-v0-1-0
+hotness,sourabghosh/arcagi22,arcagi22,Sourab Ghosh,2026-08-18T11:04:19.567Z,,https://www.kaggle.com/code/sourabghosh/arcagi22
+hotness,abhirajhiwale/arc-agi-2-pinned-v73-baseline,ARC AGI 2 Pinned V73 Baseline,ABHIRAJ,2026-08-25T07:13:34.867Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-pinned-v73-baseline
+hotness,sml0820/arc-oracle-audit,arc oracle audit,sml0820,2026-08-24T23:12:57.630Z,,https://www.kaggle.com/code/sml0820/arc-oracle-audit
+hotness,najunghwan/arcagi2-rokaiya-nvarc-pathfix,arcagi2-rokaiya-nvarc-pathfix,JungHwan,2026-08-22T15:31:30.870Z,,https://www.kaggle.com/code/najunghwan/arcagi2-rokaiya-nvarc-pathfix
+hotness,nomaanz/arc-agi-2-dsl-solver-v3,ARC-AGI-2 DSL Solver V3,Mohammed Nomaan,2026-08-17T12:16:21.327Z,,https://www.kaggle.com/code/nomaanz/arc-agi-2-dsl-solver-v3
+hotness,dragoctlin/arc-selection-stability-vs-likelihood,ARC selection stability vs likelihood,Dragoș Cătălin,2026-08-17T00:02:34.470Z,2,https://www.kaggle.com/code/dragoctlin/arc-selection-stability-vs-likelihood
+hotness,najunghwan/arcagi2-soren-vanilla-exact,arcagi2-soren-vanilla-exact,JungHwan,2026-08-16T17:57:07.343Z,1,https://www.kaggle.com/code/najunghwan/arcagi2-soren-vanilla-exact
+hotness,michaeloflaherty/arc-agi-2-exact-v3-baseline,ARC-AGI-2 Exact v3 Baseline,Michael O'Flaherty,2026-08-16T21:01:35.493Z,,https://www.kaggle.com/code/michaeloflaherty/arc-agi-2-exact-v3-baseline
+hotness,najunghwan/arcagi2-salvapiol-trm-qwen-v2,arcagi2-salvapiol-trm-qwen-v2,JungHwan,2026-08-16T16:30:59.207Z,1,https://www.kaggle.com/code/najunghwan/arcagi2-salvapiol-trm-qwen-v2
+hotness,najunghwan/arcagi2-chiaka-learned-aimo-pathfix,arcagi2-chiaka-learned-aimo-pathfix,JungHwan,2026-08-16T17:25:30.073Z,,https://www.kaggle.com/code/najunghwan/arcagi2-chiaka-learned-aimo-pathfix
+hotness,dragoctlin/arc-agi-2-leave-one-out-hypothesis-validation,ARC AGI 2 leave one out hypothesis validation,Dragoș Cătălin,2026-08-16T15:08:22.347Z,,https://www.kaggle.com/code/dragoctlin/arc-agi-2-leave-one-out-hypothesis-validation
+hotness,najunghwan/arcagi2-soren-e48v2,arcagi2-soren-e48v2,JungHwan,2026-08-16T13:10:23.643Z,,https://www.kaggle.com/code/najunghwan/arcagi2-soren-e48v2
+hotness,buihuynhgiahuy/submit1,submit1,Bui Huynh Gia Huy,2026-08-16T04:00:37.157Z,1,https://www.kaggle.com/code/buihuynhgiahuy/submit1
+hotness,najunghwan/arcagi2-salvapiol-trm-qwen,arcagi2-salvapiol-trm-qwen,JungHwan,2026-08-16T11:44:14.013Z,,https://www.kaggle.com/code/najunghwan/arcagi2-salvapiol-trm-qwen
+hotness,najunghwan/arcagi2-yusuke-p073-recovery,arcagi2-yusuke-p073-recovery,JungHwan,2026-08-16T08:42:00.127Z,,https://www.kaggle.com/code/najunghwan/arcagi2-yusuke-p073-recovery
+hotness,najunghwan/arcagi2-soren-e48,arcagi2-soren-e48,JungHwan,2026-08-16T08:05:35.150Z,,https://www.kaggle.com/code/najunghwan/arcagi2-soren-e48
+hotness,najunghwan/arcagi2-koushik-aegis-triad,arcagi2-koushik-aegis-triad,JungHwan,2026-08-15T00:05:19.650Z,1,https://www.kaggle.com/code/najunghwan/arcagi2-koushik-aegis-triad
+hotness,jazivxt/visionary-pun-engine-arc2-v2-rescue,Visionary Pun Engine ARC2 v2 Rescue,jazivxt,2026-08-15T03:01:51.257Z,,https://www.kaggle.com/code/jazivxt/visionary-pun-engine-arc2-v2-rescue
+hotness,antoinegg1/arc-prize-2026-public-mount-probe,ARC Prize 2026 Public Mount Probe,Changye Li,2026-08-15T01:32:50.777Z,,https://www.kaggle.com/code/antoinegg1/arc-prize-2026-public-mount-probe
+hotness,aghasalimmustafazada/arc-agi-2-dsl-search,ARC-AGI-2 DSL search,Aghasalim Mustafazada,2026-08-14T16:37:31.547Z,1,https://www.kaggle.com/code/aghasalimmustafazada/arc-agi-2-dsl-search
+commentCount,mpwolke/raider-of-the-arc-agi,Raider of the ARC AGI,Marília Prata,2026-03-25T21:43:05.683Z,40,https://www.kaggle.com/code/mpwolke/raider-of-the-arc-agi
+commentCount,nihilisticneuralnet/baseline-nvarc-arc-25-winning-solution-for-t4x2,[Baseline]NVARC ARC'25 Winning Solution (for T4x2),parthenos,2026-04-03T07:34:30.730Z,202,https://www.kaggle.com/code/nihilisticneuralnet/baseline-nvarc-arc-25-winning-solution-for-t4x2
+commentCount,lucifer19/arc-agi-2-blackcat-raw-signal-challenger,ARC-AGI-2 BlackCat Raw-Signal Challenger,Krizsó Gergely,2026-08-11T06:13:19.240Z,16,https://www.kaggle.com/code/lucifer19/arc-agi-2-blackcat-raw-signal-challenger
+commentCount,allegich/arc-agi-2026-visualization-all-1000-120-t,ARC-AGI 2026: Visualization all 1000+120 t,neoleg,2026-03-25T21:30:07.487Z,27,https://www.kaggle.com/code/allegich/arc-agi-2026-visualization-all-1000-120-t
+commentCount,andreshzapke/quick-eda,Quick EDA,Andres H. Zapke,2026-06-04T14:46:22.680Z,3,https://www.kaggle.com/code/andreshzapke/quick-eda
+commentCount,karnakbaevarthur/logic-profiler-for-each-task,Logic Profiler for Each Task,Karnakbayev Artur,2026-04-26T09:22:37.650Z,48,https://www.kaggle.com/code/karnakbaevarthur/logic-profiler-for-each-task
+commentCount,koushikrudra/failed-in-aimo,Failed in AIMO,Koushik Rudra,2026-08-03T07:27:34.347Z,454,https://www.kaggle.com/code/koushikrudra/failed-in-aimo
+commentCount,kalyankkr/starter-guide-with-baseline,Starter-guide with Baseline,Kalyan,2026-05-20T22:33:14.190Z,13,https://www.kaggle.com/code/kalyankkr/starter-guide-with-baseline
+commentCount,alexbilltai/notebook2b6080e881,notebook2b6080e881,alex bill tai,2026-09-01T00:41:09.113Z,1,https://www.kaggle.com/code/alexbilltai/notebook2b6080e881
+commentCount,busyaprime/arc-agi-2-what-actually-makes-a-task-hard,ARC-AGI-2 what actually makes a task hard,Busya PRIME,2026-08-10T14:05:25.850Z,1,https://www.kaggle.com/code/busyaprime/arc-agi-2-what-actually-makes-a-task-hard
+commentCount,sorenravn/arc2-champion-e48,ARC2 champion E48,Søren Ravn Andersen,2026-08-01T04:24:07.180Z,5,https://www.kaggle.com/code/sorenravn/arc2-champion-e48
+commentCount,konstantinboyko/unsloth-2026-7-2-torch-2-10-0-cu128-patched,unsloth-2026.7.2-torch-2.10.0+cu128-patched,AI-Cat,2026-07-12T12:12:01.900Z,9,https://www.kaggle.com/code/konstantinboyko/unsloth-2026-7-2-torch-2-10-0-cu128-patched
+commentCount,konstantinboyko/unsloth-2026-7-2-torch-2-10-0-cu128,unsloth-2026.7.2-torch-2.10.0+cu128,AI-Cat,2026-07-08T17:53:59.853Z,6,https://www.kaggle.com/code/konstantinboyko/unsloth-2026-7-2-torch-2-10-0-cu128
+commentCount,koushikrudra/arc-agi2-aegis-triad-v1,ARC AGI2 Aegis Triad v1,Koushik Rudra,2026-07-14T07:42:36.640Z,23,https://www.kaggle.com/code/koushikrudra/arc-agi2-aegis-triad-v1
+commentCount,boristown/agi-arc-route-3-direct-large-model-no-lora,【暗黑AGI】ARC Route 3 Direct Large-Model No-LoRA,暗黑AGI,2026-06-29T12:23:25.820Z,14,https://www.kaggle.com/code/boristown/agi-arc-route-3-direct-large-model-no-lora
+commentCount,boristown/agi-arc-route-2-qwen3-5-4b-lora-compat,【暗黑AGI】ARC Route 2 Qwen3.5-4B LoRA Compat,暗黑AGI,2026-06-26T18:16:50.513Z,20,https://www.kaggle.com/code/boristown/agi-arc-route-2-qwen3-5-4b-lora-compat
+commentCount,andreshzapke/starter-notebook-qwen-lora-stop-loss,Starter Notebook: Qwen+LoRa. Stop Loss,Andres H. Zapke,2026-07-23T06:54:22.093Z,17,https://www.kaggle.com/code/andreshzapke/starter-notebook-qwen-lora-stop-loss
+commentCount,junaid512/arc-agi-enhanced-solution,ARC-AGI Enhanced Solution,Muhammad Junaid,2026-04-15T14:51:36.597Z,133,https://www.kaggle.com/code/junaid512/arc-agi-enhanced-solution
+commentCount,shota0205/arc-prize-2026-ttt-dsl-v3,ARC Prize 2026 - TTT + DSL v3,SHOTA TAKIYANAGI,2026-04-14T01:51:37.027Z,12,https://www.kaggle.com/code/shota0205/arc-prize-2026-ttt-dsl-v3
+commentCount,yaroslavkholmirzayev/arc-2-2026-qwen3-unsloth-arpl-2,ARC-2 2026 -- Qwen3 Unsloth Arpl-2,Yaroslav kholmirzayev,2026-04-01T23:13:18.890Z,16,https://www.kaggle.com/code/yaroslavkholmirzayev/arc-2-2026-qwen3-unsloth-arpl-2
+commentCount,junaid512/arc-prize-2026-arc-agi-2, ARC Prize 2026 - ARC-AGI-2 ,Muhammad Junaid,2026-03-31T16:25:34.387Z,13,https://www.kaggle.com/code/junaid512/arc-prize-2026-arc-agi-2
+commentCount,baidalinadilzhan/prev-year-s-compressarc-method-p100-gpu-lb-1-67,Prev Year's CompressARC Method P100 gpu LB[1.67],Baidalin Adilzhan [dsmlkz],2026-03-27T13:38:24.300Z,74,https://www.kaggle.com/code/baidalinadilzhan/prev-year-s-compressarc-method-p100-gpu-lb-1-67
+commentCount,adaluvu/arc-agi-2-eda-training-qwen3-baseline,[ARC-AGI-2] EDA + Training Qwen3 baseline,Adaluvu,2026-03-27T03:38:30.997Z,30,https://www.kaggle.com/code/adaluvu/arc-agi-2-eda-training-qwen3-baseline
+commentCount,aminmahmoudalifayed/truth-guard,TRUTH GUARD 🥇,Dr/ameen Fayed,2026-03-29T00:08:48.140Z,20,https://www.kaggle.com/code/aminmahmoudalifayed/truth-guard
+commentCount,tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner,ARC Prize 2026 ARC AGI 2 Ultra Reasoner,K.THARUN KUMAR,2026-09-01T00:40:15.817Z,,https://www.kaggle.com/code/tharunkumar369/arc-prize-2026-arc-agi-2-ultra-reasoner
+commentCount,anglolodorf/arc-2026-hybrid-solver-our-solver-nvarc-qwen,ARC 2026 Hybrid Solver (Our Solver + NVARC Qwen),ANGOUAH,2026-09-01T07:16:52.150Z,1,https://www.kaggle.com/code/anglolodorf/arc-2026-hybrid-solver-our-solver-nvarc-qwen
+commentCount,sophie555/arc26-exp031-c3264,arc26-exp031-c3264,Sophie555,2026-08-31T14:01:50.187Z,1,https://www.kaggle.com/code/sophie555/arc26-exp031-c3264
+commentCount,sml0820/nvarc-stage1-gate-eval-v2-four-arm,nvarc stage1 gate eval v2 four arm,sml0820,2026-09-01T11:16:45.990Z,,https://www.kaggle.com/code/sml0820/nvarc-stage1-gate-eval-v2-four-arm
+commentCount,sunseekerrx/savr-arc-v2-binding-preserving-reasoning,SAVR ARC v2 Binding Preserving Reasoning,SunSeeker染汐,2026-08-30T09:43:07.340Z,,https://www.kaggle.com/code/sunseekerrx/savr-arc-v2-binding-preserving-reasoning
+commentCount,yjsh2003/arc2026-qwen3-4b-ttt-4xl4-1,ARC2026_Qwen3_4B_TTT_4xL4 (1),JiashengYun,2026-08-30T07:41:04.413Z,,https://www.kaggle.com/code/yjsh2003/arc2026-qwen3-4b-ttt-4xl4-1
+commentCount,quarkliu/arc2-qwen35-9b-best-replay-public-20260828,ARC2 Qwen35 9B Best Replay Public 20260828,Positive Quark,2026-08-29T00:14:47.607Z,1,https://www.kaggle.com/code/quarkliu/arc2-qwen35-9b-best-replay-public-20260828
+commentCount,abhirajhiwale/arc-agi-2-verified-repro-fork-of-the-v73-baseline,ARC-AGI-2 Verified Repro Fork of the V73 Baseline,ABHIRAJ,2026-08-28T16:09:16.903Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-verified-repro-fork-of-the-v73-baseline
+commentCount,sml0820/nvarc-ttdpo-pilot,nvarc ttdpo pilot,sml0820,2026-08-28T14:52:13.697Z,,https://www.kaggle.com/code/sml0820/nvarc-ttdpo-pilot
+commentCount,sml0820/nvarc-ttdpo-smoke,nvarc ttdpo smoke,sml0820,2026-08-28T14:21:06.597Z,,https://www.kaggle.com/code/sml0820/nvarc-ttdpo-smoke
+commentCount,ashokgaire/notebookbb9e587dbc,notebookbb9e587dbc,Ashok Gaire,2026-08-28T15:38:10.167Z,,https://www.kaggle.com/code/ashokgaire/notebookbb9e587dbc
+commentCount,sml0820/nvarc-ablate-b-11native,nvarc ablate b 11native,sml0820,2026-08-27T20:11:50.557Z,,https://www.kaggle.com/code/sml0820/nvarc-ablate-b-11native
+commentCount,stmugiwara/hermes-arc-agi2-baseline-v3,Hermes ARC AGI2 Baseline v3,St Mugiwara,2026-08-27T17:11:16.527Z,,https://www.kaggle.com/code/stmugiwara/hermes-arc-agi2-baseline-v3
+commentCount,suprasm/arc-agi-2-nvarc-p100,arc-agi-2-nvarc-p100,Ricky,2026-08-28T02:22:38.880Z,,https://www.kaggle.com/code/suprasm/arc-agi-2-nvarc-p100
+commentCount,oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2,ARC2 Mikelou LB33.89 Public Reproduction v2,Lindicaphxag,2026-08-26T13:58:58.217Z,3,https://www.kaggle.com/code/oblivicore/arc2-mikelou-lb33-89-public-reproduction-v2
+commentCount,sml0820/nvarc-ttt-s6,nvarc ttt s6,sml0820,2026-08-25T19:13:51.780Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s6
+commentCount,sml0820/nvarc-ttt-s6-eval,nvarc ttt s6 eval,sml0820,2026-08-25T15:04:30.353Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s6-eval
+commentCount,abhirajhiwale/arc-agi-2-pinned-v73-baseline,ARC AGI 2 Pinned V73 Baseline,ABHIRAJ,2026-08-25T07:13:34.867Z,,https://www.kaggle.com/code/abhirajhiwale/arc-agi-2-pinned-v73-baseline
+commentCount,peter123321123/six-class-best4-direct-legacy-replay-63e-p100,Six Class Best4 Direct Legacy Replay 63E P100,peter123321123,2026-08-25T17:14:20.480Z,,https://www.kaggle.com/code/peter123321123/six-class-best4-direct-legacy-replay-63e-p100
+commentCount,darkmatternet/arc2-nvarc-public-anchor-v1,ARC2 NVARC Public Anchor V1,DarkMatterNet,2026-08-25T03:10:36.730Z,5,https://www.kaggle.com/code/darkmatternet/arc2-nvarc-public-anchor-v1
+commentCount,mdmahfujulkarim/arcagi2-dsl-baseline-v2,Arcagi2 Dsl Baseline V2,Md.Mahfujul Karim,2026-08-29T04:51:52.783Z,,https://www.kaggle.com/code/mdmahfujulkarim/arcagi2-dsl-baseline-v2
+commentCount,sml0820/nvarc-family-s4b-eval,nvarc family s4b eval,sml0820,2026-08-24T18:01:57.773Z,,https://www.kaggle.com/code/sml0820/nvarc-family-s4b-eval
+commentCount,sml0820/nvarc-ttt-s5-eval,nvarc ttt s5 eval,sml0820,2026-08-24T23:13:00.280Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s5-eval
+commentCount,sml0820/nvarc-ttt-s5,nvarc ttt s5,sml0820,2026-08-24T17:29:59.587Z,,https://www.kaggle.com/code/sml0820/nvarc-ttt-s5
+commentCount,manderson240/cohezion-arc-agi-2-autoharness-solver,cohezion-arc-agi-2-autoharness-solver,Mike Anderson,2026-08-25T19:12:16.320Z,2,https://www.kaggle.com/code/manderson240/cohezion-arc-agi-2-autoharness-solver

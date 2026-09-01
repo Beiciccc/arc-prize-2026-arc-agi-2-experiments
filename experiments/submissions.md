@@ -864,3 +864,11 @@ The accepted submission is ref `55490292`, submitted on `2026-08-13T19:42:05.957
 Context note: the August 11 run later returned `30.14`. The August 13 refresh indexed newer public notebooks and discussions; the reviewed material did not provide a reproducible, locally validated candidate with a demonstrated advantage over the owned Program063 artifact. Recent analysis continued to indicate that the evaluation distribution is harder than training.
 
 The selected artifact was therefore the exact validated Program063 V73 pinned-runtime submission. The local `submission.json` passed the 240-task schema check before submission. The official submission list changed from zero to one August 13 row and bound ref `55490292` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
+
+### 2026-09-01: Historical V3 Highest-Score Version
+
+The accepted submission is ref `55939426`, submitted on `2026-09-01T11:56:54.887Z` from owned historical V3 Version 3 / scriptVersionId `315432491`. Its public score is intentionally left pending until the next experiment cycle. The selected version had the highest complete score in the project record, `32.22`, while the immediately preceding run scored `30.56`.
+
+The local submission artifact passed the 240-task schema check. The official submission list changed from zero to one September 1 row and bound ref `55939426` to scriptVersionId `315432491`. No score or status query was made after that acceptance confirmation.
+
+The September context refresh added current Code and Discussion indexes. A newer normal-CUDA Program076 candidate was audited as a reproducible public research direction and retained for future evaluation; it was not used for this submission.
