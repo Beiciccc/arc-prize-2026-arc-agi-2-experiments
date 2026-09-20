@@ -98,7 +98,10 @@
 | 2026-08-07 | `55325560` | Frozen V3 with protected static synthesis overlay | `28.47` | Complete |
 | 2026-08-08 | `55338457` | Frozen V3 fallback after Program063 environment validation | `29.31` | Complete |
 | 2026-08-09 | `55368951` | Exact Program063 V73 with a pinned runtime | `29.72` | Complete |
-| 2026-08-11 | `55420680` | Program063 pinned-runtime fallback after Program067 validation | pending | Pending |
+| 2026-08-11 | `55420680` | Program063 pinned-runtime fallback after Program067 validation | `30.14` | Complete |
+| 2026-08-13 | `55490292` | Validated Program063 pinned-runtime repeat | `30.56` | Complete |
+| 2026-09-01 | `55939426` | Historical V3 highest-score version rerun | `29.72` | Complete |
+| 2026-09-20 | `56406759` | Program063 fixed-version repeat after paired output audit | pending | Accepted |
 
 ## Experiment Notes
 
@@ -847,7 +850,7 @@ Postmortem: `29.72` improved on the previous V3 fallback but remained below the 
 
 ### 2026-08-11: Program067 Validation And Program063 Fallback
 
-The accepted submission is ref `55420680`, submitted on `2026-08-11T02:09:52.910Z` from owned Program063 Version 1 / scriptVersionId `341141537`. Its public score is intentionally left pending until the next experiment cycle.
+The accepted submission is ref `55420680`, submitted on `2026-08-11T02:09:52.910Z` from owned Program063 Version 1 / scriptVersionId `341141537`. The official submission list later reported public score `30.14`.
 
 Context note: the August 9 Program063 run returned `29.72`. The refreshed leaderboard showed ranks 18 through 23 in the `32.78` tie group, so the strict top-20 target remained above that bucket. Rules and competition pages were unchanged. New discussions measured a substantially harder evaluation distribution and warned that headline training-set scores do not transfer directly.
 
@@ -855,20 +858,32 @@ The primary candidate was Yusuke Togashi's public Program067 run, scriptVersionI
 
 The public Program067 kernel submission request was rejected by Kaggle with HTTP `403`, and the official list remained at zero August 11 rows. The candidate therefore did not consume the daily slot. The fallback reused the exact owned Program063 pinned-runtime kernel, whose previous accepted run scored `29.72` and whose complete GPU validation remains schema-valid with four workers and no runtime errors.
 
-The official submission list then changed from zero to one August 11 row and bound ref `55420680` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
+The official submission list then changed from zero to one August 11 row and bound ref `55420680` to scriptVersionId `341141537`.
 
 ### 2026-08-13: Validated Program063 Repeat
 
-The accepted submission is ref `55490292`, submitted on `2026-08-13T19:42:05.957Z` from owned Program063 Version 1 / scriptVersionId `341141537`. Its public score is intentionally left pending until the next experiment cycle.
+The accepted submission is ref `55490292`, submitted on `2026-08-13T19:42:05.957Z` from owned Program063 Version 1 / scriptVersionId `341141537`. The official submission list later reported public score `30.56`.
 
 Context note: the August 11 run later returned `30.14`. The August 13 refresh indexed newer public notebooks and discussions; the reviewed material did not provide a reproducible, locally validated candidate with a demonstrated advantage over the owned Program063 artifact. Recent analysis continued to indicate that the evaluation distribution is harder than training.
 
-The selected artifact was therefore the exact validated Program063 V73 pinned-runtime submission. The local `submission.json` passed the 240-task schema check before submission. The official submission list changed from zero to one August 13 row and bound ref `55490292` to scriptVersionId `341141537`. No score or status query was made after that acceptance confirmation.
+The selected artifact was therefore the exact validated Program063 V73 pinned-runtime submission. The previously reported 240-task schema check applied to an independent root-level `submission.json`, not to the saved output of this kernel, and did not validate the artifact associated with the accepted code submission. The exact kernel's public-evaluation save output, documented on August 9, contains 120 tasks and 172 records, with SHA256 `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. The official submission list changed from zero to one August 13 row and bound ref `55490292` to scriptVersionId `341141537`.
 
 ### 2026-09-01: Historical V3 Highest-Score Version
 
-The accepted submission is ref `55939426`, submitted on `2026-09-01T11:56:54.887Z` from owned historical V3 Version 3 / scriptVersionId `315432491`. Its public score is intentionally left pending until the next experiment cycle. The selected version had the highest complete score in the project record, `32.22`, while the immediately preceding run scored `30.56`.
+The accepted submission is ref `55939426`, submitted on `2026-09-01T11:56:54.887Z` from owned historical V3 Version 3 / scriptVersionId `315432491`. The official submission list later reported public score `29.72`. Before this rerun, the selected version had the highest complete score in the project record, `32.22`, while the immediately preceding run scored `30.56`.
 
-The local submission artifact passed the 240-task schema check. The official submission list changed from zero to one September 1 row and bound ref `55939426` to scriptVersionId `315432491`. No score or status query was made after that acceptance confirmation.
+The previously reported 240-task schema check applied to an independent root-level file and did not establish the identity or validity of the artifact associated with the accepted code submission. Historical exact-version evidence for V3 / scriptVersionId `315432491` identifies its public-evaluation save output as 120 tasks and 172 records, with SHA256 `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`. This save-output validation is distinct from validation of predictions generated during the competition test rerun. The official submission list changed from zero to one September 1 row and bound ref `55939426` to scriptVersionId `315432491`.
 
 The September context refresh added current Code and Discussion indexes. A newer normal-CUDA Program076 candidate was audited as a reproducible public research direction and retained for future evaluation; it was not used for this submission.
+
+### 2026-09-20 UTC: Program063 Controlled Repeat
+
+Submission `56406759` was accepted at `2026-09-20T22:00:50.213Z` (September 21 in Asia/Shanghai), using Program063 owned Version 1 / scriptVersionId `341141537`. Its score remains pending. This is an unchanged-version reproducibility experiment; no new training or demonstrated accuracy improvement is claimed.
+
+The previous V3 submission returned `29.72`. Before this submission, the project best was `32.22` at rank 82, while rank 20 was `33.19`. Program063's three previous scores were `29.72`, `30.14`, and `30.56`; these observations do not establish that it will reach the top-20 threshold.
+
+The actual saved output was recovered from a storage path identifying scriptVersionId `341141537`, and its SHA256 matched `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. It passed the matching 120-task, 172-record evaluation schema. All four saved validation workers completed without traceback or CUDA out-of-memory evidence, and the three core source hashes matched the archived specification.
+
+Saved-output diagnostics were three correct records, two fully solved tasks, and 167 double-placeholder records. The saved GPU validation exercised only four tasks, so these are limited smoke-test diagnostics rather than a full evaluation estimate. A paired comparison against the latest Qiu minimal-performance replica found two different output records, zero additional correct records, and zero lost correct records. Historical V3 independently retained its known saved-output hash and the same schema counts.
+
+The inspected public candidates did not establish a current-version improvement: Dinesh's latest run had failed; the best scores displayed for Yusuke v100 and Lux v3 could not be attributed to those exact versions; and Lux's changed two-pass selector could replace an existing second prediction. The fixed Program063 artifact was retained for this controlled repeat. The official submission list gained exactly one matching row after endpoint acceptance.
