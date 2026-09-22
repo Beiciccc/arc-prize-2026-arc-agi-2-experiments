@@ -101,7 +101,8 @@
 | 2026-08-11 | `55420680` | Program063 pinned-runtime fallback after Program067 validation | `30.14` | Complete |
 | 2026-08-13 | `55490292` | Validated Program063 pinned-runtime repeat | `30.56` | Complete |
 | 2026-09-01 | `55939426` | Historical V3 highest-score version rerun | `29.72` | Complete |
-| 2026-09-20 | `56406759` | Program063 fixed-version repeat after paired output audit | pending | Accepted |
+| 2026-09-20 | `56406759` | Program063 fixed-version repeat after paired output audit | `31.39` | Complete |
+| 2026-09-22 | `56447064` | Program063 fixed-version repeat after seed audit | pending | Accepted |
 
 ## Experiment Notes
 
@@ -878,7 +879,7 @@ The September context refresh added current Code and Discussion indexes. A newer
 
 ### 2026-09-20 UTC: Program063 Controlled Repeat
 
-Submission `56406759` was accepted at `2026-09-20T22:00:50.213Z` (September 21 in Asia/Shanghai), using Program063 owned Version 1 / scriptVersionId `341141537`. Its score remains pending. This is an unchanged-version reproducibility experiment; no new training or demonstrated accuracy improvement is claimed.
+Submission `56406759` was accepted at `2026-09-20T22:00:50.213Z` (September 21 in Asia/Shanghai), using Program063 owned Version 1 / scriptVersionId `341141537`. The official submission list later reported status `COMPLETE` and public score `31.39`. This result did not exceed the project best of `32.22`. This is an unchanged-version reproducibility experiment; no new training or demonstrated accuracy improvement is claimed.
 
 The previous V3 submission returned `29.72`. Before this submission, the project best was `32.22` at rank 82, while rank 20 was `33.19`. Program063's three previous scores were `29.72`, `30.14`, and `30.56`; these observations do not establish that it will reach the top-20 threshold.
 
@@ -887,3 +888,13 @@ The actual saved output was recovered from a storage path identifying scriptVers
 Saved-output diagnostics were three correct records, two fully solved tasks, and 167 double-placeholder records. The saved GPU validation exercised only four tasks, so these are limited smoke-test diagnostics rather than a full evaluation estimate. A paired comparison against the latest Qiu minimal-performance replica found two different output records, zero additional correct records, and zero lost correct records. Historical V3 independently retained its known saved-output hash and the same schema counts.
 
 The inspected public candidates did not establish a current-version improvement: Dinesh's latest run had failed; the best scores displayed for Yusuke v100 and Lux v3 could not be attributed to those exact versions; and Lux's changed two-pass selector could replace an existing second prediction. The fixed Program063 artifact was retained for this controlled repeat. The official submission list gained exactly one matching row after endpoint acceptance.
+
+### 2026-09-22: Program063 Seed Audit and Repeat
+
+Submission `56447064` was accepted at `2026-09-22T00:35:17.970Z`, using Program063 owned Version 1 / scriptVersionId `341141537`. Its score remains pending. The prior submission returned `31.39`, giving four fixed-version observations of `29.72`, `30.14`, `30.56`, and `31.39` (mean `30.4525`, range `1.67`). These do not establish a persistent upward trend. The project best remained `32.22` at rank 82; rank 20 was `33.19`.
+
+The seed experiment checked an explanation raised in recent reproduction discussions. Program063 already fixes `PYTHONHASHSEED=0` and resets seed 42 at both worker and task boundaries; four worker reports and four task reports confirmed this. Three independent CPU processes with hash seed zero returned identical hashes, while seed-one and seed-two controls differed. An additional hash-seeding patch was therefore unnecessary for this version. CUDA deterministic algorithms remain disabled, and CPU hash repeatability does not establish GPU determinism or identify the sole cause of score variation.
+
+The actual saved output was freshly retrieved and bound to scriptVersionId `341141537`; SHA256 remained `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. It passed the matching 120-task, 172-record schema with three correct records, two fully solved tasks, and 167 double-placeholder records. This saved GPU validation exercised four tasks only and is not a full-set accuracy estimate.
+
+No model or inference parameter changed in this controlled repeat. The newly inspected Dinesh v62 run failed, and the completed wider-DFS pilot lacked a verified matched accuracy/runtime gain. The official submission list gained one matching record after endpoint acceptance.
