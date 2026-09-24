@@ -102,7 +102,8 @@
 | 2026-08-13 | `55490292` | Validated Program063 pinned-runtime repeat | `30.56` | Complete |
 | 2026-09-01 | `55939426` | Historical V3 highest-score version rerun | `29.72` | Complete |
 | 2026-09-20 | `56406759` | Program063 fixed-version repeat after paired output audit | `31.39` | Complete |
-| 2026-09-22 | `56447064` | Program063 fixed-version repeat after seed audit | pending | Accepted |
+| 2026-09-22 | `56447064` | Program063 fixed-version repeat after seed audit | `28.89` | Complete |
+| 2026-09-24 | `56507548` | Frozen V3 recent control after paired union audit | pending | Accepted |
 
 ## Experiment Notes
 
@@ -891,10 +892,22 @@ The inspected public candidates did not establish a current-version improvement:
 
 ### 2026-09-22: Program063 Seed Audit and Repeat
 
-Submission `56447064` was accepted at `2026-09-22T00:35:17.970Z`, using Program063 owned Version 1 / scriptVersionId `341141537`. Its score remains pending. The prior submission returned `31.39`, giving four fixed-version observations of `29.72`, `30.14`, `30.56`, and `31.39` (mean `30.4525`, range `1.67`). These do not establish a persistent upward trend. The project best remained `32.22` at rank 82; rank 20 was `33.19`.
+Submission `56447064` was accepted at `2026-09-22T00:35:17.970Z`, using Program063 owned Version 1 / scriptVersionId `341141537`. The official submission list later reported status `COMPLETE` and public score `28.89`. The five fixed-version observations are `29.72`, `30.14`, `30.56`, `31.39`, and `28.89` (mean `30.14`, range `2.50`). The latest result fell `2.50` points from the prior run, reflecting run-to-run variation rather than supporting continued score growth. These observations do not establish a persistent upward trend or a reliable gain from another repeat. At submission time, the project best remained `32.22` at rank 82; rank 20 was `33.19`.
 
 The seed experiment checked an explanation raised in recent reproduction discussions. Program063 already fixes `PYTHONHASHSEED=0` and resets seed 42 at both worker and task boundaries; four worker reports and four task reports confirmed this. Three independent CPU processes with hash seed zero returned identical hashes, while seed-one and seed-two controls differed. An additional hash-seeding patch was therefore unnecessary for this version. CUDA deterministic algorithms remain disabled, and CPU hash repeatability does not establish GPU determinism or identify the sole cause of score variation.
 
 The actual saved output was freshly retrieved and bound to scriptVersionId `341141537`; SHA256 remained `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. It passed the matching 120-task, 172-record schema with three correct records, two fully solved tasks, and 167 double-placeholder records. This saved GPU validation exercised four tasks only and is not a full-set accuracy estimate.
 
 No model or inference parameter changed in this controlled repeat. The newly inspected Dinesh v62 run failed, and the completed wider-DFS pilot lacked a verified matched accuracy/runtime gain. The official submission list gained one matching record after endpoint acceptance.
+
+### 2026-09-24: Frozen V3 Recent Control
+
+Submission `56507548` was accepted at `2026-09-24T00:46:18.003Z`, using historical V3 Version 3 / scriptVersionId `315432491`. Its score remains pending. This unchanged-version run adds a recent control observation; no new training or expected leaderboard improvement is claimed.
+
+The previous Program063 run returned `28.89`, bringing its five observed scores to a mean of `30.14` and range of `28.89-31.39`. Five recent visible frozen-V3 observations averaged `29.696`. These selected, non-paired observations do not establish superiority of either method, and V3's historical `32.22` best is not a prediction for the next run. The project remained rank 82 with best `32.22`, below the rank-20 score of `33.19`.
+
+Both saved outputs were freshly recovered with matching version-path and hash checks. V3 retained SHA256 `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`; Program063 retained `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. Both passed the 120-task, 172-record evaluation schema, with three correct records and 167 double-placeholders. They differed on two records but had identical correct-output sets.
+
+A fixed combination experiment attempted to fill only vacant or duplicate second guesses in Program063 using V3 proposals, preserving every first guess and distinct sourced second guess. It changed zero slots and gained zero correct outputs. This proposed combination was rejected. These are four-task saved-run diagnostics, not full evaluation estimates.
+
+The selected V3 log showed all four workers completing without traceback or CUDA out-of-memory markers. Its save-mode task filter does not restrict competition reruns. Newly inspected wider-DFS evidence exposed an unconditional 24-task pilot filter and no paired gain, so it was not used as a full-test submission candidate. Exactly one matching official row was confirmed after endpoint acceptance.
