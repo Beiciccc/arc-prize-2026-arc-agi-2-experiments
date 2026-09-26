@@ -103,7 +103,8 @@
 | 2026-09-01 | `55939426` | Historical V3 highest-score version rerun | `29.72` | Complete |
 | 2026-09-20 | `56406759` | Program063 fixed-version repeat after paired output audit | `31.39` | Complete |
 | 2026-09-22 | `56447064` | Program063 fixed-version repeat after seed audit | `28.89` | Complete |
-| 2026-09-24 | `56507548` | Frozen V3 recent control after paired union audit | pending | Accepted |
+| 2026-09-24 | `56507548` | Frozen V3 recent control after paired union audit | `28.19` | Complete |
+| 2026-09-26 | `56571999` | Fixed Program063 repeat after unseen-task scope checks | pending | Accepted |
 
 ## Experiment Notes
 
@@ -902,12 +903,24 @@ No model or inference parameter changed in this controlled repeat. The newly ins
 
 ### 2026-09-24: Frozen V3 Recent Control
 
-Submission `56507548` was accepted at `2026-09-24T00:46:18.003Z`, using historical V3 Version 3 / scriptVersionId `315432491`. Its score remains pending. This unchanged-version run adds a recent control observation; no new training or expected leaderboard improvement is claimed.
+Submission `56507548` was accepted at `2026-09-24T00:46:18.003Z`, using historical V3 Version 3 / scriptVersionId `315432491`. The official submission-list snapshot observed at `2026-09-26T06:41:11.940143Z` reports status `COMPLETE` and public score `28.19`. This unchanged-version run adds a recent control observation; no new training or demonstrated leaderboard improvement is claimed.
 
-The previous Program063 run returned `28.89`, bringing its five observed scores to a mean of `30.14` and range of `28.89-31.39`. Five recent visible frozen-V3 observations averaged `29.696`. These selected, non-paired observations do not establish superiority of either method, and V3's historical `32.22` best is not a prediction for the next run. The project remained rank 82 with best `32.22`, below the rank-20 score of `33.19`.
+The six recent visible completed observations bound to frozen V3 scriptVersionId `315432491`, from August 1 through September 24, are `30.56`, `28.89`, `30.00`, `29.31`, `29.72`, and `28.19` (mean `29.445`, sample SD `0.8400`, range `28.19-30.56`). The five completed Program063 observations bound to owned scriptVersionId `341141537`, from August 9 through September 22, are `29.72`, `30.14`, `30.56`, `31.39`, and `28.89` (mean `30.140`, sample SD `0.9324`, range `28.89-31.39`). These summaries exclude modified V3 variants and other script versions.
+
+The latest V3 control is `0.70` points below the preceding Program063 observation, and the V3 sample mean is `0.695` points lower. The recent control does not support V3 superiority over Program063. These small, selected, non-contemporaneous, non-paired samples also do not establish a causal advantage for Program063 or a reliable gain from another repeat. V3's historical `32.22` is an old maximum, not evidence of a current improvement or a prediction for the next run. Candidate selection must not treat repeated unchanged-version submissions as demonstrated progress; a new candidate needs exact-version identity and matched accuracy/runtime evidence, not a historical peak or completion status alone. At submission time, the project remained rank 82 with best `32.22`, below the rank-20 score of `33.19`; those ranks are historical context, not a September 26 refresh.
 
 Both saved outputs were freshly recovered with matching version-path and hash checks. V3 retained SHA256 `2c04b94292b7916fe8bdd5f7331ded03e1b67c7cfe67d50476fd3e5c3f7979b2`; Program063 retained `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. Both passed the 120-task, 172-record evaluation schema, with three correct records and 167 double-placeholders. They differed on two records but had identical correct-output sets.
 
 A fixed combination experiment attempted to fill only vacant or duplicate second guesses in Program063 using V3 proposals, preserving every first guess and distinct sourced second guess. It changed zero slots and gained zero correct outputs. This proposed combination was rejected. These are four-task saved-run diagnostics, not full evaluation estimates.
 
 The selected V3 log showed all four workers completing without traceback or CUDA out-of-memory markers. Its save-mode task filter does not restrict competition reruns. Newly inspected wider-DFS evidence exposed an unconditional 24-task pilot filter and no paired gain, so it was not used as a full-test submission candidate. Exactly one matching official row was confirmed after endpoint acceptance.
+
+### 2026-09-26: Program063 Scope-Checked Repeat
+
+Submission `56571999` was accepted at `2026-09-26T06:46:52.483Z`, using Program063 owned Version 1 / scriptVersionId `341141537`. Its score remains pending. The preceding frozen-V3 control returned `28.19`; neither that result nor the small historical samples establish a reliable advantage for another repeat. No model or inference parameter changed in this control observation.
+
+The actual saved output was freshly retrieved from storage paths identifying scriptVersionId `341141537`; SHA256 remained `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. It passed the matching 120-task, 172-record schema. Four saved validation workers completed without traceback or CUDA out-of-memory markers. Three correct records, two solved tasks and 167 double-placeholders remain four-task smoke diagnostics rather than full evaluation accuracy.
+
+A task-scope experiment isolated the reviewed starter selection loop under a restricted syntax allowlist. With 1, 7, 120, 240 and 317 synthetic unseen task IDs and varying numbers of test outputs, competition-rerun mode enumerated every task exactly once. The four-task development filter applied only in save mode. This checks task enumeration, not model accuracy, GPU completion or runtime. The starter SHA256 was `aa6bb2ef8bdd0bcca929c5c4d685d93ed06c7f7596958a8c14d1bc35a726651e`.
+
+The incremental public-code review found completed TTT and Perfpatch versions but no verified paired gain. Their notebook historical best scores were not bound to those exact versions. New methods remain candidates for controlled evaluation; missing public scores alone do not disqualify them. The selected fixed artifact added one matching official submission record. The pre-submission project best remained `32.22` at rank 82, below the rank-20 score of `33.19`.
