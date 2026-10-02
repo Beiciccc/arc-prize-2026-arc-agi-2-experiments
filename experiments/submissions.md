@@ -104,7 +104,8 @@
 | 2026-09-20 | `56406759` | Program063 fixed-version repeat after paired output audit | `31.39` | Complete |
 | 2026-09-22 | `56447064` | Program063 fixed-version repeat after seed audit | `28.89` | Complete |
 | 2026-09-24 | `56507548` | Frozen V3 recent control after paired union audit | `28.19` | Complete |
-| 2026-09-26 | `56571999` | Fixed Program063 repeat after unseen-task scope checks | pending | Accepted |
+| 2026-09-26 | `56571999` | Fixed Program063 repeat after unseen-task scope checks | `28.06` | Complete |
+| 2026-10-02 | `56768658` | Recovered H4 protected replay after same-run CPU audit | pending | Accepted |
 
 ## Experiment Notes
 
@@ -655,9 +656,9 @@ This submission is the single predeclared independent replication of the July 26
 
 The strict gate authenticated the exact Version 3 outputs and executed notebook, reproduced all twelve expected second-attempt changes, preserved every first attempt and independent sourced candidate, and passed every required check before the accepted row was recorded.
 
-A separate routing audit over the competition test inputs found 240 tasks and 259 output records but zero selected replay tasks. This submission should therefore be interpreted as an independent historical-v3 stochastic replication, not as evidence that the visible-evaluation replay gains transfer to the hidden scoring set.
+A separate routing audit over the downloadable test inputs found 240 tasks and 259 output records but zero selected replay tasks. Correction added October 2: the official data description identifies this downloadable file as a placeholder replaced during scoring. Zero activation on that file does not establish zero activation on the hidden scoring set. The earlier inference that this submission necessarily behaved as a plain historical-V3 replication is withdrawn; hidden routing was not observed.
 
-Postmortem: the `30.97` result improved on the first H4 run but remained below both the project best of `32.22` and the `32.64` top-20 threshold. Because the formal scoring-set router selected zero replay tasks, this result is treated as another observation from the historical-v3 stochastic family. No additional H4 rerun is planned without evidence that the specialists activate on the scoring set.
+Postmortem: the `30.97` result improved on the first H4 run but remained below both the project best of `32.22` and the `32.64` top-20 threshold. Neither the score change nor the public-evaluation gain establishes hidden-test improvement. The earlier decision to retire H4 relied partly on conflating the placeholder with the hidden scoring set; the October 2 recovery rechecks the exact saved artifact and same-run candidate-preservation properties before reconsidering it.
 
 ### 2026-07-30: Exact V40 V1 Upper-Tail Rerun
 
@@ -917,10 +918,24 @@ The selected V3 log showed all four workers completing without traceback or CUDA
 
 ### 2026-09-26: Program063 Scope-Checked Repeat
 
-Submission `56571999` was accepted at `2026-09-26T06:46:52.483Z`, using Program063 owned Version 1 / scriptVersionId `341141537`. Its score remains pending. The preceding frozen-V3 control returned `28.19`; neither that result nor the small historical samples establish a reliable advantage for another repeat. No model or inference parameter changed in this control observation.
+Submission `56571999` was accepted at `2026-09-26T06:46:52.483Z`, using Program063 owned Version 1 / scriptVersionId `341141537`. The October 2 official submission-list check reported status `COMPLETE` and public score `28.06`. This fixed-version repeat did not improve the project best of `32.22` and does not demonstrate an accuracy gain. The preceding frozen-V3 control returned `28.19`; neither that result nor the small historical samples establish a reliable advantage for another repeat. No model or inference parameter changed in this control observation.
 
 The actual saved output was freshly retrieved from storage paths identifying scriptVersionId `341141537`; SHA256 remained `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea`. It passed the matching 120-task, 172-record schema. Four saved validation workers completed without traceback or CUDA out-of-memory markers. Three correct records, two solved tasks and 167 double-placeholders remain four-task smoke diagnostics rather than full evaluation accuracy.
 
 A task-scope experiment isolated the reviewed starter selection loop under a restricted syntax allowlist. With 1, 7, 120, 240 and 317 synthetic unseen task IDs and varying numbers of test outputs, competition-rerun mode enumerated every task exactly once. The four-task development filter applied only in save mode. This checks task enumeration, not model accuracy, GPU completion or runtime. The starter SHA256 was `aa6bb2ef8bdd0bcca929c5c4d685d93ed06c7f7596958a8c14d1bc35a726651e`.
 
 The incremental public-code review found completed TTT and Perfpatch versions but no verified paired gain. Their notebook historical best scores were not bound to those exact versions. New methods remain candidates for controlled evaluation; missing public scores alone do not disqualify them. The selected fixed artifact added one matching official submission record. The pre-submission project best remained `32.22` at rank 82, below the rank-20 score of `33.19`.
+
+### 2026-10-02: Recovered H4 Protected Replay
+
+Submission `56768658` was accepted at `2026-10-02T07:31:27.163Z`, using existing H4 owned Version 3 / scriptVersionId `338027445`. Its score remains pending. The preceding Program063 submission returned `28.06`; the project best was still `32.22`, now rank 90, against a rank-20 score of `33.47`.
+
+The H4 source, same-run pre-specialist baseline, final predictions and candidate audit were recovered from storage paths bound to `338027445`. Every source body matched the saved executed file. Final-output SHA256: `4f4ea5e468e4e95edc5e6b78433723d5f53d07499ad58dd2de79afee0060d035`; same-run baseline SHA256: `52d973d4c7f4309f6a2f5dfa6d108640efd2ab58718fdf846a92a3f378363d8a`.
+
+A fresh CPU execution of the reviewed nine rule families reproduced the final prediction object in `32.596` seconds. The matched baseline had `3/172` correct records and two solved tasks; H4 had `15/172` correct records and eleven solved tasks. Twelve correct outputs were added and none lost. All first guesses and all nine sourced neural candidates were retained, with zero independent second guesses overwritten. Each changed record originally had zero sourced neural candidates, as documented by the saved decoder audit.
+
+Both prediction files passed the 120-task, 172-record schema. All four saved workers completed without traceback or CUDA out-of-memory markers, and the four neural core source modules matched frozen V3 after trailing-newline normalization. The neural save run still covers four tasks only. This public-evaluation regression check is not untouched holdout validation and does not predict hidden accuracy.
+
+The fresh placeholder routing check again selected zero of the visible 240 tasks. As clarified by the [official data description](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/data), this file is replaced with unseen tasks when scoring; its routing result does not reveal hidden-set activation. That distinction corrects the earlier July interpretation. H4's historical `28.89` and `30.97` results do not independently establish an uplift.
+
+This submission restores an existing protected rule extension after a fresh same-run audit, with no newly trained weights. The extension selects rules by exact fit to a task's demonstration pairs and abstains on conflicting rule predictions; it fills only source-proven vacant or duplicated second slots. The official list gained exactly one matching submission after endpoint acceptance.
