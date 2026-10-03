@@ -105,7 +105,8 @@
 | 2026-09-22 | `56447064` | Program063 fixed-version repeat after seed audit | `28.89` | Complete |
 | 2026-09-24 | `56507548` | Frozen V3 recent control after paired union audit | `28.19` | Complete |
 | 2026-09-26 | `56571999` | Fixed Program063 repeat after unseen-task scope checks | `28.06` | Complete |
-| 2026-10-02 | `56768658` | Recovered H4 protected replay after same-run CPU audit | pending | Accepted |
+| 2026-10-02 | `56768658` | Recovered H4 protected replay after same-run CPU audit | `30.42` | Complete |
+| 2026-10-03 | `56803048` | Program063 fallback after H4 shutdown-race audit | pending | Accepted |
 
 ## Experiment Notes
 
@@ -928,7 +929,7 @@ The incremental public-code review found completed TTT and Perfpatch versions bu
 
 ### 2026-10-02: Recovered H4 Protected Replay
 
-Submission `56768658` was accepted at `2026-10-02T07:31:27.163Z`, using existing H4 owned Version 3 / scriptVersionId `338027445`. Its score remains pending. The preceding Program063 submission returned `28.06`; the project best was still `32.22`, now rank 90, against a rank-20 score of `33.47`.
+Submission `56768658` was accepted at `2026-10-02T07:31:27.163Z`, using existing H4 owned Version 3 / scriptVersionId `338027445`. The official submission-list check at `2026-10-03T17:00:43.845383Z` (October 4 in Asia/Shanghai) confirmed status `COMPLETE` and public score `30.42`. This result did not exceed the project best of `32.22` and was below the earlier `30.97` from the same scriptVersionId (ref `55023331`); these unchanged-version observations are insufficient to establish an improvement. The preceding Program063 submission returned `28.06`; at H4 submission time, the project best was still `32.22`, rank 90, against a rank-20 score of `33.47`. Those ranks are historical context, not a refreshed ranking.
 
 The H4 source, same-run pre-specialist baseline, final predictions and candidate audit were recovered from storage paths bound to `338027445`. Every source body matched the saved executed file. Final-output SHA256: `4f4ea5e468e4e95edc5e6b78433723d5f53d07499ad58dd2de79afee0060d035`; same-run baseline SHA256: `52d973d4c7f4309f6a2f5dfa6d108640efd2ab58718fdf846a92a3f378363d8a`.
 
@@ -939,3 +940,15 @@ Both prediction files passed the 120-task, 172-record schema. All four saved wor
 The fresh placeholder routing check again selected zero of the visible 240 tasks. As clarified by the [official data description](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/data), this file is replaced with unseen tasks when scoring; its routing result does not reveal hidden-set activation. That distinction corrects the earlier July interpretation. H4's historical `28.89` and `30.97` results do not independently establish an uplift.
 
 This submission restores an existing protected rule extension after a fresh same-run audit, with no newly trained weights. The extension selects rules by exact fit to a task's demonstration pairs and abstains on conflicting rule predictions; it fills only source-proven vacant or duplicated second slots. The official list gained exactly one matching submission after endpoint acceptance.
+
+### 2026-10-03 UTC / October 4 Asia/Shanghai: Shutdown Audit and Fallback
+
+Submission `56803048` was accepted at `2026-10-03T17:12:01.717Z`, using unchanged Program063 Version 1 / scriptVersionId `341141537`. Its score remains pending. The previous H4 run returned `30.42`, below project best `32.22`. The pre-submission ranking was 93; rank 20 was `33.47`.
+
+Fresh H4 CPU replay again reproduced its exact saved output, with twelve added correct public-evaluation records and zero losses relative to its own same-run baseline. A direct set comparison confirmed preservation of all baseline guess values on this saved evaluation. Separately, 124 synthetic cases exercised the exact reviewed second-slot loop, including 40 cases with a sourced zero grid. All first guesses and sourced candidates survived. Seven cases replaced an unsourced default zero grid, so this property is not a universal accuracy-nondecrease guarantee.
+
+A separate runtime audit found two termination sentinels for four workers in H4's inherited V3 starter, combined with separate queue-empty checks and blocking reads. A controlled CPU interleaving used the same Manager.Queue interface: all four consumers observed a nonempty queue, then only two obtained termination sentinels. The other two exhausted the test's bounded read timeout; the original unbounded reads could block. This is a scheduling counterexample, not an observed Kaggle hang or an explanation of previous leaderboard scores.
+
+A local one-line change supplies four sentinels, and all four consumers then exit in the controlled test. That corrected source has not undergone GPU validation and was not submitted. Further submissions of the affected old H4 and V3 versions are deferred pending a validated replacement. Program063 already supplies four termination sentinels for four workers and was retained as the validated fallback.
+
+The actual Program063 saved output retained SHA256 `7539bca197e12e2249a327c7dc683aa64983550d7474ab1024a0c6bf6a245eea` and passed the matching 120-task/172-record schema. Three correct records remain four-task smoke diagnostics rather than full accuracy. Exactly one matching official submission was confirmed; no new model or inference settings are claimed for this fallback.
